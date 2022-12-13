@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>크리스마스 성격 테스트</title>
-    <meta name="description" content="나를 닮은 크리스마스 캐릭터는 무엇인지 MBTI 기반으로 찾아주는 사이트 입니다.">
-<meta name="keywords" content="크리스마스 테스트,성격 테스트,크리스마스 mbti,mbti테스트,크리스마스mbti,크리스마스성격,mbti성격,mbti크리스마스">
+    <title>2023년 행운 아이템 뽑기</title>
+    <meta name="description" content="2023년 내가 얻게 될 행운 아이템은 무엇일까?">
+<meta name="keywords" content="2023년운세, 2023년, 2023년 아이템, 2023년 행운 아이템, 2023년 사주, 2023년 아이템뽑기">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="크리스마스 성격 테스트">
-    <meta property="og:description" content="나를 닮은 크리스마스 캐릭터는 무엇인지  MBTI 기반으로 찾아주는 사이트 입니다.">
-    <meta property="og:image" content="https://christmasmbti.netlify.app/img_main.jpeg">
-    <meta property="og:url" content="https://christmasmbti.netlify.app/">
+    <meta property="og:title" content="2023년 행운 아이템 뽑기">
+    <meta property="og:description" content="2023년 내가 얻게 될 행운 아이템은 무엇일까?">
+    <meta property="og:image" content="https://2023item.netlify.app/img_main.png">
+    <meta property="og:url" content="https://2023item.netlify.app/">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -33,8 +33,8 @@
 
     <!--시작화면-->
     <article class="start">
-        <img id="img_main" class="mt-5" src="img_main.jpeg">
-        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(8, 183, 14); border-color: rgb(8, 183, 14);">테스트 시작하기</button>
+        <img id="img_main" class="mt-5" src="img_main.png">
+        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 217, 21); border-color: rgb(255, 217, 21);">아이템 뽑기 시작</button>
     </article>
     <!--문제화면-->
     <article class="question">
@@ -43,8 +43,8 @@
         </div>
         <h6 style="font-weight: bold;" class="text-center mt-5" id="title">문제</h6>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(8, 183, 14); border-color: rgb(8, 183, 14);">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(8, 183, 14); border-color: rgb(8, 183, 14);">Primary</button>
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 217, 21); border-color: rgb(255, 217, 21);">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 217, 21); border-color: rgb(255, 217, 21);">Primary</button>
 
         </article>
     <!--결과화면-->
@@ -84,44 +84,44 @@
         var num = 1;
         // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
         var q = {
-              1: {"title": "크리스마스가 다가온다! 나는?", "type": "SN", "A": "벌써? 시간 빠르네", "B": "크리스마스에 뭘 할지 생각한다."},
-             2: {"title": "크리스마스 이브<br><br>집에서 쉬고있는데 나오라는 친구의 전화", "type": "EI", "A": "마침 심심했는데 잘됐다", "B": "나오라고? 사람도 많을텐데..<br>대충 둘러대고 계속 집에서 쉰다."},
-             3: {"title": "크리스마스에 쓸데없는 선물 주기 하자!<br><br>친구의 말에 나의 속마음은?", "type": "TF", "A": "벌써 머릿속에 쓸데없는 선물 몇개를 떠올림", "B": "쓸데없는걸 굳이 왜..? 하지만 내색하지 않음"},
+              1: {"title": "더 끌리는 단어를 고르시오", "type": "SN", "A": "공기", "B": "방울"},
+             2: {"title": "뭐가 더 좋은가요?", "type": "EI", "A": "포근한 과자", "B": "상큼한 하늘"},
+             3: {"title": "내가 좋아하는 계절은?", "type": "TF", "A": "여름", "B": "겨울"},
 
-             4: {"title": "크리스마스에 가려던 가게가 예약이 다 차버렸다!", "type": "JP", "A": "진작 예약하지 않은 나를 원망한다.", "B": "아 아쉽다. 딴데 가지 뭐"},
-             5: {"title": "자고 일어나면 크리스마스이브! 침대에 누운 나는", "type": "SN", "A": "별생각 없다. 잔다.", "B": "내일 무슨 일이 일어날지 상상의 나래를 펼친다"},
-            6: {"title": "우리 크리스마스에 드레스코드 정해서 만나자!", "type": "EI", "A": "1년에 하루뿐이니 특이한 분장을 한다.", "B": "튀기 싫어! 적당히 무난한 옷을 고른다."},
+             4: {"title": "기분이 안 좋을 땐", "type": "JP", "A": "집으로", "B": "집 밖으로"},
+             5: {"title": "끌리는 걸 골라주세요", "type": "SN", "A": "따끈따끈", "B": "살랑살랑"},
+            6: {"title": "더 좋아하는 것은?", "type": "EI", "A": "우유,탄산", "B": "커피"},
 
-                7: {"title": "산타와 루돌프가 선물을 놓고 가려다 내 방을 어질러놨다.<br><br>누구에게 더 화가 날까?", "type": "TF", "A": "사과는 뒷전, 일단 정리부터 하는 산타!", "B": "정리는 뒷전, 사과부터 하는 루돌프!"},
-             8: {"title": "산타와 루돌프가 수습을 시작했다. 내 방식은?", "type": "JP", "A": "그냥 알아서 치워줘", "B": "이거 먼저 치우고, 다음에 이거 치워줘"},
-            9: {"title": "수습을 끝낸 산타와 루돌프가 인사를 하고 떠난다.<br><br>어떤 모습으로 떠났는가?", "type": "SN", "A": "문을 열고 나간다.", "B": "창문을 열고 하늘로 날아간다."},
+                7: {"title": "더 좋아하는 날씨는?","type": "TF", "A": "선선, 조용히 내리는 비", "B": "파란 하늘, 내리쬐는 햇볕"},     
+8: {"title": "더 따가울 것 같은 건 무엇일까?", "type": "JP", "A": "고슴도치 가시", "B": "장미 가시"},
+            9: {"title": "눈 하면 생각나는 것은?", "type": "SN", "A": "얼굴에 있는 눈", "B": "하늘에서 내리는 눈"},
 
-         10: {"title": "정말 피곤했던 크리스마스 이브<br>친구가 쓸데없는 선물을 주겠다고 한다.", "type": "EI", "A": "내 선물도 챙겨서 바로 나간다!", "B": "이미 에너지를 다 썼어..다음에 주고 받는다."},
-            11: {"title": "내가 정말 쓸데없는걸 줬다며 친구가 엉엉 울어버린다..<br><br>이때 나는", "type": "TF", "A": "당황스럽지만 위로부터 해준다.", "B": "쓸데없는 선물 주기로 한거 아니야?"},
-              12: {"title": "드디어 내일이 크리스마스!<br><br>나는 내일 뭐할까?", "type": "JP", "A": "밥먹고 영화보고 구경 좀 하고~", "B": "이미 예약을 해놔서 그대로 움직인다."}
+         10: {"title": "더 좋아하는 것은?", "type": "EI", "A": "강아지", "B": "고양이"},
+            11: {"title": "내가 좋아하는 영화 장르는?", "type": "TF", "A": "로맨틱 코미디", "B": "액션 스릴러"},
+              12: {"title": "타임머신이 있다면?", "type": "JP", "A": "10년 전", "B": "10년 후"}
         }
 
         // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
         var result = {
-            "ISTJ": {"img":"img_istj.png"},
-            "ISFJ": {"img":"img_isfj.png"},
-            "INFJ": {"img":"img_infj.png"},
-            "INTJ": {"img":"img_intj.png"},
+            "ISTJ": {"img":"img_1.png"},
+            "ISFJ": {"img":"img_2.png"},
+            "INFJ": {"img":"img_3.png"},
+            "INTJ": {"img":"img_4.png"},
 
-            "ISTP": {"img":"img_istp.png"},
-            "ISFP": {"img":"img_isfp.png"},
-            "INFP": {"img":"img_infp.png"},
-            "INTP": {"img":"img_intp.png"},
+            "ISTP": {"img":"img_5.png"},
+            "ISFP": {"img":"img_6.png"},
+            "INFP": {"img":"img_7.png"},
+            "INTP": {"img":"img_8.png"},
 
-            "ESTP": {"img":"img_estp.png"},
-            "ESFP": {"img":"img_esfp.png"},
-            "ENFP": {"img":"img_enfp.png"},
-            "ENTP": {"img":"img_entp.png"},
+            "ESTP": {"img":"img_9.png"},
+            "ESFP": {"img":"img_10.png"},
+            "ENFP": {"img":"img_11.png"},
+            "ENTP": {"img":"img_12.png"},
 
-            "ESTJ": {"img":"img_estj.png"},
-            "ESFJ": {"img":"img_esfj.png"},
-            "ENFJ": {"img":"img_enfj.png"},
-            "ENTJ": {"img":"img_entj.png"},
+            "ESTJ": {"img":"img_13.png"},
+            "ESFJ": {"img":"img_14.png"},
+            "ENFJ": {"img":"img_15.png"},
+            "ENTJ": {"img":"img_16.png"},
         }
         // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
         function start(){
