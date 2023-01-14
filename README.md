@@ -75,3 +75,4 @@ To watch some usage guides, visit [https://help.goorm.io/en/goormide](https://he
 # color
 # 2023
 # age
+# birthday
