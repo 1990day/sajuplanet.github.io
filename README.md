@@ -82,3 +82,4 @@ To watch some usage guides, visit [https://help.goorm.io/en/goormide](https://he
 # posi
 # mario
 # g-idol
+# g-idol
