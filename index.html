@@ -85,7 +85,7 @@ article{
     display: none;
 }
 .progress-bar {
-    background-color: #ffcfcf;
+    background-color: #c9f293;
 }
 .progress {
     background-color: #ffffff;
@@ -169,7 +169,7 @@ article{
      <!--시작화면-->
     <article class="start">
         <img id="img_main" class="mt-5" src="img_main44.png">
-        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 207, 207); border-color: rgb(255, 207, 207);">테스트 시작하기</button>
+        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(227, 255, 36); border-color: rgb(227, 255, 36);">테스트 시작하기</button>
     </article>
     <!--문제화면-->
     <article class="question">
@@ -178,8 +178,8 @@ article{
         </div>
         <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(205, 233, 246); border-color: rgb(205, 233, 246);">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(252, 247, 225); border-color: rgb(252, 247, 225);">Primary</button>
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 173, 173); border-color: rgb(255, 173, 173);">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 210, 0); border-color: rgb(225, 210, 0);">Primary</button>
 
         </article>
     <!--결과화면-->
@@ -215,18 +215,18 @@ article{
 
     <script>
         // 문제 번호를 나타내는 num 변수
-        var num = 1;
+          var num = 1;
         // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
-        var q = {
+             var q = {
               1: {"title": "최악의 경우까지 상상해야 타격을 덜 입는다?", "type": "SN", "A": "아니다", "B": "맞다"},
              2: {"title": "나와 다른 사람들을 알아가는 게 좋다?", "type": "EI", "A": "그렇다", "B": "아니다"},
              3: {"title": "누가 이유없이 날 싫다 해도 타격 없다?", "type": "TF", "A": "타격 있다", "B": "타격 없다"},
 
-             4: {"title": "계획 짜는 거 귀찮지만 해야 마음이 편하다?", "type": "JP", "A": "그렇다", "B": "안짜도 편하다"},
+             4: {"title": "계획 짜는 거 귀찮지만 해야 마음이 편하다?", "type": "JP", "A": "안짜도 편하다", "B": "짜는게 편하다"},
              5: {"title": "초능력을 가진 사람이 존재할 거라고 생각하는가?", "type": "SN", "A": "말도 안 된다", "B": "세상은 넓으니 가능성 있다"},
             6: {"title": "나는 주로 친구와의 만남에서", "type": "EI", "A": "얘기를 하는 편", "B": "얘기를 들어주는 편"},
 
-                7: {"title": "슬픔을 나누면", "type": "TF", "A": "슬픈 사람이 둘이 된다", "B": "슬픔이 반이 된다"},
+                7: {"title": "슬픔을 나누면", "type": "TF", "A": "슬픔이 반이 된다", "B": "슬픈 사람이 둘이 된다"},
              8: {"title": "약속 장소에 갈 때 나는", "type": "JP", "A": "약속시간에 딱 맞게 도착하는 편", "B": "약속시간 전에 도착하는 편"},
             9: {"title": "나는 어디에 가까운가?", "type": "SN", "A": "현실적으로 살아가는 사람", "B": "낭만적으로 살아가는 사람"},
 
@@ -234,6 +234,7 @@ article{
             11: {"title": "나는 무언가를 선택해야 할 때", "type": "TF", "A": "결정을 쉽게 못 내리는 편", "B": "빠르게 최선의 선택을 내리는 편"},
               12: {"title": "계획이 틀어지는 거에 스트레스를", "type": "JP", "A": "받지 않는다", "B": "많이 받는다"}
         }
+
 
         // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
         var result = {
