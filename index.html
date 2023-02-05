@@ -14,13 +14,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>말풍선 성격 테스트</title>
-    <meta name="description" content="남이 보는 내 성격은 어떤지 MBTI 기반으로 알려주는 테스트입니다.">
-<meta name="keywords" content="테스트잇,남이보는내성격,말풍선성격테스트,말풍선 테스트, 말풍선 mbti, 말풍선 성격, 남이보는 mbti, 연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
+    <title>키워드 성격 테스트</title>
+    <meta name="description" content="나를 나타내는 핵심 키워드는 무엇인지 MBTI 기반으로 알려주는 테스트입니다.">
+<meta name="keywords" content="테스트잇,남이보는내성격,키워드성격,키워드테스트,키워드성격테스트,키워드mbti,핵심키워드테스트,핵심키워드mbti, 남이보는 mbti, 연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="말풍선 성격 테스트">
-    <meta property="og:description" content="남이 보는 내 성격은 어떤지 MBTI 기반으로 알려주는 테스트입니다.">
-    <meta property="og:image" content="img_main50.png">
+    <meta property="og:title" content="키워드 성격 테스트">
+    <meta property="og:description" content="나를 나타내는 핵심 키워드는 무엇인지 MBTI 기반으로 알려주는 테스트입니다.">
+    <meta property="og:image" content="img_main51.png">
     <meta property="og:url" content="https://bubble-mbti.netlify.app/">
 
 
@@ -88,10 +88,10 @@ article{
     display: none;
 }
 .progress-bar {
-    background-color: #bce6f0;
+    background-color: #000080;
 }
 .progress {
-    background-color: #ffffff;
+    background-color: #008080;
 }
 #img{
     width: 360px;
@@ -141,7 +141,7 @@ article{
 
 </head>
 <!-- body 태그 style background-color 지정으로 배경색 변경-->
-<body class="container" style="background-color:#ffffff">
+<body class="container" style="background-color:#008080">
             
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
@@ -171,8 +171,8 @@ article{
 
      <!--시작화면-->
     <article class="start">
-        <img id="img_main" class="mt-5" src="img_main50.png">
-        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(188, 230, 240); border-color: rgb(188, 230, 240);">테스트 시작하기</button>
+        <img id="img_main" class="mt-5" src="img_main51.png">
+        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(192, 192, 192); border-color: rgb(192, 192, 192);">테스트 시작하기</button>
     </article>
     <!--문제화면-->
     <article class="question">
@@ -181,8 +181,8 @@ article{
         </div>
         <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 231, 241); border-color: rgb(255, 231, 241);">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(211, 255, 196); border-color: rgb(211, 255, 196);">Primary</button>
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(192, 192, 192); border-color: rgb(192, 192, 192);">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(192, 192, 192); border-color: rgb(192, 192, 192);">Primary</button>
 
         </article>
     <!--결과화면-->
@@ -221,45 +221,45 @@ article{
           var num = 1;
         // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
              var q = {
-              1: {"title": "나는 친구들과 먼저 약속을 잡는 편이다", "type": "EI", "A": "그렇다", "B": "아니다"},
-             2: {"title": "친구들과 나는 주로 이런 얘기를 한다", "type": "SN", "A": "현실적인 얘기와 고민", "B": "헛소리가 대부분인 대화"},
-             3: {"title": "나는 친구에게 쉽게 감동받는 편이다", "type": "TF", "A": "그렇다", "B": "아니다"},
+              1: {"title": "주말 저녁 나는 어디로 갈 것인가?", "type": "EI", "A": "시끌벅적 깜짝 이벤트가 많은 파티", "B": "잔잔한 음악이 흘러나오는 분위기 있는 파티"},
+             2: {"title": "나는 오늘 파티에서", "type": "SN", "A": "예상 가능한 일만 일어나는 게 좋다", "B": "특별한 일이 일어나길 기대한다"},
+             3: {"title": "파티를 열어준 친구에게 선물을 한다면", "type": "TF", "A": "친구를 생각하면 떠오르는 선물을 산다", "B": "친구가 평소 필요해 보였던 선물을 산다"},
 
-             4: {"title": "친구들과 여행을 가면 나의 포지션은", "type": "JP", "A": "군말 없이 따라다니는 것", "B": "여행 계획을 짜는 편"},
-             5: {"title": "나는 웃긴 상상을 자주 하는 편이다", "type": "SN", "A": "아니다", "B": "그렇다"},
-            6: {"title": "나는 친구들과 놀고 헤어졌을 때<br><br>친구와 가는 방향이 같으면", "type": "EI", "A": "더 떠들 수 있어서 좋다", "B": "집에 가는 길은 혼자 가고 싶다"},
+             4: {"title": "파티에 가는 길<br><br> 정해진 시간보다 일찍 도착한 버스 때문에 버스를 놓쳤다", "type": "JP", "A": "다음 버스가 금방 오기 때문에 괜찮다", "B": "왜 시간을 지키지 않는지 짜증이 난다"},
+             5: {"title": "파티 장소로 가는 길<br><br>버스 안에서 나는", "type": "SN", "A": "재밌게 놀 생각에 설렌다", "B": "나만의 상상의 나래를 펼친다"},
+            6: {"title": "파티 장소에 도착한 나<br><br>자리를 어디로 안내해달라고 할까?", "type": "EI", "A": "자유롭게 돌아다니면서 인사할 수 있는 자리", "B": "친한 친구들이 모여있는 구석자리"},
 
-                7: {"title":"나는 친구에게 섭섭한 것이 있으면", "type": "TF", "A": "속으로 쌓아두는 편이다", "B": "바로바로 말하는 편이다"},
-             8: {"title": "갑자기 휴일이 생기면 나는", "type": "JP", "A": "너무 좋다! 할 게 많다", "B": "좋긴 한데 뭘 해야 할지 모르겠다"},
-            9: {"title": "친구들과 예상보다 일찍 헤어지게 되면", "type": "EI", "A": "더 놀고 싶었는데.. 서운하다", "B": "피곤했는데 잘 됐다"},
+                7: {"title":"파티를 연 친구에게 선물을 건넸는데<br><br>내 선물만 두고 다른 곳으로 갔다", "type": "TF", "A": "뭐지? 선물이 마음에 안 들었나?", "B": "정신없어서 놓고 갔나 보네"},
+             8: {"title": "파티 시작 전<br><br>진행 순서가 적힌 안내문을 나눠준다", "type": "JP", "A": "촘촘하게 세워진 진행 순서에 놀란다", "B": "촘촘하게 세워진 진행 순서에 편안함을 느낀다"},
+            9: {"title": "몇 번 인사만 했던 친구의 친구가 말을 걸어온다", "type": "EI", "A": "이번 기회에 친해져야겠다 생각한다", "B": "어색한 미소로 인사를 받아준다"},
 
-         10: {"title": "나는 친구와 우리의 미래에 대해", "type": "SN", "A": "잘 얘기하지 않는다", "B": "미래에 우린 뭐 하고 있을지 얘기한다"},
-            11: {"title": "나는 친구와의 끊임없는 연락이", "type": "TF", "A": "재밌다", "B": "힘들다"},
-              12: {"title": "친구가 갑자기 약속 장소를 바꾸면", "type": "JP", "A": "대수롭지 않게 생각한다", "B": "스트레스를 받는다"}
+         10: {"title": "잠시 자리를 비운 사이 내 자리에 쪽지가 놓여있다", "type": "SN", "A": "무슨 쪽지인지 펼쳐본다", "B": "혹시 누가 날 좋아하나? 생각하며 두리번거린다"},
+            11: {"title": "친구한테 잘하는 것 같지 않은데 주변에 늘 사람이 많네<br><br>라는 말을 들었을 때 나는", "type": "TF", "A": "왜 알지도 못하면서 저런 말을 하지?", "B": "내가 사람을 끄는 매력이 있지"},
+              12: {"title": "적혀진 안내문과는 다르게<br><br>파티는 멋대로 진행되고 있다", "type": "JP", "A": "애초에 안내문을 꼼꼼히 안 봐서 모른다", "B": "그럴 거면 왜 안내문을 줬는지 이해가 안 간다"}
         }
 
 
         // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
         var result = {
-            "ISTJ": {"img":"img_istj50.png"},
-            "ISFJ": {"img":"img_isfj50.png"},
-            "INFJ": {"img":"img_infj50.png"},
-            "INTJ": {"img":"img_intj50.png"},
+            "ISTJ": {"img":"img_istj51.png"},
+            "ISFJ": {"img":"img_isfj51.png"},
+            "INFJ": {"img":"img_infj51.png"},
+            "INTJ": {"img":"img_intj51.png"},
 
-            "ISTP": {"img":"img_istp50.png"},
-            "ISFP": {"img":"img_isfp50.png"},
-            "INFP": {"img":"img_infp50.png"},
-            "INTP": {"img":"img_intp50.png"},
+            "ISTP": {"img":"img_istp51.png"},
+            "ISFP": {"img":"img_isfp51.png"},
+            "INFP": {"img":"img_infp51.png"},
+            "INTP": {"img":"img_intp51.png"},
 
-            "ESTP": {"img":"img_estp50.png"},
-            "ESFP": {"img":"img_esfp50.png"},
-            "ENFP": {"img":"img_enfp50.png"},
-            "ENTP": {"img":"img_entp50.png"},
+            "ESTP": {"img":"img_estp51.png"},
+            "ESFP": {"img":"img_esfp51.png"},
+            "ENFP": {"img":"img_enfp51.png"},
+            "ENTP": {"img":"img_entp51.png"},
 
-            "ESTJ": {"img":"img_estj50.png"},
-            "ESFJ": {"img":"img_esfj50.png"},
-            "ENFJ": {"img":"img_enfj50.png"},
-            "ENTJ": {"img":"img_entj50.png"},
+            "ESTJ": {"img":"img_estj51.png"},
+            "ESFJ": {"img":"img_esfj51.png"},
+            "ENFJ": {"img":"img_enfj51.png"},
+            "ENTJ": {"img":"img_entj51.png"},
         }
         // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
         function start(){
