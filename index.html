@@ -14,13 +14,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>강아지 성격 테스트</title>
-    <meta name="description" content="우리 강아지는 어떤 성격일까? 멍BTI를 기반으로 만든 테스트입니다.">
-<meta name="keywords" content="테스트잇,강아지성격,개성격,멍비티아이,멍BTI,강아지mbti,개mbti,강아지성격테스트,멍키성격테스트,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
+    <title>연애 보고서 테스트</title>
+    <meta name="description" content="나의 연애 보고서에 쓰인 내 연애 스타일은 과연 무엇인지 MBTI를 기반으로 알아보는 테스트입니다.">
+<meta name="keywords" content="테스트잇,연애보고서,연애보고서테스트,연애보고서mbti,보고서테스트,보고서mbti,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="강아지 성격 테스트">
-    <meta property="og:description" content="우리 강아지는 어떤 성격일까? 멍BTI를 기반으로 만든 테스트입니다.">
-    <meta property="og:image" content="img_main52.png">
+    <meta property="og:title" content="연애 보고서 테스트">
+    <meta property="og:description" content="나의 연애 보고서에 쓰인 내 연애 스타일은 과연 무엇인지 MBTI를 기반으로 알아보는 테스트입니다.">
+    <meta property="og:image" content="img_main53.png">
     <meta property="og:url" content="https://puppy-mbti.netlify.app/">
 
 
@@ -88,7 +88,7 @@ article{
     display: none;
 }
 .progress-bar {
-    background-color: #fda4a4;
+    background-color: #ffa0a0;
 }
 .progress {
     background-color: #ffffff;
@@ -171,8 +171,8 @@ article{
 
      <!--시작화면-->
     <article class="start">
-        <img id="img_main" class="mt-5" src="img_main52.png">
-        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(200, 170, 123); border-color: rgb(200, 170, 123);">테스트 시작하기</button>
+        <img id="img_main" class="mt-5" src="img_main53.png">
+        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 160, 160); border-color: rgb(255, 160, 160);">테스트 시작하기</button>
     </article>
     <!--문제화면-->
     <article class="question">
@@ -181,8 +181,8 @@ article{
         </div>
         <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(200, 170, 123); border-color: rgb(200, 170, 123);">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(200, 170, 123); border-color: rgb(200, 170, 123);">Primary</button>
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 230, 230); border-color: rgb(255, 230, 230);">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(225, 236, 150); border-color: rgb(225, 236, 150);">Primary</button>
 
         </article>
     <!--결과화면-->
@@ -221,45 +221,45 @@ article{
           var num = 1;
         // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
              var q = {
-              1: {"title": "우리 강아지는 산책 갔다가 친구를 만나면", "type": "EI", "A": "먼저 다가가는 편이다", "B": "피하는 편이다"},
-             2: {"title": "우리 강아지는 잠들 때", "type": "SN", "A": "머리만 대면 자는 편이다", "B": "뒤척이다가 잠든다"},
-             3: {"title": "우리 강아지는 주인이 혼내면", "type": "TF", "A": "삐진 티가 난다", "B": "평소와 같다"},
+              1: {"title": "좋아하는 사람이 생긴 나!", "type": "EI", "A": "그 사람에게 나를 최대한 어필한다", "B": "그 사람의 주변을 맴돈다"},
+             2: {"title": "좋아하는 사람이 생기면 나는!", "type": "SN", "A": "그 사람과 어떻게 이어질지 생각한다", "B": "그 사람과 사귀고 헤어지는 상상을 한다"},
+             3: {"title": "좋아하는 사람에게 마음을 표현하고 싶은 나!", "type": "TF", "A": "마음이 담긴 장문의 편지를 건넨다", "B": "커피나 사탕 등 소소한 선물공세를 펼친다"},
 
-             4: {"title": "우리 강아지는 자기만의 하루 루틴이", "type": "JP", "A": "존재하지 않는다", "B": "존재하는 것 같다"},
-             5: {"title": "우리 강아지는 가만히 있을 때", "type": "SN", "A": "혼자 뭘 하려고 한다", "B": "가만히 멍을 때린다"},
-            6: {"title": "우리 강아지는 친구들과", "type": "EI", "A": "빨리 친해지는 편이다", "B": "시간이 걸리는 편이다"},
+             4: {"title": "좋아하는 사람에게 고백하러 가는 길!", "type": "JP", "A": "천천히 걸으면서 생각 좀 하자", "B": "일단 빨리 도착해서 생각하자"},
+             5: {"title": "고백하러 가는 길에 나는!", "type": "SN", "A": "고백 멘트를 머릿속으로 정리한다", "B": "거절당하면 어쩌지? 걱정이 된다"},
+            6: {"title": "나의 짝사랑을 아는 사람은!", "type": "EI", "A": "친한 친구들", "B": "비밀이라 아무도 모른다"},
 
-                7: {"title":"우리 강아지는 주인이 속상해하면", "type": "TF", "A": "눈치채고 옆에 와있는다", "B": "아무 생각 없이 평소대로 행동한다"},
-             8: {"title": "우리 강아지는<br><br> 원래 가던 산책코스로 가지 않으면", "type": "JP", "A": "신경 안 쓰고 새로운 냄새를 맡는다", "B": "원래처럼 잘 따라오지 않는다"},
-            9: {"title": "우리 강아지는<br><br> 주인이 아닌 다른 사람이 관심을 보이면", "type": "EI", "A": "이뻐해 달라고 애교 부린다", "B": "경계한다"},
+                7: {"title":"고백에 거절당하면 나는!", "type": "TF", "A": "창피해서 잊을 수 없을 것이다", "B": "빨리 털어버리고 다른 사람을 찾는다"},
+             8: {"title": "고백하러 가는 길 약속시간에 10분 늦었다면!", "type": "JP", "A": "이왕 늦은 거 떨리는 마음을 추스른다", "B": "늦는 상황에 더 스트레스를 받는다"},
+            9: {"title": "고백을 끝낸 후 나는!", "type": "EI", "A": "친구들을 만나 오늘 있었던 일을 말한다", "B": "서둘러 집에 가서 눕는다"},
 
-         10: {"title": "우리 강아지는 새로운 물건을 발견했을 때", "type": "SN", "A": "침착히 탐색한다", "B": "흥분하며 건드려본다"},
-            11: {"title": "우리 강아지는 기쁠 때와 슬플 때가", "type": "TF", "A": "엄청 티가 난다", "B": "잘 모르겠다"},
-              12: {"title": "우리 강아지는 산책 가기로 해놓고 안 가면", "type": "JP", "A": "언젠간 가겠지 하고 기다린다", "B": "주인에게 눈치를 준다"}
+         10: {"title": "결국 고백을 거절당한 나<br><br>자기 전의 나는!", "type": "SN", "A": "빨리 잊기 위해 잔다", "B": "흑역사 생성에 이불을 뻥뻥 찬다"},
+            11: {"title": "거절당한 이유를 생각하는 나!", "type": "TF", "A": "오늘 옷이 별로였나? 내가 10분 늦어서 그런가?", "B": "나같이 매력적인 사람을 거절하다니"},
+              12: {"title": "다음날 길거리에서 그 사람을 봤는데<br><br>그 사람은 아직 나를 못 봤다면!", "type": "JP", "A": "마주치지 않으려 돌고 돌아간다", "B": "원래 가던 길로 빠르게 걸어간다"}
         }
 
 
         // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
         var result = {
-            "ISTJ": {"img":"img_istj52.png"},
-            "ISFJ": {"img":"img_isfj52.png"},
-            "INFJ": {"img":"img_infj52.png"},
-            "INTJ": {"img":"img_intj52.png"},
+            "ISTJ": {"img":"img_istj53.png"},
+            "ISFJ": {"img":"img_isfj53.png"},
+            "INFJ": {"img":"img_infj53.png"},
+            "INTJ": {"img":"img_intj53.png"},
 
-            "ISTP": {"img":"img_istp52.png"},
-            "ISFP": {"img":"img_isfp52.png"},
-            "INFP": {"img":"img_infp52.png"},
-            "INTP": {"img":"img_intp52.png"},
+            "ISTP": {"img":"img_istp53.png"},
+            "ISFP": {"img":"img_isfp53.png"},
+            "INFP": {"img":"img_infp53.png"},
+            "INTP": {"img":"img_intp53.png"},
 
-            "ESTP": {"img":"img_estp52.png"},
-            "ESFP": {"img":"img_esfp52.png"},
-            "ENFP": {"img":"img_enfp52.png"},
-            "ENTP": {"img":"img_entp52.png"},
+            "ESTP": {"img":"img_estp53.png"},
+            "ESFP": {"img":"img_esfp53.png"},
+            "ENFP": {"img":"img_enfp53.png"},
+            "ENTP": {"img":"img_entp53.png"},
 
-            "ESTJ": {"img":"img_estj52.png"},
-            "ESFJ": {"img":"img_esfj52.png"},
-            "ENFJ": {"img":"img_enfj52.png"},
-            "ENTJ": {"img":"img_entj52.png"},
+            "ESTJ": {"img":"img_estj53.png"},
+            "ESFJ": {"img":"img_esfj53.png"},
+            "ENFJ": {"img":"img_enfj53.png"},
+            "ENTJ": {"img":"img_entj53.png"},
         }
         // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
         function start(){
