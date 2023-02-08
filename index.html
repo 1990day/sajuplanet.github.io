@@ -14,13 +14,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>연애 보고서 테스트</title>
-    <meta name="description" content="나의 연애 보고서에 쓰인 내 연애 스타일은 과연 무엇인지 MBTI를 기반으로 알아보는 테스트입니다.">
+    <title>발렌타인데이 초콜렛 성격 테스트</title>
+    <meta name="description" content="발렌타인데이 기념 초콜릿으로 알아보는 나의 성격을 MBTI 기반으로 알아보는 테스트입니다.">
 <meta name="keywords" content="테스트잇,연애보고서,연애보고서테스트,연애보고서mbti,보고서테스트,보고서mbti,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="연애 보고서 테스트">
-    <meta property="og:description" content="나의 연애 보고서에 쓰인 내 연애 스타일은 과연 무엇인지 MBTI를 기반으로 알아보는 테스트입니다.">
-    <meta property="og:image" content="img_main53.png">
+    <meta property="og:title" content="발렌타인데이 초콜렛 성격 테스트">
+    <meta property="og:description" content="발렌타인데이 기념 초콜릿으로 알아보는 나의 성격을 MBTI 기반으로 알아보는 테스트입니다.">
+    <meta property="og:image" content="img_main54.png">
     <meta property="og:url" content="https://report-mbti.netlify.app/">
 
 
@@ -88,10 +88,10 @@ article{
     display: none;
 }
 .progress-bar {
-    background-color: #ffa0a0;
+    background-color: #84521d;
 }
 .progress {
-    background-color: #ffffff;
+    background-color: #fbeec1;
 }
 #img{
     width: 360px;
@@ -141,7 +141,7 @@ article{
 
 </head>
 <!-- body 태그 style background-color 지정으로 배경색 변경-->
-<body class="container" style="background-color:#ffffff">
+<body class="container" style="background-color:#fbeec1">
             
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
@@ -171,8 +171,8 @@ article{
 
      <!--시작화면-->
     <article class="start">
-        <img id="img_main" class="mt-5" src="img_main53.png">
-        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 160, 160); border-color: rgb(255, 160, 160);">테스트 시작하기</button>
+        <img id="img_main" class="mt-5" src="img_main54.png">
+        <button type="button" class="btn btn-info mt-5" onclick='start();' style="font-size:large; font-weight: bold; color: white; background-color: rgb(133, 82, 29); border-color: rgb(133, 82, 29);">테스트 시작하기</button>
     </article>
     <!--문제화면-->
     <article class="question">
@@ -181,8 +181,8 @@ article{
         </div>
         <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 230, 230); border-color: rgb(255, 230, 230);">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(225, 236, 150); border-color: rgb(225, 236, 150);">Primary</button>
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 226, 93); border-color: rgb(255, 226, 93);">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 226, 93); border-color: rgb(255, 226, 93);">Primary</button>
 
         </article>
     <!--결과화면-->
@@ -221,45 +221,45 @@ article{
           var num = 1;
         // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
              var q = {
-              1: {"title": "좋아하는 사람이 생긴 나!", "type": "EI", "A": "그 사람에게 나를 최대한 어필한다", "B": "그 사람의 주변을 맴돈다"},
-             2: {"title": "좋아하는 사람이 생기면 나는!", "type": "SN", "A": "그 사람과 어떻게 이어질지 생각한다", "B": "그 사람과 사귀고 헤어지는 상상을 한다"},
-             3: {"title": "좋아하는 사람에게 마음을 표현하고 싶은 나!", "type": "TF", "A": "마음이 담긴 장문의 편지를 건넨다", "B": "커피나 사탕 등 소소한 선물공세를 펼친다"},
+              1: {"title": "밖이 내가 정말 좋아하는 날씨라면", "type": "EI", "A": "나가서 날씨를 마음껏 즐긴다", "B": "집에서 마음껏 날씨를 구경한다"},
+             2: {"title": "아무 생각을 안 한다는 건", "type": "SN", "A": "진짜 아무 생각 안 함", "B": "아무 생각을 안 하려고 노력하지만 생각함"},
+             3: {"title": "내가 선호하는 동료 직원은", "type": "TF", "A": "같이 있으면 즐거운데 일은 못하는 직원", "B": "같이 있으면 불편한데 일은 잘하는 직원"},
 
-             4: {"title": "좋아하는 사람에게 고백하러 가는 길!", "type": "JP", "A": "천천히 걸으면서 생각 좀 하자", "B": "일단 빨리 도착해서 생각하자"},
-             5: {"title": "고백하러 가는 길에 나는!", "type": "SN", "A": "고백 멘트를 머릿속으로 정리한다", "B": "거절당하면 어쩌지? 걱정이 된다"},
-            6: {"title": "나의 짝사랑을 아는 사람은!", "type": "EI", "A": "친한 친구들", "B": "비밀이라 아무도 모른다"},
+             4: {"title": "나는 내가 예측하지 못하는 상황이 오면", "type": "JP", "A": "흥미롭고 적응할 수 있다", "B": "스트레스고 뚝딱거린다"},
+             5: {"title": "나는 내가 죽고 난 후의 상황에 대해", "type": "SN", "A": "깊게 생각해 본 적 없다", "B": "가끔 생각한다"},
+            6: {"title": "친한 친구와 단둘이 놀 때", "type": "EI", "A": "밖에서 노는 게 좋다", "B": "집에서 노는 게 좋다"},
 
-                7: {"title":"고백에 거절당하면 나는!", "type": "TF", "A": "창피해서 잊을 수 없을 것이다", "B": "빨리 털어버리고 다른 사람을 찾는다"},
-             8: {"title": "고백하러 가는 길 약속시간에 10분 늦었다면!", "type": "JP", "A": "이왕 늦은 거 떨리는 마음을 추스른다", "B": "늦는 상황에 더 스트레스를 받는다"},
-            9: {"title": "고백을 끝낸 후 나는!", "type": "EI", "A": "친구들을 만나 오늘 있었던 일을 말한다", "B": "서둘러 집에 가서 눕는다"},
+                7: {"title":"친구의 말투가 어제보다 딱딱해지면", "type": "TF", "A": "기분 나쁜 일이 있나 걱정된다", "B": "눈치를 못 채는 편이다"},
+             8: {"title": "나는 기한이 없는 일을", "type": "JP", "A": "미룰 수 있을 때까지 미룬다", "B": "빨리 해치우는 편이다"},
+            9: {"title": "내가 스트레스 푸는 방법은", "type": "EI", "A": "친구들과의 수다 타임이다", "B": "혼자만의 생각할 시간이다"},
 
-         10: {"title": "결국 고백을 거절당한 나<br><br>자기 전의 나는!", "type": "SN", "A": "빨리 잊기 위해 잔다", "B": "흑역사 생성에 이불을 뻥뻥 찬다"},
-            11: {"title": "거절당한 이유를 생각하는 나!", "type": "TF", "A": "오늘 옷이 별로였나? 내가 10분 늦어서 그런가?", "B": "나같이 매력적인 사람을 거절하다니"},
-              12: {"title": "다음날 길거리에서 그 사람을 봤는데<br><br>그 사람은 아직 나를 못 봤다면!", "type": "JP", "A": "마주치지 않으려 돌고 돌아간다", "B": "원래 가던 길로 빠르게 걸어간다"}
+         10: {"title": "나는 스트레스 받은 상황에 대해", "type": "SN", "A": "계속 곱씹게 되는 편이다", "B": "빨리 잊어버리는 편이다"},
+            11: {"title": "친구가 고민 상담을 하는데<br><br> 누가 봐도 친구의 잘못이라면", "type": "TF", "A": "일단 친구 편을 들고 공감해 준다", "B": "위로는 하되 기분 나쁘지 않게 솔직히 말한다"},
+              12: {"title": "나는 여행할 때 어떤 스타일인가", "type": "JP", "A": "친구가 짠 계획에 군말 없이 따라다니는 스타일", "B": "내가 짠 계획에 친구가 군말 없이 따라다니는 스타일"}
         }
 
 
         // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
         var result = {
-            "ISTJ": {"img":"img_istj53.png"},
-            "ISFJ": {"img":"img_isfj53.png"},
-            "INFJ": {"img":"img_infj53.png"},
-            "INTJ": {"img":"img_intj53.png"},
+            "ISTJ": {"img":"img_istj54.png"},
+            "ISFJ": {"img":"img_isfj54.png"},
+            "INFJ": {"img":"img_infj54.png"},
+            "INTJ": {"img":"img_intj54.png"},
 
-            "ISTP": {"img":"img_istp53.png"},
-            "ISFP": {"img":"img_isfp53.png"},
-            "INFP": {"img":"img_infp53.png"},
-            "INTP": {"img":"img_intp53.png"},
+            "ISTP": {"img":"img_istp54.png"},
+            "ISFP": {"img":"img_isfp54.png"},
+            "INFP": {"img":"img_infp54.png"},
+            "INTP": {"img":"img_intp54.png"},
 
-            "ESTP": {"img":"img_estp53.png"},
-            "ESFP": {"img":"img_esfp53.png"},
-            "ENFP": {"img":"img_enfp53.png"},
-            "ENTP": {"img":"img_entp53.png"},
+            "ESTP": {"img":"img_estp54.png"},
+            "ESFP": {"img":"img_esfp54.png"},
+            "ENFP": {"img":"img_enfp54.png"},
+            "ENTP": {"img":"img_entp54.png"},
 
-            "ESTJ": {"img":"img_estj53.png"},
-            "ESFJ": {"img":"img_esfj53.png"},
-            "ENFJ": {"img":"img_enfj53.png"},
-            "ENTJ": {"img":"img_entj53.png"},
+            "ESTJ": {"img":"img_estj54.png"},
+            "ESFJ": {"img":"img_esfj54.png"},
+            "ENFJ": {"img":"img_enfj54.png"},
+            "ENTJ": {"img":"img_entj54.png"},
         }
         // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
         function start(){
