@@ -1,12 +1,8 @@
 
 
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-<meta name="naver-site-verification" content="76081b74cd43245d89a4160aeb9fc9a827be455d" />
-
-
 
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
      crossorigin="anonymous"></script>
@@ -15,34 +11,32 @@
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta ht-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>얼굴 장르 테스트</title>
-    <meta name="description" content="얼굴 장르 테스트">
-    <meta name="title" content="내 얼굴은 무슨 장르와 잘 어울릴까?">
-    <meta name="subject" content="내 얼굴은 무슨 장르와 잘 어울릴까?">
-    <meta name="keywords" content="얼굴테스트,mbti테스트,얼굴장르테스트,장르테스트,성격테스트,테스트잇,닮은꼴테스트">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="test it">
-   
-    <link rel="canonical" href="https://test-it.co.kr/test64.html" />
-    <meta property="og:url" content="https://test-it.co.kr/test64.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="얼굴 장르 테스트" />
-    <meta property="og:description" content="얼굴 장르 테스트"/>
+    <title>화이트데이 사탕 테스트</title>
+    <meta name="description" content="화이트데이 기념 내 성격은 무슨 색의 사탕인지 알아보는 테스트">
+<meta name="keywords" content="테스트잇,성격테스트,사탕테스트,사탕mbti,화이트데이테스트,화이트데이mbti,화이트데이사탕테스트,화이트데이사탕mbti,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="화이트데이 사탕 테스트">
+    <meta property="og:description" content="화이트데이 기념 내 성격은 무슨 색의 사탕인지 알아보는 테스트">
+    <meta property="og:image" content="img_main65.png">
+    <meta property="og:url" content="https://type-mbti.netlify.app/">
 
-       <link rel="icon" type="image/png" href="favicon.png">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
- 
+
 
 <style>
 
-
-
+/* start 태그와 question 태그 모두 article 태그라서 article 태그에 속성을 주면 동시에 적용됨
+.start{
+    display: flex;
+    flex-direction: column;
+}
+*/
 .logo {
     width: 100px;
     margin-top: 14px;
@@ -79,640 +73,105 @@
     justify-content: space-between;
 }
 
-
-.wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 4%;
-}
     
-
-body {
-  font-family: 'Jua', sans-serif;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  color: #9A9A9A;
+article{
+    display: flex;
+    flex-direction: column;
 }
 
-.file-upload {
-    padding: 3% 3%;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: solid 1.5px #ffffff;
+ 
+    
+.question{
+    display: none;
+}
+
+.result{
+    display: none;
+}
+.progress-bar {
+    background-color: #ffc2d3;
+}
+.progress {
     background-color: #ffffff;
-    
 }
-
-.img {
+#img{
+    width: 360px;
+    height: 900px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-     text-align: center;
-
-}
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #F2E7FA;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
-.file-upload-btn:hover {
-  background: #1AA059;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.file-upload-btn:active {
-  border: 0;
-  transition: all .2s ease;
-}
-
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-#loading {
-  display: none;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-
-.image-upload-wrap {
-    width: 70%;
-        height: 70%;
+#img_main{
+    width: 500px;
+    height: 600px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    position: relative;
-    object-fit: contain;
-    border-radius: 5px;
-    border: dashed 1.5px #ffffff;
-    background-color: #fff0be;
+}
+
     
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.image-dropping,
-.image-upload-wrap:hover {
-    background-color: #fff0be;
-    border: 1.5px dashed #ffffff;
+    .btn-info:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
+    .btn-info.focus, .btn-info:focus {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.drag-text {
-  text-align: center;
+    .btn-info {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.drag-text h3 {
-  font-weight: 500;
-  text-transform: uppercase;
+    .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-
-.file-upload-image {
-  max-height:50%;
-  max-width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
-.try-again-btn {
-  border-radius: 40px;
-  border: solid 1.5px #fff0be;
-  background-color: #fff0be;
-}
-
-.try-again-text {
-  display: block;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #000000;
-  padding: 4px 15px;
-}
-
-.remove-image:hover {
-  background: #c13b2a;
-  color: #000000;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.remove-image:active {
-  border: 0;
-  transition: all .2s ease;
-}
-
-.section {
-    margin-top: 50px;
-}
-
-.title {
-  line-height: 1.67;
-  text-align: center;
-  color: #bfbbf2;
-        font-size: 25px;
-}
-
-.subtitle {
-  line-height: 1.53;
-  text-align: center;
-  color: #948bd3;
-        font-size: 30px;
-}
-.sbtitle {
-  line-height: 1.53;
-  text-align: center;
-  color: #BDBDBD;
-        font-size: 20px;
-}
-
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
-    .navbar-brand {
-        font-size: 2rem;
+   
+    
+    
+    .at-share-btn-elements{
+        text-align: center;
     }
-}
-
-
-
-.upload {
-    width: 20%;
-}
-
-.upload-text {
-    width: 58%;
-    font-size: 1.5rem;
-    line-height: 1.53;
-    text-align: center;
-    color: #35465d;
+.share{
     margin: 0 auto;
 }
 
-.footer {
-    background-color: initial;
-    color: initial;
-}
-
-.bar-container {
-  height: 2.7rem;
-}
-.sf-box {
- position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(154, 0, 255, 0.2);
-}
-.sf-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(154, 0, 255, 1);
-}
-.gp-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
- background-color: rgba(117, 204, 84, 0.2);
-}
-.gp-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-     background-color: rgba(117, 204, 84, 1);
-}
-.nw-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
- background-color: rgba(255, 166, 166, 0.2);
-}
-.nw-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-background-color: rgba(255, 166, 166, 1);
-}
-.dq-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-background-color: rgba(4, 146, 255, 0.2);
-}
-.dq-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-   background-color: rgba(4, 146, 255, 1);
-}
-.rm-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-background-color: rgba(255, 128, 0, 0.2);
-}
-.rm-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 128, 0, 1);
-}
-.ms-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(255, 206, 7, 0.2);
-}
-.ms-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-    background-color: rgba(255, 206, 7, 1);
-}
-.bj-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(113, 174, 206, 0.2);
-}
-.bj-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-   background-color: rgba(113, 174, 206, 1);
-}
-.sr-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(255, 102, 102, 0.2);
-}
-.sr-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 102, 102, 1);
-}
-.an-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(27, 145, 9, 0.2);
-}
-.an-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(27, 145, 9, 1);
-}
-.ac-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(255, 229, 138, 0.2);
-}
-.ac-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 229, 138, 1);
-}
-.cm-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(204, 153, 255, 0.2);
-}
-.cm-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(204, 153, 255, 1);
-}
-.pt-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(249, 77, 255, 0.2);
-}
-.pt-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(249, 77, 255, 1);
-}
-
-
-.percent-text {
-  font-size: 1rem;
-  color: #ffffff;
-}
-.gg-label {
-    width: 20%;
-    text-align: left;
-    height: 2rem;
-}
-#label-container {
-    width: 80%;
-    margin: 0 auto;
-}
-.result-message {
-    font-size: 2rem;
-}
-
-
-.gg-explain {
-    color: #23231e;
-    font-size: 1.5rem;
-}
-.sf-gg-title {
-    color:  #9A00FF;
-}
-.sf-gg-celeb {
-    color: #9A00FF;
-    font-size: 1.2rem;
-}
-.gp-gg-title {
-      color: #75CC54;
-}
-.gp-gg-celeb {
-    color: #75CC54;
-    font-size: 1.2rem;
-}
-.nw-gg-title {
- color: #FFA6A6;
-}
-.nw-gg-celeb {
-       color: #FFA6A6;
-    font-size: 1.2rem;
-}
-.dq-gg-title {
-    color: #0492FF;
-}
-.dq-gg-celeb {
-    color: #0492FF;
-    font-size: 1.2rem;
-}
-.rm-gg-title {
-   color: #FF9C07;
-}
-.rm-gg-celeb {
-  color: #FF9C07;
-     font-size: 1.2rem;
-}
-.ms-gg-title {
-  color: #FFCE07;
-}
-.ms-gg-celeb {
-    color: #FFCE07;
-    font-size: 1.2rem;
-}
-.bj-gg-title {
-   color: #71aece;
-}
-.bj-gg-celeb {
- color: #71aece;
-    font-size: 1.2rem;
-}
-.sr-gg-title {
-    color: #FF6666;
-}
-.sr-gg-celeb {
-     color: #FF6666;
-    font-size: 1.2rem;
-}
-.an-gg-title {
-    color: #1B9109;
-}
-.an-gg-celeb {
-     color: #1B9109;
-    font-size: 1.2rem;
-}
-.ac-gg-title {
-    color: #ffe58a;
-}
-.ac-gg-celeb {
-     color: #ffe58a;
-    font-size: 1.2rem;
-}
-.cm-gg-title {
-    color: #CC99FF;
-}
-.cm-gg-celeb {
-     color: #CC99FF;
-    font-size: 1.2rem;
-}
-.pt-gg-title {
-    color: #f94dff;
-}
-.pt-gg-celeb {
-     color: #f94dff;
-    font-size: 1.2rem;
-}
-
-
-
-/* gender */
-input#gender {
-  display: none;
-}
-
-label {
-  cursor: pointer;
-  display: inline-block;
-  width: 90px;
-  height: 41px;
-  box-shadow: 0 0 0 8px #e5e9ea inset;
-  border-radius: 30px;
-  position: relative;
-}
-
-.knob {
-  position: absolute;
-  width: 41px;
-  top: 0;
-  left: 0;
-  height: 41px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 8px #f470a7 inset;
-  background-color: #fbd4e6;
-  transition: 0.3s;
-}
-
-.knob > i {
-  position: absolute;
-  width: 4px;
-  height: 18px;
-  top: 100%;
-  background-color: #f470a7;
-  left: calc(50% - 2px);
-}
-
-.knob > i:before,
-.knob > i:after {
-  width: 6px;
-  position: absolute;
-  top: 42%;
-  content: "";
-  height: 4px;
-  background-color: #f470a7;
-}
-
-.knob > i:before {
-  left: 4px;
-}
-.knob > i:after {
-  left: -6px;
-}
-
-input:checked + label > .knob {
-  box-shadow: 0 0 0 8px #a1c6dd inset;
-  background-color: #e2ecf4;
-  transform: translateX(49px) rotate(-140deg);
-}
-
-input:checked + label > .knob > i {
-  background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after,
-input:checked + label > .knob > i:before {
-  background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after {
-  top: 14.5px;
-  width: 12px;
-  left: -7px;
-  transform: rotate(45deg);
-}
-input:checked + label > .knob > i:before {
-  top: 13px;
-  width: 12px;
-  left: 0px;
-  transform: rotate(134deg);
-}
-
-.ad-banner {
+.kakao_ad{
     width: 320px;
     margin: 0 auto;
 }
 
-
-.coupang-banner {
+.kakao_ad2{
     width: 320px;
     margin: 0 auto;
 }
+.coupang_ad {
+    width: 320px;
+    margin: 0 auto;
+}
+    
 
-
+  
 </style>
 
 
 
 
 
-
-
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <meta property="og:image" content="face64.png" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
-
-    <script data-ad-client="ca-pub-5522499110435321" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
 </head>
-
-
-
-<body>
- 
-
+<!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffe4ea">
+            
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
         </h1>
@@ -726,397 +185,169 @@ input:checked + label > .knob > i:before {
         
         
     </header>
+
     
-    <section class="section">
-  </section>
+<!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffffff">
 
+    <article class="kakao_ad2 mt-5">
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-2unIxNFRA1dvEwBX" 
+        data-ad-width   = "320" 
+        data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    
+    </article>
 
-<div class="ad-banner">
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-vjHtfLNcDrRfohyx" 
- data-ad-width   = "320" 
- data-ad-height  = "50"></ins> 
-</div>
-
-
-
-    <section class="section">
-
-        <h2 class="sr-only">얼굴 장르 테스트</h2>
-        <h3 class="sr-only">인공지능으로 파악한 나의 얼굴 장르는?</h3>
-        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
-        <p class="sr-only">얼굴 장르 테스트</p>
-    </section>
-
-  <div class="img"> 
-<img class="up mt-3 pb-5" src="face64.png" alt="up">
-</div>
-
-    <h3 class="sbtitle""d-flex justify-content-center">성별 선택</h3>
-    <section class="d-flex justify-content-center">
-        <p class="d-flex align-items-center pr-3">여</p>
-        <div>
-            <input type="checkbox" id="gender">
-            <label for="gender">
-                <span class="knob">
-                    <i></i>
-                </span>
-            </label>
+     <!--시작화면-->
+    <article class="start">
+        <img id="img_main" class="mt-3" src="img_main65.png">
+        <button type="button" class="btn btn-info mt-3" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 190, 190); border-color: rgb(255, 190, 190); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
+    </article>
+    <!--문제화면-->
+    <article class="question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <p class="d-flex align-items-center pl-3">남</p>
-    </section>
-   
-   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-                <h3 class="mb-5 pb-4 pt-5  upload-text">사진을 올려놓거나<br>눌러서 파일 업로드</h3>
-            </div>
-        </div>
-        <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading</span>
-                </div>
-                <p class="text-center">장르를 찾고 있습니다...</p>
-            </div>
-                <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+        <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 206, 206); border-color: rgb(255, 206, 206); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-3" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 241, 186); border-color: rgb(255, 241, 186); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
+
+        </article>
+    <!--결과화면-->
+    <article class="result">
+        <img id="img" class="mt-5" src="" alt="animal">
+        
+
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_bzap"></div>
+                <div class="addthis_inline_share_toolbox_ougq"></div>
+                
+        <button type="button" class="btn btn-info mt-3" onclick="location.href='test63.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 255, 255); border-color: rgb(255, 190, 190); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
+                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 255, 255); border-color: rgb(255, 190, 190); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
+  
             
+    </article>
 
-            <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
-                    <span class="try-again-text">다른 사진으로 해보기</span>
-                </button>
-                        
-                        
-            </div>
-        </div>
-    </div>
-    
-               
-<div class="ad-banner mt-3">
+    <article class="kakao_ad mt-5">
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-OiiahW35ddhx9bLW" 
+        data-ad-width   = "320" 
+        data-ad-height  = "100"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </article>
+    <article class="coupang_ad">
+<a href="https://link.coupang.com/a/QvHxK" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
+        
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <!--각 타입의 점수를 저장하는 input 태그(hidden으로 안보임)-->
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
 
-  <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-cDEWd1ltTOxyuLkB" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <div class="ad-banner mt-1">
-<a href="https://link.coupang.com/a/QJ4zx" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
-
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
-
-
-
-<footer class="footer pt-5 container d-flex justify-content-center">
-        <div>
-            <p>&copy; test it 2023. All Rights Reserved. </p>
-        </div>
-    </footer>
     <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('.image-upload-wrap').hide();
-                    $('.img').hide();
-                    $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-                    $('.image-title').html(input.files[0].name);
-                };
-                reader.readAsDataURL(input.files[0]);
-                init().then(function() {
-                    console.log("hello");
-                    predict();
-                    $('#loading').hide();
-                });
-            } else {
-                removeUpload();
-            }
+        // 문제 번호를 나타내는 num 변수
+          var num = 1;
+        // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
+             var q = {
+              1: {"title": "*화이트데이에 나는*<br><br>짝사랑하는 사람에게", "type": "EI", "A": "사탕을 줄 수 있다", "B": "줄 수 없다 짝사랑 들키면 안 됨"},
+             2: {"title": "*화이트데이에*<br><br>전혀 친하지 않은 사람이 나에게 사탕을 줬다", "type": "SN", "A": "무슨 맛이지?", "B": "무슨 뜻이지?"},
+             3: {"title": "*화이트데이에*<br><br>나에게 잘못한 친구가 기프티콘을 보내왔다", "type": "TF", "A": "화해의 의미로 받아준다", "B": "사과도 안 하고 기프티콘만 보내니 당황스럽다"},
+
+             4: {"title": "*화이트데이에*<br><br>사탕을 직접 만드는 나", "type": "JP", "A": "남들이 만든 완성작을 먼저 구경한다", "B": "레시피를 차근차근 훑어본다"},
+             5: {"title": "*화이트데이에*<br><br>받고 싶은 선물은?", "type": "SN", "A": "무조건 실용적인 게 최고!", "B": "나를 위한! 나를 생각해서 산 거!"},
+            6: {"title": "*화이트데이에*<br><br>혼자 사탕을 못 받은 친구가 있다면", "type": "EI", "A": "너무 신경 쓰인다.. 나라도 챙겨주자", "B": "신경 쓰이지만 내가 챙겨줄 필요가..?"},
+
+                7: {"title":"*화이트데이에*<br><br>직접 만든 선물을 준 내가 듣고 싶은 반응은?", "type": "TF", "A": "진짜 감동이다 너랑 친구여서 너무 행복해", "B": "이게 네가 만든 거라고? 너 손재주 미쳤다"},
+             8: {"title": "*화이트데이에*<br><br>사탕을 만드는 나", "type": "JP", "A": "만들기 시작하는 이 순간이 재미있다", "B": "모두 다 만든 후 가 재미있다"},
+            9: {"title": "*화이트데이에*<br><br>약속이 취소돼서 심심한 나", "type": "EI", "A": "날씨 확인 후 나갈까 생각한다", "B": "집에서 할 일을 찾는다"},
+
+         10: {"title": "*화이트데이에 친구의 질문*<br><br>만약에 네가 싫어하는 사람이 사탕을 주면 어떡할 거야?", "type": "SN", "A": "그럴 일이 없어", "B": "얼마나 싫어하는데? 원수야? 그냥 싸운 사이야?"},
+            11: {"title": "*화이트데이에 친구가 만든 사탕이*<br><br>너무 맛없는데 기대하는 표정일 때 나는", "type": "TF", "A": "고마워 감동이야.. 억지로 표정관리를 한다", "B": "고마워.. 근데 여기에 뭐 넣었어?"},
+              12: {"title": "*화이트데이에*<br><br>사탕을 만드는 중인 나", "type": "JP", "A": "일단 만들고 나중에 치운다", "B": "중간중간 주변을 정리하며 만든다"}
         }
 
-        function removeUpload() {
-            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-            $('.file-upload-content').hide();
-            $('.image-upload-wrap').show();
+
+        // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
+        var result = {
+            "ISTJ": {"img":"img_istj65.png"},
+            "ISFJ": {"img":"img_isfj65.png"},
+            "INFJ": {"img":"img_infj65.png"},
+            "INTJ": {"img":"img_intj65.png"},
+
+            "ISTP": {"img":"img_istp65.png"},
+            "ISFP": {"img":"img_isfp65.png"},
+            "INFP": {"img":"img_infp65.png"},
+            "INTP": {"img":"img_intp65.png"},
+
+            "ESTP": {"img":"img_estp65.png"},
+            "ESFP": {"img":"img_esfp65.png"},
+            "ENFP": {"img":"img_enfp65.png"},
+            "ENTP": {"img":"img_entp65.png"},
+
+            "ESTJ": {"img":"img_estj65.png"},
+            "ESFJ": {"img":"img_esfj65.png"},
+            "ENFJ": {"img":"img_enfj65.png"},
+            "ENTJ": {"img":"img_entj65.png"},
         }
-        $('.image-upload-wrap').bind('dragover', function() {
-            $('.image-upload-wrap').addClass('image-dropping');
+        // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
+        function start(){
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+        // A 버튼 클릭하면 해당 타입 값을 가져와서 값 1 증가 후 next()
+        $("#A").click(function(){
+            var type = $("#type").val();
+            var preValue = $("#"+type).val();
+            $("#"+type).val(parseInt(preValue)+1);
+            next();
         });
-        $('.image-upload-wrap').bind('dragleave', function() {
-            $('.image-upload-wrap').removeClass('image-dropping');
+        // B 버튼 클릭하면 값 증가 없이 next()
+        $("#B").click(function(){
+            next();
         });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    <script type="text/javascript">
-        let URL;
-        const urlMale = "https://teachablemachine.withgoogle.com/models/Z3x76Q4ro/";
-        const urlFemale = "https://teachablemachine.withgoogle.com/models/Z3x76Q4ro/";
-        let model, webcam, labelContainer, maxPredictions;
-       async function init() {
-            if (document.getElementById("gender").checked) {
-                URL = urlMale;
-            } else {
-                URL = urlFemale;
+        function next(){
+            // 마지막 문제인 경우
+            if(num==13){
+                // 질문은 숨기고 결과 화면 보여주기
+                $(".question").hide();
+                $(".result").show();
+
+                var mbti = "";
+                
+                // 삼항 연산자를 사용해서 MBTI 계산
+                ($("#EI").val()<2) ? mbti+="I" : mbti+="E";
+                ($("#SN").val()<2) ? mbti+="N" : mbti+="S";
+                ($("#TF").val()<2) ? mbti+="T" : mbti+="F";
+                ($("#JP").val()<2) ? mbti+="J" : mbti+="P";
+                
+                // 계산된 MBTI로 이미지, 동물, 설명 값 변경
+                $("#img").attr("src",result[mbti]["img"]);
+                $("#animal").html(result[mbti]["animal"]);
+                $("#explain").html(result[mbti]["explain"]);
+            } // 마지막 문제가 아닌 경우
+            else{
+                // 프로그래스 바 1/12씩 차오르도록 구현
+                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
+                // 각 문제별 문제&선택지 출력
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
             }
-            const modelURL = URL + "model.json";
-            const metadataURL = URL + "metadata.json";
-            model = await tmImage.load(modelURL, metadataURL);
-            maxPredictions = model.getTotalClasses();
-            labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions; i++) {
-                var element = document.createElement("div")
-                element.classList.add("d-flex");
-                labelContainer.appendChild(element);
-            }
-        }
-        async function predict() {
-            var image = document.getElementById("face-image")
-            const prediction = await model.predict(image, false);
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-            console.log(prediction[0].className);
-            var resultTitle, resultExplain, resultCeleb;
-            if (document.getElementById("gender").checked) {
-                switch (prediction[0].className) {
-                                        case "sf":
-                        resultTitle = "SF"
-                        resultExplain = "당신의 얼굴은 [SF] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "gp":
-                        resultTitle = "공포"
-                        resultExplain = "당신의 얼굴은 [공포] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "nw":
-                        resultTitle = "느와르"
-                        resultExplain = "당신의 얼굴은 [느와르] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "dq":
-                        resultTitle = "다큐멘터리"
-                        resultExplain = "당신의 얼굴은 [다큐멘터리] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                        
-                    case "rm":
-                        resultTitle = "로맨스"
-                        resultExplain = "당신의 얼굴은 [로맨스] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "ms":
-                        resultTitle = "미스터리"
-                        resultExplain = "당신의 얼굴은 [미스터리] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                        case "bj":
-                        resultTitle = "범죄"
-                        resultExplain = "당신의 얼굴은 [범죄] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "sr":
-                        resultTitle = "스릴러"
-                        resultExplain = "당신의 얼굴은 [스릴러] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                    case "an":
-                        resultTitle = "애니메이션"
-                        resultExplain = "당신의 얼굴은 [애니메이션] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-    	   case "ac":
-                        resultTitle = "액션"
-                        resultExplain = "당신의 얼굴은 [액션] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
 
-    	   case "cm":
-                        resultTitle = "코미디"
-                        resultExplain = "당신의 얼굴은 [코미디] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-
-    	   case "pt":
-                        resultTitle = "판타지"
-                        resultExplain = "당신의 얼굴은 [판타지] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-    	
-
-                        
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                }
-            } else {
-                switch (prediction[0].className) {
-                                              case "sf":
-                        resultTitle = "SF"
-                        resultExplain = "당신의 얼굴은 [SF] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "gp":
-                        resultTitle = "공포"
-                        resultExplain = "당신의 얼굴은 [공포] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "nw":
-                        resultTitle = "느와르"
-                        resultExplain = "당신의 얼굴은 [느와르] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "dq":
-                        resultTitle = "다큐멘터리"
-                        resultExplain = "당신의 얼굴은 [다큐멘터리] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                        
-                    case "rm":
-                        resultTitle = "로맨스"
-                        resultExplain = "당신의 얼굴은 [로맨스] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "ms":
-                        resultTitle = "미스터리"
-                        resultExplain = "당신의 얼굴은 [미스터리] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                        case "bj":
-                        resultTitle = "범죄"
-                        resultExplain = "당신의 얼굴은 [범죄] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                        break;
-                    case "sr":
-                        resultTitle = "스릴러"
-                        resultExplain = "당신의 얼굴은 [스릴러] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-                    case "an":
-                        resultTitle = "애니메이션"
-                        resultExplain = "당신의 얼굴은 [애니메이션] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-    	   case "ac":
-                        resultTitle = "액션"
-                        resultExplain = "당신의 얼굴은 [액션] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-
-    	   case "cm":
-                        resultTitle = "코미디"
-                        resultExplain = "당신의 얼굴은 [코미디] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-
-    	   case "pt":
-                        resultTitle = "판타지"
-                        resultExplain = "당신의 얼굴은 [판타지] 장르와 잘 어울립니다."
-                        resultCeleb = ""
-                            break;
-
-
-
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                }
-            }
-            var title = "<div class='" + prediction[0].className + "-gg-title'>" + resultTitle + "</div>"
-            var explain = "<div class='gg-explain pt-2'>" + resultExplain + "</div>"
-            var celeb = "<div class='" + prediction[0].className + "-gg-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-            $('.result-message').html(title + explain + celeb);
-            var barWidth;
-            for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } else {
-                    barWidth = "2%"
-                }
-                var labelTitle;
-                switch (prediction[i].className) {
-                    case "sf":
-                        labelTitle = "SF"
-                        break;
-                    case "gp":
-                        labelTitle = "공포"
-                        break;
-                    case "nw":
-                        labelTitle = "느와르"
-                        break;
-                    case "dq":
-                        labelTitle = "다큐멘터리"
-                         break;
-                        case "rm":
-                        labelTitle = "로맨스"
-                        break;
-                    case "ms":
-                        labelTitle = "미스터리"
-                        break;
-                    case "bj":
-                        labelTitle = "범죄"
-                        break;
-                    case "sr":
-                        labelTitle = "스릴러"
-                         break;
-                    case "an":
-                        labelTitle = "애니메이션"
-                        break;
-                    case "ac":
-                        labelTitle = "액션"
-                         break;
-                   case "cm":
-                        labelTitle = "코미디"
-                         break;
-                   case "pt":
-                        labelTitle = "판타지"
-                         break;
-                  
-              
-
-                    default:
-                        labelTitle = "알수없음"
-            }
-                var label = "<div class='gg-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
         }
     </script>
-    <script>
-        function iosApp() {
-            document.getElementById("coupang").style.display="none";
-            $("#coupang ins").hide();
-            document.getElementById("addThis").style.display="none";
-            document.getElementById("disqus_thread").style.display="none";
-            var kakao = document.getElementsByClassName("kakao_ad_area");
-            for (var i = 0; i < kakao.length; i++) {
-              if(kakao[i]) {
-                  kakao[i].style.display="none";
-              }
-            }
-            document.getElementById("yotube-top-link").style.display="none";
-            document.getElementById("yotube-mid-link").style.display="none";
-            document.getElementById("yotube-bottom-link").style.display="none";
-        }
-    </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
+
+
 </body>
-<!-- 
-image input box
-Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 </html>
+
