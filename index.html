@@ -40,11 +40,13 @@
     flex-direction: column;
 }
 */
-.logo {
-    width: 100px;
-    margin-top: 14px;
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50px;
+    margin-top: 7px;
+  }
 }
-
+        
 .main-nav {
     display: flex;
     font-size: 1.25rem;
@@ -81,7 +83,9 @@ article{
     flex-direction: column;
 }
 
- 
+ .result{
+    display: none;
+}
         
         #img{
     width: 360px;
