@@ -2,3 +2,4 @@
 # theg2
 # Trend
 # xfile
+# colortest
