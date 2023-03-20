@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -14,20 +13,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>연관검색어 테스트</title>
-    <meta name="description" content="연관검색어로 알아보는 성격 테스트">
-<meta name="keywords" content="테스트잇,성격테스트,연관검색어,연관검색어테스트,연관검색어mbti,연관검색어결과,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
+    <title>눈썰미 테스트</title>
+    <meta name="description" content="두 가지 중 더 비싼 물건을 찾아내는 눈썰미 테스트">
+<meta name="keywords" content="테스트잇,성격테스트,눈썰미테스트,눈썰미테스트결과, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="연관검색어 테스트">
-    <meta property="og:description" content="연관검색어로 알아보는 성격 테스트">
-    <meta property="og:image" content="img_main74.png">
-    <meta property="og:url" content="https://searchtmbti.netlify.app/">
+    <meta property="og:title" content="눈썰미 테스트">
+    <meta property="og:description" content="두 가지 중 더 비싼 물건을 찾아내는 눈썰미 테스트">
+    <meta property="og:image" content="img_main75.png">
+    <meta property="og:url" content="https://test-it.co.kr/test75.html">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
 
+
+	<style>
+        
+        
 
 <style>
 
@@ -37,11 +40,13 @@
     flex-direction: column;
 }
 */
-.logo {
-    width: 100px;
-    margin-top: 14px;
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50px;
+    margin-top: 7px;
+  }
 }
-
+        
 .main-nav {
     display: flex;
     font-size: 1.25rem;
@@ -58,7 +63,7 @@
 }
 
 .main-nav a{
-    color: #000000;
+    color: #432;
        font-family: 'Do Hyeon', sans-serif;
     line-height: 1.7;
 }
@@ -73,28 +78,38 @@
     justify-content: space-between;
 }
 
-    
+        p {
+            margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+        
 article{
     display: flex;
     flex-direction: column;
 }
-
- 
-    
-.question{
-    display: none;
+.result-image-container {
+  text-align: center;
+}
+.result-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
 }
 
-.result{
-    display: none;
+        @media screen and (max-width: 768px) {
+  .result-image {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+      text-align: center;
+  }
 }
-.progress-bar {
-    background-color: #f9c0cf;
-}
-.progress {
-    background-color: #fff4d5;
-}
-#img{
+
+        
+        #img{
     width: 360px;
     height: 900px;
     max-width: 100%;
@@ -110,35 +125,68 @@ article{
     margin: 0 auto;
 }
 
-    
-.btn-info.focus, .btn-info:focus {
-    box-shadow: 0 0 0 0.2rem rgb(0 0 0);
+        #start-button {
+  display: block;
+  margin: 0 auto;
 }
-    .btn-info:hover {
-    color: #fff4d5;
-    background-color: #fff4d5;
-    border-color: #fff4d5;
-            box-shadow: 0 0 0 0.2rem rgb(0 0 0);
+
+		.question-page {
+			display: none;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.question-page:first-of-type {
+			display: block;
+		}
+
+		.question-image {
+    width: 600px;
+    height: 900px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
-    .btn-info.focus, .btn-info:focus {
-    color: #fff4d5;
-    background-color: #fff4d5;
-    border-color: #fff4d5;
-    box-shadow: 0 0 0 0.2rem rgb(0 0 0);
-}
-    .btn-info {
-    color: #fff4d5;
-    background-color: #fff4d5;
-    border-color: #fff4d5;
-            box-shadow: 0 0 0 0.2rem rgb(0 0 0);
-}
-    .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(0 0 0);
-}
-   
-    
-    
+        
+
+
+
+		.progress-bar {
+			background-color: #e7e7e7;
+			border-radius: 5px;
+			height: 10px;
+			margin: 20px 0;
+			overflow: hidden;
+		}
+
+		.progress {
+			background-color: #bebebe;
+			height: 100%;
+			width: 0%;
+		}
+
+		.button-container {
+			margin: 20px 0;
+		}
+
+		.submit-button {
+			padding: 10px 20px;
+			border-radius: 5px;
+			background-color: #e7e7e7;
+			color: #212121;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			transition: 0.3s ease;
+            
+		}
+
+		.submit-button:hover {
+			background-color: #e7e7e7;
+		}
+        
+        
+           
     .at-share-btn-elements{
         text-align: center;
     }
@@ -160,17 +208,35 @@ article{
     margin: 0 auto;
 }
     
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    
+    .main-nav li {
+        margin: 0 20px;
+    }
+    
+  .home-content {
+    text-align: center;
+    margin-top: 10%;
+}
 
-  
-</style>
-
-
-
-
-
+    }
+    
+}
+        
+        
+	</style>
 </head>
-<!-- body 태그 style background-color 지정으로 배경색 변경-->
-<body class="container" style="background-color:#fff4d5">
+<body>
+    <!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffffff">
             
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
@@ -185,173 +251,308 @@ article{
         
         
     </header>
-
-    
-<!-- body 태그 style background-color 지정으로 배경색 변경-->
+    <!-- body 태그 style background-color 지정으로 배경색 변경-->
 <body class="container" style="background-color:#ffffff">
 
     <article class="kakao_ad2 mt-5">
         <ins class="kakao_ad_area" style="display:none;" 
-        data-ad-unit    = "DAN-BrpLbfqlBvatMmgV" 
+        data-ad-unit    = "DAN-QTYoAWrRhe8lnk1O" 
         data-ad-width   = "320" 
         data-ad-height  = "50"></ins> 
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     
     </article>
 
-     <!--시작화면-->
-    <article class="start">
-        <img id="img_main" class="mt-3" src="img_main74.png">
-        <button type="button" class="btn btn-info mt-3" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(247, 236, 151); border-color: rgb(247, 236, 151); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
-    </article>
-    <!--문제화면-->
-    <article class="question">
-        <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
-        <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(247, 236, 151); border-color: rgb(247, 236, 151); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
-        <button id="B" type="button" class="btn btn-info mt-3" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(247, 236, 151); border-color: rgb(247, 236, 151); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
 
-        </article>
-    <!--결과화면-->
-    <article class="result">
-        <img id="img" class="mt-5" src="" alt="animal">
+	<div class="container">
+	
+		<div id="start-page">
+	
+              <article class="start">
+        <img id="img_main" class="mt-3" src="img_main75.png">
+            </article>
+		<button id="start-button" class="mt-5" onclick="showFirstQuestion()"style="font-size:large; font-weight: bold; color: black; background-color: rgb(231, 231, 231); border-color: rgb(231, 231, 231); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
+
+		</div>
+
+		<div class="question-page" id="question-page-1">
+			<div class="progress-bar">
+				<div class="progress" id="progress-1"></div>
+			</div>
+			<h2></h2>
+			<img src="qs1-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-1">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(1)">다음 문제</button>
+			</div>
+		</div>
+
+		<div class="question-page" id="question-page-2">
+			<div class="progress-bar">
+				<div class="progress" id="progress-2"></div>
+			</div>
+			<h2></h2>
+			<img src="qs2-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-2">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(2)">다음 문제</button>
+			</div>
+		</div>
+		<div class="question-page" id="question-page-3">
+			<div class="progress-bar">
+				<div class="progress" id="progress-3"></div>
+			</div>
+			<h2></h2>
+			<img src="qs3-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-3">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(3)">다음 문제</button>
+			</div>
+		</div>
         
+        	<div class="question-page" id="question-page-4">
+			<div class="progress-bar">
+				<div class="progress" id="progress-4"></div>
+			</div>
+			<h2></h2>
+			<img src="qs4-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-4">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(4)">다음 문제</button>
+			</div>
+		</div>
+        
+             	<div class="question-page" id="question-page-5">
+			<div class="progress-bar">
+				<div class="progress" id="progress-5"></div>
+			</div>
+			<h2></h2>
+			<img src="qs5-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-5">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(5)">다음 문제</button>
+			</div>
+		</div>
+        
+             	<div class="question-page" id="question-page-6">
+			<div class="progress-bar">
+				<div class="progress" id="progress-6"></div>
+			</div>
+			<h2></h2>
+			<img src="qs6-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-6">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(6)">다음 문제</button>
+			</div>
+		</div>
+        
+             	<div class="question-page" id="question-page-7">
+			<div class="progress-bar">
+				<div class="progress" id="progress-7"></div>
+			</div>
+			<h2></h2>
+			<img src="qs7-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-7">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(7)">다음 문제</button>
+			</div>
+		</div>
+        
+             	<div class="question-page" id="question-page-8">
+			<div class="progress-bar">
+				<div class="progress" id="progress-8"></div>
+			</div>
+			<h2></h2>
+			<img src="qs8-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-8">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(8)">다음 문제</button>
+			</div>
+		</div>
+        
+             	<div class="question-page" id="question-page-9">
+			<div class="progress-bar">
+				<div class="progress" id="progress-9"></div>
+			</div>
+			<h2></h2>
+			<img src="qs9-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-9">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(9)">다음 문제</button>
+			</div>
+		</div>
 
+		<div class="question-page" id="question-page-10">
+            <div class="progress-bar">
+				<div class="progress" id="progress-10"></div>
+			</div>
+			<h2></h2>
+			<img src="qs10-75.png" class="question-image">
+			<p>숫자로만 입력해 주세요.</p>
+			<input type="text" id="answer-10">
+			<div class="button-container">
+				<button class="submit-button" onclick="checkAnswer(10)">제출하기</button>
+			</div>
+		</div>
+         <article class="result-image">    
+        <div id="result-page" style="display: none;">
+
+		<p id="score-text"></p>
+		<img src="" id="result-image" style=" width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;">
+         
+                
+           <article class="result">       
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ougq mt-3"></div>
                 
-        <button type="button" class="btn btn-info mt-3" onclick="location.href='test74.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(247, 236, 151); border-color: rgb(254, 214, 214); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
-                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(247, 236, 151); border-color: rgb(254, 214, 214); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
-  
-            
-    </article>
-
+                     <button type="button" class="btn btn-info mt-3" onclick="location.href='test75.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(231, 231, 231); border-color: rgb(231, 231, 231); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
+                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(231, 231, 231); border-color: rgb(231, 231, 231); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
+                </article>
+                
+	</div>
+</div>
+    
     <article class="kakao_ad mt-5">
         <ins class="kakao_ad_area" style="display:none;" 
-        data-ad-unit    = "DAN-zze68FIFcONghaJC" 
+        data-ad-unit    = "DAN-9fPA02DoFVvWHUPv" 
         data-ad-width   = "320" 
         data-ad-height  = "100"></ins> 
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </article>
     <article class="coupang_ad">
-<a href="https://link.coupang.com/a/SxikZ" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
+<a href="https://link.coupang.com/a/RRUxi" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
         
-    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    <!--각 타입의 점수를 저장하는 input 태그(hidden으로 안보임)-->
-    <input type="hidden" id="EI" value="0">
-    <input type="hidden" id="SN" value="0">
-    <input type="hidden" id="TF" value="0">
-    <input type="hidden" id="JP" value="0">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+	const numQuestions = 10;
+	let currentQuestion = 1;
+	let correctAnswers = 0;
 
-    <script>
-          var num = 1;
-        // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
-             var q = {
-              1: {"title": "날씨 좋은 주말, 나는", "type": "EI", "A": "평일에 바빴으니 여유롭게 외출", "B": "평일에 바빴으니 여유롭게 집에"},
-             2: {"title": "비행기를 탈 때 내가 하는 생각은?", "type": "SN", "A": "비행시간, 기내식, 설렘", "B": "추락 걱정, 테러 걱정, 옆자리는 누굴까?"},
-             3: {"title": "'너는 노력 대비 결과가 늘 좋다'라는 말에 나는", "type": "TF", "A": "내가 노력을 얼마나 했는지 알고 그런 말을 하지?", "B": "내가 좀 천재라 그런 편이지"},
+	function checkAnswer(questionNum) {
+		const answer = document.getElementById(`answer-${questionNum}`).value.trim();
+	if (questionNum === 1 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 2 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 3 && answer.toLowerCase() === "2") {
+    correctAnswers++;
+} else if (questionNum === 4 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 5 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 6 && answer.toLowerCase() === "2") {
+    correctAnswers++;
+} else if (questionNum === 7 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 8 && answer.toLowerCase() === "2") {
+    correctAnswers++;
+} else if (questionNum === 9 && answer.toLowerCase() === "1") {
+    correctAnswers++;
+} else if (questionNum === 10 && answer.toLowerCase() === "2") {
+    correctAnswers++;
+}
 
-             4: {"title": "나는 주변 환경이", "type": "JP", "A": "조금 지저분해도 집중할 수 있다", "B": "깨끗하게 정리가 되어있어야 한다"},
-             5: {"title": "일이 정말 바쁜데 배가 고플 때 나는", "type": "SN", "A": "최대한 빨리 먹을 수 있는 걸 고른다", "B": "식사를 대체할 수 있는 알약은 언제 개발될까?"},
-            6: {"title": "약속이 없는 날", "type": "EI", "A": "종종 밖으로 나가서 돌아다닌다", "B": "무조건 집에 있는 걸 선호한다"},
+    
+    
+		if (questionNum < numQuestions) {
+			document.getElementById(`question-page-${questionNum}`).style.display = "none";
+			document.getElementById(`question-page-${questionNum + 1}`).style.display = "block";
+			document.getElementById(`progress-${questionNum + 1}`).style.width = `${(questionNum + 1) * 100 / numQuestions}%`;
+			currentQuestion++;
+		} else {
+			showResult();
+		}
+	}
 
-                7: {"title":"나는 정에 약한 편이다?", "type": "TF", "A": "그렇다", "B": "아니다"},
-             8: {"title": "내가 원하는 업무환경은", "type": "JP", "A": "유동적인 출퇴근 시간, 자유로운 일", "B": "같은 시간 출퇴근,정해진 일"},
-            9: {"title": "친구의 친구를 만나는 자리", "type": "EI", "A": "어떤 친구들일지 궁금해진다", "B": "어색할까 긴장이 된다"},
+function showResult() {
+    document.getElementById("question-page-10").style.display = "none";
+    document.getElementById("result-page").style.display = "block";
+    if (correctAnswers === 10) {
+        document.getElementById("result-image").src = "75-100.png";
+    } else if (correctAnswers === 9) {
+        document.getElementById("result-image").src = "75-90.png";
+    } else if (correctAnswers === 8) {
+        document.getElementById("result-image").src = "75-80.png";
+    } else if (correctAnswers === 7) {
+        document.getElementById("result-image").src = "75-70.png";
+    } else if (correctAnswers === 6) {
+        document.getElementById("result-image").src = "75-60.png";
+    } else if (correctAnswers === 5) {
+        document.getElementById("result-image").src = "75-50.png";
+    } else if (correctAnswers === 4) {
+        document.getElementById("result-image").src = "75-40.png";
+    } else if (correctAnswers === 3) {
+        document.getElementById("result-image").src = "75-30.png";
+    } else if (correctAnswers === 2) {
+        document.getElementById("result-image").src = "75-20.png";
+    } else if (correctAnswers === 1) {
+        document.getElementById("result-image").src = "75-10.png";
+    } else if (correctAnswers === 0) {
+        document.getElementById("result-image").src = "75-0.png";
+    } else {
+        // 10개 맞춘 경우
+        document.getElementById("result-image").src = "75-100.png";
+    }
+    // progress-bar 리셋
+    document.getElementById("progress-bar").style.width = "0%";
+    document.getElementById("progress-bar").textContent = "문제 1 / 10";
+}
 
-         10: {"title": "약도를 그릴 때 나는", "type": "SN", "A": "최대한 자세하게 그리는 편", "B": "랜드마크 위주로 그리는 편"},
-            11: {"title": "친구와 대화할 때 나는", "type": "TF", "A": "반응을 잘하는 편", "B": "질문을 잘하는 편"},
-              12: {"title": "무언가를 결정할 때나는", "type": "JP", "A": "고민하는 시간이 긴 편", "B": "빠르게 결정하는 편"}
-   
-
-     }
 
 
-        // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
-        var result = {
-            "ISTJ": {"img":"img_istj74.png"},
-            "ISFJ": {"img":"img_isfj74.png"},
-            "INFJ": {"img":"img_infj74.png"},
-            "INTJ": {"img":"img_intj74.png"},
+function showFirstQuestion() {
+  document.getElementById("start-page").style.display = "none";
+  document.getElementById("question-page-1").style.display = "block";
+}
+function restartTest() {
+    // 답변과 진행상황 초기화
+    document.querySelectorAll('input[type="text"]').forEach(function(el) {
+        el.value = "";
+    });
+    document.querySelectorAll('.progress').forEach(function(el) {
+        el.textContent = el.id.replace('progress-', '문제 ') + ' / 10';
+    });
 
-            "ISTP": {"img":"img_istp74.png"},
-            "ISFP": {"img":"img_isfp74.png"},
-            "INFP": {"img":"img_infp74.png"},
-            "INTP": {"img":"img_intp74.png"},
+    // 현재 보이는 화면 초기화
+    document.querySelectorAll('.question-page').forEach(function(el) {
+        el.style.display = 'none';
+    });
+    document.querySelector('#start-page').style.display = 'block';
+}
 
-            "ESTP": {"img":"img_estp74.png"},
-            "ESFP": {"img":"img_esfp74.png"},
-            "ENFP": {"img":"img_enfp74.png"},
-            "ENTP": {"img":"img_entp74.png"},
+function restartTest() {
+    currentQuestion = 1;
+    correctAnswers = 0;
+    document.getElementById("start-page").style.display = "block";
+    document.getElementById("result-page").style.display = "none";
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById(`answer-${i}`).value = "";
+        document.getElementById(`progress-${i}`).style.width = "0%";
+        document.getElementById(`question-page-${i}`).style.display = "none";
+    }
+    document.getElementById(`question-page-${currentQuestion}`).style.display = "block";
+}
 
-            "ESTJ": {"img":"img_estj74.png"},
-            "ESFJ": {"img":"img_esfj74.png"},
-            "ENFJ": {"img":"img_enfj74.png"},
-            "ENTJ": {"img":"img_entj74.png"},
-        }
-        // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
-        function start(){
-            $(".start").hide();
-            $(".question").show();
-            next();
-        }
-        // A 버튼 클릭하면 해당 타입 값을 가져와서 값 1 증가 후 next()
-        $("#A").click(function(){
-            var type = $("#type").val();
-            var preValue = $("#"+type).val();
-            $("#"+type).val(parseInt(preValue)+1);
-            next();
-        });
-        // B 버튼 클릭하면 값 증가 없이 next()
-        $("#B").click(function(){
-            next();
-        });
-        function next(){
-            // 마지막 문제인 경우
-            if(num==13){
-                // 질문은 숨기고 결과 화면 보여주기
-                $(".question").hide();
-                $(".result").show();
-
-                var mbti = "";
-                
-                // 삼항 연산자를 사용해서 MBTI 계산
-                ($("#EI").val()<2) ? mbti+="I" : mbti+="E";
-                ($("#SN").val()<2) ? mbti+="N" : mbti+="S";
-                ($("#TF").val()<2) ? mbti+="T" : mbti+="F";
-                ($("#JP").val()<2) ? mbti+="J" : mbti+="P";
-                
-                // 계산된 MBTI로 이미지, 동물, 설명 값 변경
-                $("#img").attr("src",result[mbti]["img"]);
-                $("#animal").html(result[mbti]["animal"]);
-                $("#explain").html(result[mbti]["explain"]);
-            } // 마지막 문제가 아닌 경우
-            else{
-                // 프로그래스 바 1/12씩 차오르도록 구현
-                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
-                // 각 문제별 문제&선택지 출력
-                $("#title").html(q[num]["title"]);
-                $("#type").val(q[num]["type"]);
-                $("#A").html(q[num]["A"]);
-                $("#B").html(q[num]["B"]);
-                num++;
-            }
-
-        }
-    </script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
+</script>
+        
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
 
     </article>
-
-</body>
     </body>
-    
+    </body>
+    </body>
 </html>
 
