@@ -1,49 +1,42 @@
 
 
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-<meta name="naver-site-verification" content="76081b74cd43245d89a4160aeb9fc9a827be455d" />
-
-
 
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
      crossorigin="anonymous"></script>
-    
 
 
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta ht-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>앰버서더 얼굴 테스트</title>
-    <meta name="description" content="나는 어느 브랜드 앰버서더에 어울리는 얼굴일까?">
-    <meta name="title" content="앰버서더 얼굴 테스트">
-    <meta name="subject" content="나는 어느 브랜드 앰버서더에 어울리는 얼굴일까?">
-    <meta name="keywords" content="얼굴테스트,mbti테스트,앰버서더,명품앰버서더,브랜드앰버서더,앰버서더테스트,얼굴앰버서더테스트,앰버서더얼굴테스트,연,테스트잇,닮은꼴테스트">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="test it">
-   
-    <link rel="canonical" href="https://program-face.netlify.app/" />
-    <meta property="og:url" content="https://program-face.netlify.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="앰버서더 얼굴 테스트" />
-    <meta property="og:description" content="나는 어느 브랜드 앰버서더에 어울리는 얼굴일까?"/>
+    <title>이상형 자판기 테스트</title>
+    <meta name="description" content="자판기 속에 내가 원하는 이상형의 MBTI는?">
+<meta name="keywords" content="테스트잇,성격테스트,이상형mbti,이상형테스트,이상형테스트결과,이상형엠비티아이,자판기테스트,자판기이상형테스트,이상형자판기테스트,연애테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="이상형 자판기 테스트">
+    <meta property="og:description" content="자판기 속에 내가 원하는 이상형의 MBTI는?">
+    <meta property="og:image" content="img_main77.png">
+    <meta property="og:url" content="https://cherryblossomsmbti.netlify.app/">
 
-       <link rel="icon" type="image/png" href="favicon.png">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
- 
+
 
 <style>
 
-
-
+/* start 태그와 question 태그 모두 article 태그라서 article 태그에 속성을 주면 동시에 적용됨
+.start{
+    display: flex;
+    flex-direction: column;
+}
+*/
 .logo {
     width: 100px;
     margin-top: 14px;
@@ -80,641 +73,105 @@
     justify-content: space-between;
 }
 
-
-.wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 4%;
-}
     
-
-body {
-  font-family: 'Jua', sans-serif;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  color: #9A9A9A;
+article{
+    display: flex;
+    flex-direction: column;
 }
 
-.file-upload {
-    padding: 3% 3%;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: solid 1.5px #ffffff;
+ 
+    
+.question{
+    display: none;
+}
+
+.result{
+    display: none;
+}
+.progress-bar {
+    background-color: #ffeb64;
+}
+.progress {
     background-color: #ffffff;
-    
 }
-
-.img {
+#img{
+    width: 360px;
+    height: 900px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-     text-align: center;
-
-}
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #F2E7FA;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
-.file-upload-btn:hover {
-  background: #1AA059;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.file-upload-btn:active {
-  border: 0;
-  transition: all .2s ease;
-}
-
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-#loading {
-  display: none;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-
-.image-upload-wrap {
-    width: 70%;
-        height: 70%;
+#img_main{
+    width: 500px;
+    height: 600px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    position: relative;
-    object-fit: contain;
-    border-radius: 5px;
-    border: dashed 1.5px #ffffff;
-    background-color: #ded2f4;
+}
+
     
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.image-dropping,
-.image-upload-wrap:hover {
-    background-color: #ded2f4;
-    border: 1.5px dashed #ffffff;
+    .btn-info:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
+    .btn-info.focus, .btn-info:focus {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.drag-text {
-  text-align: center;
+    .btn-info {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-.drag-text h3 {
-  font-weight: 500;
-  text-transform: uppercase;
+    .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255);
 }
-
-
-.file-upload-image {
-  max-height:50%;
-  max-width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
-.try-again-btn {
-  border-radius: 40px;
-  border: solid 1.5px #ded2f4;
-  background-color: #ded2f4;
-
-}
-
-.try-again-text {
-  display: block;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #ffffff;
-  padding: 4px 15px;
-}
-
-.remove-image:hover {
-  background: #c13b2a;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.remove-image:active {
-  border: 0;
-  transition: all .2s ease;
-}
-
-.section {
-    margin-top: 50px;
-}
-
-.title {
-  line-height: 1.67;
-  text-align: center;
-  color: #bfbbf2;
-        font-size: 25px;
-}
-
-.subtitle {
-  line-height: 1.53;
-  text-align: center;
-  color: #948bd3;
-        font-size: 30px;
-}
-.sbtitle {
-  line-height: 1.53;
-  text-align: center;
-  color: #BDBDBD;
-        font-size: 20px;
-}
-
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
-    .navbar-brand {
-        font-size: 2rem;
+   
+    
+    
+    .at-share-btn-elements{
+        text-align: center;
     }
-}
-
-
-
-.upload {
-    width: 20%;
-}
-
-.upload-text {
-    width: 58%;
-    font-size: 1.5rem;
-    line-height: 1.53;
-    text-align: center;
-    color: #35465d;
+.share{
     margin: 0 auto;
 }
 
-.footer {
-    background-color: initial;
-    color: initial;
-}
-
-.bar-container {
-  height: 2.7rem;
-}
-.gc-box {
- position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(154, 0, 255, 0.2);
-}
-.gc-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(154, 0, 255, 1);
-}
-.ds-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
- background-color: rgba(117, 204, 84, 0.2);
-}
-.ds-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-     background-color: rgba(117, 204, 84, 1);
-}
-.do-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
- background-color: rgba(255, 166, 166, 0.2);
-}
-.do-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-background-color: rgba(255, 166, 166, 1);
-}
-.rb-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-background-color: rgba(4, 146, 255, 0.2);
-}
-.rb-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-   background-color: rgba(4, 146, 255, 1);
-}
-.bd-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-background-color: rgba(255, 128, 0, 0.2);
-}
-.bd-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 128, 0, 1);
-}
-.bb-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(255, 206, 7, 0.2);
-}
-.bb-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-    background-color: rgba(255, 206, 7, 1);
-}
-.cn-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(113, 174, 206, 0.2);
-}
-.cn-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-   background-color: rgba(113, 174, 206, 1);
-}
-.yg-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(255, 102, 102, 0.2);
-}
-.yg-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 102, 102, 1);
-}
-.em-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(27, 145, 9, 0.2);
-}
-.em-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(27, 145, 9, 1);
-}
-.tp-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(255, 229, 138, 0.2);
-}
-.tp-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(255, 229, 138, 1);
-}
-.pr-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(204, 153, 255, 0.2);
-}
-.pr-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(204, 153, 255, 1);
-}
-.hp-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-   background-color: rgba(249, 77, 255, 0.2);
-}
-.hp-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
- background-color: rgba(249, 77, 255, 1);
-}
-
-
-
-.percent-text {
-  font-size: 1rem;
-  color: #ffffff;
-}
-.gz-label {
-    width: 20%;
-    text-align: left;
-    height: 2rem;
-}
-#label-container {
-    width: 80%;
-    margin: 0 auto;
-}
-.result-message {
-    font-size: 2rem;
-}
-
-
-.gz-explain {
-    color: #23231e;
-    font-size: 1.5rem;
-}
-.gc-gz-title {
-    color:  #9A00FF;
-}
-.gc-gz-celeb {
-    color: #9A00FF;
-    font-size: 1.2rem;
-}
-.ds-gz-title {
-      color: #75CC54;
-}
-.ds-gz-celeb {
-    color: #75CC54;
-    font-size: 1.2rem;
-}
-.do-gz-title {
- color: #FFA6A6;
-}
-.do-gz-celeb {
-       color: #FFA6A6;
-    font-size: 1.2rem;
-}
-.rb-gz-title {
-    color: #0492FF;
-}
-.rb-gz-celeb {
-    color: #0492FF;
-    font-size: 1.2rem;
-}
-.bd-gz-title {
-   color: #FF9C07;
-}
-.bd-gz-celeb {
-  color: #FF9C07;
-     font-size: 1.2rem;
-}
-.bb-gz-title {
-  color: #FFCE07;
-}
-.bb-gz-celeb {
-    color: #FFCE07;
-    font-size: 1.2rem;
-}
-.cn-gz-title {
-   color: #71aece;
-}
-.cn-gz-celeb {
- color: #71aece;
-    font-size: 1.2rem;
-}
-.yg-gz-title {
-    color: #FF6666;
-}
-.yg-gz-celeb {
-     color: #FF6666;
-    font-size: 1.2rem;
-}
-.em-gz-title {
-    color: #1B9109;
-}
-.em-gz-celeb {
-     color: #1B9109;
-    font-size: 1.2rem;
-}
-.tp-gz-title {
-    color: #ffe58a;
-}
-.tp-gz-celeb {
-     color: #ffe58a;
-    font-size: 1.2rem;
-}
-.pr-gz-title {
-    color: #CC99FF;
-}
-.pr-gz-celeb {
-     color: #CC99FF;
-    font-size: 1.2rem;
-}
-.hp-gz-title {
-    color: #f94dff;
-}
-.hp-gz-celeb {
-     color: #f94dff;
-    font-size: 1.2rem;
-}
-
-
-/* gender */
-input#gender {
-  display: none;
-}
-
-label {
-  cursor: pointer;
-  display: inline-block;
-  width: 90px;
-  height: 41px;
-  box-shadow: 0 0 0 8px #e5e9ea inset;
-  border-radius: 30px;
-  position: relative;
-}
-
-.knob {
-  position: absolute;
-  width: 41px;
-  top: 0;
-  left: 0;
-  height: 41px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 8px #f470a7 inset;
-  background-color: #fbd4e6;
-  transition: 0.3s;
-}
-
-.knob > i {
-  position: absolute;
-  width: 4px;
-  height: 18px;
-  top: 100%;
-  background-color: #f470a7;
-  left: calc(50% - 2px);
-}
-
-.knob > i:before,
-.knob > i:after {
-  width: 6px;
-  position: absolute;
-  top: 42%;
-  content: "";
-  height: 4px;
-  background-color: #f470a7;
-}
-
-.knob > i:before {
-  left: 4px;
-}
-.knob > i:after {
-  left: -6px;
-}
-
-input:checked + label > .knob {
-  box-shadow: 0 0 0 8px #a1c6dd inset;
-  background-color: #e2ecf4;
-  transform: translateX(49px) rotate(-140deg);
-}
-
-input:checked + label > .knob > i {
-  background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after,
-input:checked + label > .knob > i:before {
-  background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after {
-  top: 14.5px;
-  width: 12px;
-  left: -7px;
-  transform: rotate(45deg);
-}
-input:checked + label > .knob > i:before {
-  top: 13px;
-  width: 12px;
-  left: 0px;
-  transform: rotate(134deg);
-}
-
-.ad-banner {
+.kakao_ad{
     width: 320px;
     margin: 0 auto;
 }
 
-
-.coupang-banner {
+.kakao_ad2{
     width: 320px;
     margin: 0 auto;
 }
+.coupang_ad {
+    width: 320px;
+    margin: 0 auto;
+}
+    
 
-
+  
 </style>
 
 
 
 
 
-
-
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <meta property="og:image" content="face76.png" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
-
-    <script data-ad-client="ca-pub-5522499110435321" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
 </head>
-
-
-
-<body>
- 
-
+<!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffffff">
+            
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
         </h1>
@@ -728,405 +185,172 @@ input:checked + label > .knob > i:before {
         
         
     </header>
+
     
-    <section class="section">
-  </section>
+<!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffffff">
 
+    <article class="kakao_ad2 mt-5">
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-5aYMl2GlLUJdQX7O" 
+        data-ad-width   = "320" 
+        data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    
+    </article>
 
-<div class="ad-banner">
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-FPcmhxL6siboz1iO" 
- data-ad-width   = "320" 
- data-ad-height  = "50"></ins> 
-</div>
-
-
-
-    <section class="section">
-
-        <h2 class="sr-only">나는 어느 브랜드 앰버서더에 어울리는 얼굴일까?</h2>
-        <h3 class="sr-only">인공지능으로 파악한 앰버서더 얼굴 테스트</h3>
-        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
-        <p class="sr-only">앰버서더 얼굴 테스트</p>
-    </section>
-
-  <div class="img"> 
-<img class="up mt-3 pb-5" src="face76.png" alt="up">
-</div>
-
-    <h3 class="sbtitle""d-flex justify-content-center">성별 선택</h3>
-    <section class="d-flex justify-content-center">
-        <p class="d-flex align-items-center pr-3">여</p>
-        <div>
-            <input type="checkbox" id="gender">
-            <label for="gender">
-                <span class="knob">
-                    <i></i>
-                </span>
-            </label>
+     <!--시작화면-->
+    <article class="start">
+        <img id="img_main" class="mt-3" src="img_main77.png">
+        <button type="button" class="btn btn-info mt-3" onclick='start();' style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 235, 100); border-color: rgb(255, 235, 100); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
+    </article>
+    <!--문제화면-->
+    <article class="question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <p class="d-flex align-items-center pl-3">남</p>
-    </section>
-   
-   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-                <h3 class="mb-5 pb-4 pt-5  upload-text">사진을 올려놓거나<br>눌러서 파일 업로드</h3>
-            </div>
-        </div>
-        <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading</span>
-                </div>
-                <p class="text-center">나와 어울리는 브랜드는...</p>
-            </div>
-                <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_bzap"></div>
-            
-<div class="pt-3 image-title-wrap">
-    <div style="display: block; text-align: center;">
-        <button type="button" class="try-again-btn mt-3" onclick="window.location.reload();" style="white-space: nowrap; width: 250px;">
-            <span class="try-again-text">다른 사진으로 해보기</span>
-        </button>
-    </div>
-    <div style="display: block; text-align: center;">
-        <button type="button" class="try-again-btn mt-3" onclick="location.href='/';" style="white-space: nowrap; width: 250px; margin-top: 10px;">
-            <span class="try-again-text">다른 테스트 하러가기</span>
-        </button>
-    </div>
-</div>
+        <h6 style="font-weight: bold; color: black;" class="text-center mt-5" id="title">문제</h6>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn btn-info mt-5" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 205, 205); border-color: rgb(255, 205, 205); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
+        <button id="B" type="button" class="btn btn-info mt-3" style="font-size:smaller; font-weight: bold; color: black; background-color: rgb(255, 237, 205); border-color: rgb(255, 237, 205); width: 350px; height: 100px; margin: 0 auto;">Primary</button>
 
-
+        </article>
+    <!--결과화면-->
+    <article class="result">
+        <img id="img" class="mt-5" src="" alt="animal">
         
-            </div>
-    </div>
 
-
-<div class="ad-banner mt-1">
-
-  <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-xEahC6Atz018cihB" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-</div>
-
-    <div class="ad-banner mt-1">
-<a href="https://link.coupang.com/a/QlBhu" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_ougq mt-3"></div>
+                
+        <button type="button" class="btn btn-info mt-3" onclick="location.href='test77.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 235, 100); border-color: rgb(255, 235, 100); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
+                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 235, 100); border-color: rgb(255, 235, 100); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
   
+            
+    </article>
 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <article class="kakao_ad mt-5">
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-Gi3RBDQ40nCqHjdN" 
+        data-ad-width   = "320" 
+        data-ad-height  = "100"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </article>
+    <article class="coupang_ad">
+<a href="https://link.coupang.com/a/RbtuC" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
+        
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <!--각 타입의 점수를 저장하는 input 태그(hidden으로 안보임)-->
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-
-
-<footer class="footer pt-5 container d-flex justify-content-center">
-        <div>
-            <p>&copy; test it 2023. All Rights Reserved. </p>
-        </div>
-    </footer>
     <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('.image-upload-wrap').hide();
-                    $('.img').hide();
-                    $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-                    $('.image-title').html(input.files[0].name);
-                };
-                reader.readAsDataURL(input.files[0]);
-                init().then(function() {
-                    console.log("hello");
-                    predict();
-                    $('#loading').hide();
-                });
-            } else {
-                removeUpload();
-            }
+        // 문제 번호를 나타내는 num 변수
+          var num = 1;
+        // 문제 번호별 질문을 저장하는 자바스크립트 객체 q
+             var q = {
+              1: {"title": "내 이상형은", "type": "EI", "A": "넓고 얕은 인간관계를 가진 사람", "B": "좁고 깊은 인간관계를 가진 사람"},
+             2: {"title": "내 이상형은", "type": "SN", "A": "다퉜을 때 생각할 시간을 가진 후 대화하는 사람", "B": "다퉜을 때 오해 생기지 않게 바로 푸는 사람"},
+             3: {"title": "내 이상형은", "type": "TF", "A": "내 얘기에 반응을 잘해주는 사람", "B": "나에게 궁금한 게 많은 사람"},
+
+             4: {"title": "내 이상형은", "type": "JP", "A": "시간을 자유롭게 쓰는 사람", "B": "자기만의 루틴이 있는 사람"},
+             5: {"title": "내 이상형은", "type": "SN", "A": "자주 안 만나도 서운해하지 않는 사람", "B": "자주 붙어있고 싶어 하는 사람"},
+            6: {"title": "내 이상형은", "type": "EI", "A": "숨기지 않고 생각하는 걸 말하는 사람", "B": "적당히 필터링해서 말하는 사람"},
+
+                7: {"title":"내 이상형은", "type": "TF", "A": "한결같이 다정한 사람", "B": "가끔 차가운 것 같다가도 다정한 면모가 있는 사람"},
+                8: {"title": "내 이상형은", "type": "JP", "A": "뭐 하고 있는지 보고 잘 해주는 사람", "B": "보고 안 해도 뭐 하고 있을지 파악 가능한 사람"},
+            9: {"title": "내 이상형은", "type": "EI", "A": "친구들에게 날 소개하고 싶어 하는 사람", "B": "서로의 친구를 굳이 소개하지 않는 사람"},
+
+         10: {"title": "내 이상형은", "type": "SN", "A": "평소에 내가 필요했던 선물을 사주는 사람", "B": "날 생각하며 고른 선물을 주는 사람"},
+            11: {"title": "내 이상형은", "type": "TF", "A": "내가 잘못했을 때도 내 편을 들어주는 사람", "B": "아닌 건 아니라고 말해주는 사람"},
+              12: {"title": "내 이상형은", "type": "JP", "A": "새로운 데이트 코스를 좋아하는 사람", "B": "익숙한 데이트 코스를 좋아하는 사람"}
         }
 
-        function removeUpload() {
-            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-            $('.file-upload-content').hide();
-            $('.image-upload-wrap').show();
+
+        // MBTI 결과별 동물&설명을 저장하는 자바스크립트 객체 result
+        var result = {
+            "ISTJ": {"img":"img_istj77.png"},
+            "ISFJ": {"img":"img_isfj77.png"},
+            "INFJ": {"img":"img_infj77.png"},
+            "INTJ": {"img":"img_intj77.png"},
+
+            "ISTP": {"img":"img_istp77.png"},
+            "ISFP": {"img":"img_isfp77.png"},
+            "INFP": {"img":"img_infp77.png"},
+            "INTP": {"img":"img_intp77.png"},
+
+            "ESTP": {"img":"img_estp77.png"},
+            "ESFP": {"img":"img_esfp77.png"},
+            "ENFP": {"img":"img_enfp77.png"},
+            "ENTP": {"img":"img_entp77.png"},
+
+            "ESTJ": {"img":"img_estj77.png"},
+            "ESFJ": {"img":"img_esfj77.png"},
+            "ENFJ": {"img":"img_enfj77.png"},
+            "ENTJ": {"img":"img_entj77.png"},
         }
-        $('.image-upload-wrap').bind('dragover', function() {
-            $('.image-upload-wrap').addClass('image-dropping');
+        // 시작 버튼을 클릭하면 시작화면 숨기고 질문화면 보여주기
+        function start(){
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+        // A 버튼 클릭하면 해당 타입 값을 가져와서 값 1 증가 후 next()
+        $("#A").click(function(){
+            var type = $("#type").val();
+            var preValue = $("#"+type).val();
+            $("#"+type).val(parseInt(preValue)+1);
+            next();
         });
-        $('.image-upload-wrap').bind('dragleave', function() {
-            $('.image-upload-wrap').removeClass('image-dropping');
+        // B 버튼 클릭하면 값 증가 없이 next()
+        $("#B").click(function(){
+            next();
         });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    <script type="text/javascript">
-        let URL;
-        const urlMale = "https://teachablemachine.withgoogle.com/models/E7CzIomVZ/";
-        const urlFemale = "https://teachablemachine.withgoogle.com/models/E7CzIomVZ/";
-        let model, webcam, labelContainer, maxPredictions;
-       async function init() {
-            if (document.getElementById("gender").checked) {
-                URL = urlMale;
-            } else {
-                URL = urlFemale;
+        function next(){
+            // 마지막 문제인 경우
+            if(num==13){
+                // 질문은 숨기고 결과 화면 보여주기
+                $(".question").hide();
+                $(".result").show();
+
+                var mbti = "";
+                
+                // 삼항 연산자를 사용해서 MBTI 계산
+                ($("#EI").val()<2) ? mbti+="I" : mbti+="E";
+                ($("#SN").val()<2) ? mbti+="N" : mbti+="S";
+                ($("#TF").val()<2) ? mbti+="T" : mbti+="F";
+                ($("#JP").val()<2) ? mbti+="J" : mbti+="P";
+                
+                // 계산된 MBTI로 이미지, 동물, 설명 값 변경
+                $("#img").attr("src",result[mbti]["img"]);
+                $("#animal").html(result[mbti]["animal"]);
+                $("#explain").html(result[mbti]["explain"]);
+            } // 마지막 문제가 아닌 경우
+            else{
+                // 프로그래스 바 1/12씩 차오르도록 구현
+                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
+                // 각 문제별 문제&선택지 출력
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
             }
-            const modelURL = URL + "model.json";
-            const metadataURL = URL + "metadata.json";
-            model = await tmImage.load(modelURL, metadataURL);
-            maxPredictions = model.getTotalClasses();
-            labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions; i++) {
-                var element = document.createElement("div")
-                element.classList.add("d-flex");
-                labelContainer.appendChild(element);
-            }
-        }
-        async function predict() {
-            var image = document.getElementById("face-image")
-            const prediction = await model.predict(image, false);
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-            console.log(prediction[0].className);
-            var resultTitle, resultExplain, resultCeleb;
-            if (document.getElementById("gender").checked) {
-                switch (prediction[0].className) {
-                     case "gc":
-                        resultTitle = "구찌"
-                        resultExplain = "당신은 [구찌] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "이탈리아의 하이엔드 명품 패션 브랜드."
-                        break;
-                    case "ds":
-                        resultTitle = "다이소"
-                        resultExplain = "당신은 [다이소] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "아성다이소가 운영하는 한국의 생활용품 판매점."
-                        break;
-                    case "do":
-                        resultTitle = "디올"
-                        resultExplain = "당신은 [디올] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "1946년에 설립된 프랑스의 패션 하우스."
-                        break;
-                    case "rb":
-                        resultTitle = "루이비통"
-                        resultExplain = "당신은 [루이비통] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "프랑스의 하이엔드 명품 패션 브랜드."
-                            break;
-                        
-                    case "bd":
-                        resultTitle = "배달의 민족"
-                        resultExplain = "당신은 [배달의 민족] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "대한민국의 대표적인 배달 애플리케이션."
-                        break;
-                    case "bb":
-                        resultTitle = "버버리"
-                        resultExplain = "당신은 [버버리] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "영국의 명품 패션 브랜드."
-                            break;
-                        case "cn":
-                        resultTitle = "샤넬"
-                        resultExplain = "당신은 [샤넬] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "프랑스의 하이엔드 명품 패션 브랜드."
-                        break;
-                    case "yg":
-                        resultTitle = "요기요"
-                        resultExplain = "당신은 [요기요] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "위대한상상이 제공하는 배달 서비스."
-                            break;
-                    case "em":
-                        resultTitle = "이마트"
-                        resultExplain = "당신은 [이마트] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "신세계그룹 계열 할인점 체인업체."
-                            break;
-    	   case "tp":
-                        resultTitle = "티파니앤코"
-                        resultExplain = "당신은 [티파니앤코] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "미국의 명품 보석 브랜드."
-                            break;
 
-    	   case "pr":
-                        resultTitle = "프라다"
-                        resultExplain = "당신은 [프라다] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "이탈리아의 하이엔드 명품 패션 하우스."
-                            break;
-
-    	   case "hp":
-                        resultTitle = "홈플러스"
-                        resultExplain = "당신은 [홈플러스] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "대한민국의 종합 유통업체이자 대형 할인점 브랜드."
-                            break;
- 
-
-                        
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                }
-            } else {
-                switch (prediction[0].className) {
-                                               case "gc":
-                        resultTitle = "구찌"
-                        resultExplain = "당신은 [구찌] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "이탈리아의 하이엔드 명품 패션 브랜드."
-                        break;
-                    case "ds":
-                        resultTitle = "다이소"
-                        resultExplain = "당신은 [다이소] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "아성다이소가 운영하는 한국의 생활용품 판매점."
-                        break;
-                    case "do":
-                        resultTitle = "디올"
-                        resultExplain = "당신은 [디올] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "1946년에 설립된 프랑스의 패션 하우스."
-                        break;
-                    case "rb":
-                        resultTitle = "루이비통"
-                        resultExplain = "당신은 [루이비통] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "프랑스의 하이엔드 명품 패션 브랜드."
-                            break;
-                        
-                    case "bd":
-                        resultTitle = "배달의 민족"
-                        resultExplain = "당신은 [배달의 민족] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "대한민국의 대표적인 배달 애플리케이션."
-                        break;
-                    case "bb":
-                        resultTitle = "버버리"
-                        resultExplain = "당신은 [버버리] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "영국의 명품 패션 브랜드."
-                            break;
-                        case "cn":
-                        resultTitle = "샤넬"
-                        resultExplain = "당신은 [샤넬] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "프랑스의 하이엔드 명품 패션 브랜드."
-                        break;
-                    case "yg":
-                        resultTitle = "요기요"
-                        resultExplain = "당신은 [요기요] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "위대한상상이 제공하는 배달 서비스."
-                            break;
-                    case "em":
-                        resultTitle = "이마트"
-                        resultExplain = "당신은 [이마트] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "신세계그룹 계열 할인점 체인업체."
-                            break;
-    	   case "tp":
-                        resultTitle = "티파니앤코"
-                        resultExplain = "당신은 [티파니앤코] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "미국의 명품 보석 브랜드."
-                            break;
-
-    	   case "pr":
-                        resultTitle = "프라다"
-                        resultExplain = "당신은 [프라다] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "이탈리아의 하이엔드 명품 패션 하우스."
-                            break;
-
-    	   case "hp":
-                        resultTitle = "홈플러스"
-                        resultExplain = "당신은 [홈플러스] 앰버서더가 잘 어울리는 얼굴입니다."
-                        resultCeleb = "대한민국의 종합 유통업체이자 대형 할인점 브랜드."
-                            break;
- 
-
-
-
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                }
-            }
-            var title = "<div class='" + prediction[0].className + "-gz-title'>" + resultTitle + "</div>"
-            var explain = "<div class='gz-explain pt-2'>" + resultExplain + "</div>"
-            var celeb = "<div class='" + prediction[0].className + "-gz-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-            $('.result-message').html(title + explain + celeb);
-            var barWidth;
-            for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } else {
-                    barWidth = "2%"
-                }
-                var labelTitle;
-                switch (prediction[i].className) {
-                    case "gc":
-                        labelTitle = "구찌"
-                        break;
-                    case "ds":
-                        labelTitle = "다이소"
-                        break;
-                    case "do":
-                        labelTitle = "디올"
-                        break;
-                    case "rb":
-                        labelTitle = "루이비통"
-                         break;
-                        case "bd":
-                        labelTitle = "배달의민족"
-                        break;
-                    case "bb":
-                        labelTitle = "버버리"
-                        break;
-                    case "cn":
-                        labelTitle = "샤넬"
-                        break;
-                    case "yg":
-                        labelTitle = "요기요"
-                         break;
-                    case "em":
-                        labelTitle = "이마트"
-                        break;
-                    case "tp":
-                        labelTitle = "티파니앤코"
-                         break;
-                   case "pr":
-                        labelTitle = "프라다"
-                         break;
-                   case "hp":
-                        labelTitle = "홈플러스"
-                         break;
-               
-           
-                    default:
-                        labelTitle = "알수없음"
-            }
-                var label = "<div class='gz-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
         }
     </script>
-    <script>
-        function iosApp() {
-            document.getElementById("coupang").style.display="none";
-            $("#coupang ins").hide();
-            document.getElementById("addThis").style.display="none";
-            document.getElementById("disqus_thread").style.display="none";
-            var kakao = document.getElementsByClassName("kakao_ad_area");
-            for (var i = 0; i < kakao.length; i++) {
-              if(kakao[i]) {
-                  kakao[i].style.display="none";
-              }
-            }
-            document.getElementById("yotube-top-link").style.display="none";
-            document.getElementById("yotube-mid-link").style.display="none";
-            document.getElementById("yotube-bottom-link").style.display="none";
-        }
-    </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
+
+    </article>
+
 </body>
-<!-- 
-image input box
-Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
+    </body>
+    
 </html>
+
