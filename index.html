@@ -13,13 +13,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>과자 퀴즈 테스트</title>
-    <meta name="description" content="과자 좀 먹어본 사람만 풀 수 있는 퀴즈">
-<meta name="keywords" content="테스트잇,성격테스트,과자테스트, 과자퀴즈테스트, 과자퀴즈테스트정답, 과자퀴즈, 과자이름테스트, 과자이름맞히기, 심리테스트, mbti테스트">
+    <title>영화 포스터 퀴즈 테스트</title>
+    <meta name="description" content="영화 좀 본 사람만 맞출 수 있는 퀴즈">
+<meta name="keywords" content="테스트잇,성격테스트,영화테스트,영화퀴즈테스트,영화포스터퀴즈,영화포스터테스트, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="과자 퀴즈 테스트">
-    <meta property="og:description" content="과자 좀 먹어본 사람만 풀 수 있는 퀴즈">
-    <meta property="og:image" content="img_main78.png">
+    <meta property="og:title" content="영화 포스터 퀴즈 테스트">
+    <meta property="og:description" content="영화 좀 본 사람만 맞출 수 있는 퀴즈">
+    <meta property="og:image" content="img_main79.png">
     <meta property="og:url" content="https://snacktest.netlify.app/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -152,7 +152,7 @@ article{
 
 
 		.progress-bar {
-			background-color: #ffffff;
+			background-color: #eaebed;
 			border-radius: 5px;
 			height: 10px;
 			margin: 20px 0;
@@ -160,7 +160,7 @@ article{
 		}
 
 		.progress {
-			background-color: #efc18f;
+			background-color: #d5d5d5;
 			height: 100%;
 			width: 0%;
 		}
@@ -172,7 +172,7 @@ article{
 		.submit-button {
 			padding: 10px 20px;
 			border-radius: 5px;
-			background-color: #efc18f;
+			background-color: #d5d5d5;
 			color: #212121;
 			border: none;
 			font-size: 16px;
@@ -182,7 +182,7 @@ article{
 		}
 
 		.submit-button:hover {
-			background-color: #efc18f;
+			background-color: #d5d5d5;
 		}
         
         
@@ -236,7 +236,7 @@ article{
 </head>
 <body>
     <!-- body 태그 style background-color 지정으로 배경색 변경-->
-<body class="container" style="background-color:#ffffff">
+<body class="container" style="background-color:#eeefee">
             
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
@@ -269,9 +269,9 @@ article{
 		<div id="start-page">
 	
               <article class="start">
-        <img id="img_main" class="mt-3" src="img_main78.png">
+        <img id="img_main" class="mt-3" src="img_main79.png">
             </article>
-		<button id="start-button" class="mt-5" onclick="showFirstQuestion()"style="font-size:large; font-weight: bold; color: black; background-color: rgb(239, 193, 143); border-color: rgb(239, 193, 143); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
+		<button id="start-button" class="mt-5" onclick="showFirstQuestion()"style="font-size:large; font-weight: bold; color: black; background-color: rgb(213, 213, 213); border-color: rgb(213, 213, 213); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
 
 		</div>
 
@@ -280,8 +280,8 @@ article{
 				<div class="progress" id="progress-1"></div>
 			</div>
 			<h2></h2>
-			<img src="qs1-78.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
+			<img src="qs1-79.png" class="question-image">
+			<p>띄어쓰기 없이 입력해 주세요(5글자)</p>
 			<input type="text" id="answer-1">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(1)">다음 문제</button>
@@ -293,8 +293,8 @@ article{
 				<div class="progress" id="progress-2"></div>
 			</div>
 			<h2></h2>
-			<img src="qs2-78.png" class="question-image">
-			<p>띄어쓰기 없이 한글로 입력해 주세요(3글자)</p>
+			<img src="qs2-79.png" class="question-image">
+			<p>띄어쓰기 없이 한글로 입력해 주세요(6글자)</p>
 			<input type="text" id="answer-2">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(2)">다음 문제</button>
@@ -305,8 +305,8 @@ article{
 				<div class="progress" id="progress-3"></div>
 			</div>
 			<h2></h2>
-			<img src="qs3-78.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
+			<img src="qs3-79.png" class="question-image">
+			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
 			<input type="text" id="answer-3">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(3)">다음 문제</button>
@@ -318,8 +318,8 @@ article{
 				<div class="progress" id="progress-4"></div>
 			</div>
 			<h2></h2>
-			<img src="qs4-78.png" class="question-image">
-			<p>띄어쓰기 없이 한글로 입력해 주세요(6글자)</p>
+			<img src="qs4-79.png" class="question-image">
+			<p>띄어쓰기 없이 한글로 입력해 주세요(5글자)</p>
 			<input type="text" id="answer-4">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(4)">다음 문제</button>
@@ -331,8 +331,8 @@ article{
 				<div class="progress" id="progress-5"></div>
 			</div>
 			<h2></h2>
-			<img src="qs5-78.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(6글자)</p>
+			<img src="qs5-79.png" class="question-image">
+			<p>띄어쓰기 없이 입력해 주세요(5글자)</p>
 			<input type="text" id="answer-5">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(5)">다음 문제</button>
@@ -344,7 +344,7 @@ article{
 				<div class="progress" id="progress-6"></div>
 			</div>
 			<h2></h2>
-			<img src="qs6-78.png" class="question-image">
+			<img src="qs6-79.png" class="question-image">
 			<p>띄어쓰기 없이 입력해 주세요(4글자)</p>
 			<input type="text" id="answer-6">
 			<div class="button-container">
@@ -357,8 +357,8 @@ article{
 				<div class="progress" id="progress-7"></div>
 			</div>
 			<h2></h2>
-			<img src="qs7-78.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(4글자)</p>
+			<img src="qs7-79.png" class="question-image">
+			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
 			<input type="text" id="answer-7">
 			<div class="button-container">
 				<button class="submit-button" onclick="checkAnswer(7)">다음 문제</button>
@@ -370,7 +370,7 @@ article{
 				<div class="progress" id="progress-8"></div>
 			</div>
 			<h2></h2>
-			<img src="qs8-78.png" class="question-image">
+			<img src="qs8-79.png" class="question-image">
 			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
 			<input type="text" id="answer-8">
 			<div class="button-container">
@@ -383,7 +383,7 @@ article{
 				<div class="progress" id="progress-9"></div>
 			</div>
 			<h2></h2>
-			<img src="qs9-78.png" class="question-image">
+			<img src="qs9-79.png" class="question-image">
 			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
 			<input type="text" id="answer-9">
 			<div class="button-container">
@@ -396,7 +396,7 @@ article{
 				<div class="progress" id="progress-10"></div>
 			</div>
 			<h2></h2>
-			<img src="qs10-78.png" class="question-image">
+			<img src="qs10-79.png" class="question-image">
 			<p>띄어쓰기 없이 입력해 주세요(4글자)</p>
 			<input type="text" id="answer-10">
 			<div class="button-container">
@@ -417,8 +417,8 @@ article{
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ougq mt-3"></div>
                 
-                     <button type="button" class="btn btn-info mt-3" onclick="location.href='test78.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(239, 193, 143); border-color: rgb(239, 193, 143); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
-                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(239, 193, 143); border-color: rgb(239, 193, 143); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
+                     <button type="button" class="btn btn-info mt-3" onclick="location.href='test79.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(213, 213, 213); border-color: rgb(213, 213, 213); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
+                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(213, 213, 213); border-color: rgb(213, 213, 213); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
                 </article>
                 
 	</div>
@@ -442,25 +442,25 @@ article{
 
 	function checkAnswer(questionNum) {
 		const answer = document.getElementById(`answer-${questionNum}`).value.trim();
-	if (questionNum === 1 && answer.toLowerCase() === "콘칲") {
+	if (questionNum === 1 && answer.toLowerCase() === "어바웃타임") {
     correctAnswers++;
-} else if (questionNum === 2 && answer.toLowerCase() === "쌀로별") {
+} else if (questionNum === 2 && answer.toLowerCase() === "러브액츄얼리") {
     correctAnswers++;
-} else if (questionNum === 3 && answer.toLowerCase() === "콘초") {
+} else if (questionNum === 3 && answer.toLowerCase() === "미나리") {
     correctAnswers++;
-} else if (questionNum === 4 && answer.toLowerCase() === "카라멜콘땅콩") {
+} else if (questionNum === 4 && answer.toLowerCase() === "끝까지간다") {
     correctAnswers++;
-} else if (questionNum === 5 && answer.toLowerCase() === "무뚝뚝감자칩") {
+} else if (questionNum === 5 && answer.toLowerCase() === "완벽한타인") {
     correctAnswers++;
-} else if (questionNum === 6 && answer.toLowerCase() === "오징어집") {
+} else if (questionNum === 6 && answer.toLowerCase() === "주토피아") {
     correctAnswers++;
-} else if (questionNum === 7 && answer.toLowerCase() === "벌집핏자") {
+} else if (questionNum === 7 && answer.toLowerCase() === "브로커") {
     correctAnswers++;
-} else if (questionNum === 8 && answer.toLowerCase() === "자갈치") {
+} else if (questionNum === 8 && answer.toLowerCase() === "마약왕") {
     correctAnswers++;
-} else if (questionNum === 9 && answer.toLowerCase() === "칸쵸") {
+} else if (questionNum === 9 && answer.toLowerCase() === "독전") {
     correctAnswers++;
-} else if (questionNum === 10 && answer.toLowerCase() === "참붕어빵") {
+} else if (questionNum === 10 && answer.toLowerCase() === "세얼간이") {
     correctAnswers++;
 }
 
@@ -480,30 +480,30 @@ function showResult() {
     document.getElementById("question-page-10").style.display = "none";
     document.getElementById("result-page").style.display = "block";
     if (correctAnswers === 10) {
-        document.getElementById("result-image").src = "78-100.png";
+        document.getElementById("result-image").src = "79-100.png";
     } else if (correctAnswers === 9) {
-        document.getElementById("result-image").src = "78-90.png";
+        document.getElementById("result-image").src = "79-90.png";
     } else if (correctAnswers === 8) {
-        document.getElementById("result-image").src = "78-80.png";
+        document.getElementById("result-image").src = "79-80.png";
     } else if (correctAnswers === 7) {
-        document.getElementById("result-image").src = "78-70.png";
+        document.getElementById("result-image").src = "79-70.png";
     } else if (correctAnswers === 6) {
-        document.getElementById("result-image").src = "78-60.png";
+        document.getElementById("result-image").src = "79-60.png";
     } else if (correctAnswers === 5) {
-        document.getElementById("result-image").src = "78-50.png";
+        document.getElementById("result-image").src = "79-50.png";
     } else if (correctAnswers === 4) {
-        document.getElementById("result-image").src = "78-40.png";
+        document.getElementById("result-image").src = "79-40.png";
     } else if (correctAnswers === 3) {
-        document.getElementById("result-image").src = "78-30.png";
+        document.getElementById("result-image").src = "79-30.png";
     } else if (correctAnswers === 2) {
-        document.getElementById("result-image").src = "78-20.png";
+        document.getElementById("result-image").src = "79-20.png";
     } else if (correctAnswers === 1) {
-        document.getElementById("result-image").src = "78-10.png";
+        document.getElementById("result-image").src = "79-10.png";
     } else if (correctAnswers === 0) {
-        document.getElementById("result-image").src = "78-0.png";
+        document.getElementById("result-image").src = "79-0.png";
     } else {
         // 10개 맞춘 경우
-        document.getElementById("result-image").src = "78-100.png";
+        document.getElementById("result-image").src = "79-100.png";
     }
     // progress-bar 리셋
     document.getElementById("progress-bar").style.width = "0%";
