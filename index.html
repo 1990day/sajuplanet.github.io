@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,24 +14,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>옛날 사람 테스트 3탄</title>
-    <meta name="description" content="옛날 문제 테스트 3탄">
-<meta name="keywords" content="테스트잇,성격테스트,옛날사람테스트,옛날테스트,옛날문제테스트,옛날사람,옛날문제,연애테스트,연애mbti,연애성격테스트, 옛날사람테스트2탄, 옛날사람2탄, 옛날테스트2탄, 심리테스트, mbti테스트">
+    <title>인싸력 테스트</title>
+    <meta name="description" content="나는 인싸일까? 아싸일까?">
+<meta name="keywords" content="테스트잇,성격테스트,인싸력테스트,인싸테스트,인싸아싸테스트,아싸테스트,연애mbti,연애성격테스트, 심리테스트, mbti테스트">
     <meta property="og:type" content="website"> 
-    <meta property="og:title" content="옛날 사람 테스트 3탄">
-    <meta property="og:description" content="옛날 문제 테스트 3탄">
-    <meta property="og:image" content="img_main68.png">
-    <meta property="og:url" content="https://oldtest3.netlify.app/">
+    <meta property="og:title" content="인싸력 테스트">
+    <meta property="og:description" content="나는 인싸일까? 아싸일까?">
+    <meta property="og:image" content="img_main28.png">
+    <meta property="og:url" content="https://hedgehogtest.netlify.app/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
 
-
-	<style>
-        
-        
 
 <style>
 
@@ -40,13 +37,21 @@
     flex-direction: column;
 }
 */
-@media screen and (max-width: 768px) {
-  .logo {
-    width: 50px;
-    margin-top: 7px;
+    @media (max-width: 600px) {
+  .result-image img {
+    max-width: 100%;
+    height: auto;
   }
 }
-        
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+    
+.logo {
+    width: 100px;
+    margin-top: 14px;
+}
+
 .main-nav {
     display: flex;
     font-size: 1.25rem;
@@ -78,32 +83,20 @@
     justify-content: space-between;
 }
 
+    
 article{
     display: flex;
     flex-direction: column;
 }
-.result-image-container {
-  text-align: center;
-}
-.result-image {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  margin: 0 auto;
-}
 
-        @media screen and (max-width: 768px) {
-  .result-image {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    margin: 0 auto;
-      text-align: center;
-  }
+ 
+.progress-bar {
+    background-color: #c3e68d;
 }
-
-        
-        #img{
+.progress {
+    background-color: #ffffff;
+}
+#img{
     width: 360px;
     height: 900px;
     max-width: 100%;
@@ -119,68 +112,12 @@ article{
     margin: 0 auto;
 }
 
-        #start-button {
-  display: block;
-  margin: 0 auto;
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
-		.question-page {
-			display: none;
-			text-align: center;
-			margin-top: 50px;
-		}
-
-		.question-page:first-of-type {
-			display: block;
-		}
-
-		.question-image {
-    width: 600px;
-    height: 900px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-        
-
-
-
-		.progress-bar {
-			background-color: #ffffff;
-			border-radius: 5px;
-			height: 10px;
-			margin: 20px 0;
-			overflow: hidden;
-		}
-
-		.progress {
-			background-color: #fff29d;
-			height: 100%;
-			width: 0%;
-		}
-
-		.button-container {
-			margin: 20px 0;
-		}
-
-		.submit-button {
-			padding: 10px 20px;
-			border-radius: 5px;
-			background-color: #fff29d;
-			color: #424242;
-			border: none;
-			font-size: 16px;
-			cursor: pointer;
-			transition: 0.3s ease;
-            
-		}
-
-		.submit-button:hover {
-			background-color: #fff29d;
-		}
-        
-        
-           
     .at-share-btn-elements{
         text-align: center;
     }
@@ -202,35 +139,128 @@ article{
     margin: 0 auto;
 }
     
-@media (max-width: 600px) {
-    .page-title {
-        font-size: 2.5rem;
-    }
-    
-    .main-nav {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    
-    .main-nav li {
-        margin: 0 20px;
-    }
-    
-  .home-content {
-    text-align: center;
-    margin-top: 10%;
+
+    #container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+             #start-button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        background-color: #b0fff8;
+        color: black;
+        border: none;
+        padding: 10px 40px;
+        cursor: pointer;
+        border-radius: 5px;
+          margin-top: 20px;        
+      }
+
+      #start-button:hover {
+        background-color: #b0fff8;
+      }
+
+      #start-button:focus {
+        outline: none;
+      }
+   .question {
+  margin-top: 40px;
+  font-size: 18px;
+  margin: 0 auto; /* 추가 */
+  text-align: center;
+       font-weight: bold;
+         margin-bottom: 40px;
+}
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block; 
 }
 
-    }
-    
+.result-image {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
 }
-        
-        
-	</style>
-</head>
-<body>
-    <!-- body 태그 style background-color 지정으로 배경색 변경-->
-<body class="container" style="background-color:#fffffff">
+
+.result-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+      #progress {
+        margin-top: 20px;
+        height: 20px;
+        background-color: #ffffff;
+          margin-bottom: 50px;
+      }
+      #progress-bar {
+        height: 100%;
+        background-color: #cdf5ff;
+        width: 0%;
+          margin-top: 10px;
+
+      }
+.choices {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.choice {
+  display: block;
+  font-size: 15px;
+  background-color: #ffcfcf;
+  color: black;
+  border-color: #ffcfcf;
+  border: none;
+  font-weight: bold;
+  padding: 10px 10px;
+  width: 350px;
+  height: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.result button {
+  /* 추가 스타일 */
+  display: block;
+  margin: 0 auto;
+}
+    .button {
+          margin-top: 10px;
+  text-align: center;
+        display: block; 
+    }
+    .btn.btn-info.mt-3 {
+  /* 추가 스타일 */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+    </style>
+  </head>
+  <!-- body 태그 style background-color 지정으로 배경색 변경-->
+<body class="container" style="background-color:#ffdfdf">
             
     <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="img_logo.png" alt="test it"></a>
@@ -245,308 +275,207 @@ article{
         
         
     </header>
-    <!-- body 태그 style background-color 지정으로 배경색 변경-->
+
+    
+<!-- body 태그 style background-color 지정으로 배경색 변경-->
 <body class="container" style="background-color:#ffffff">
 
     <article class="kakao_ad2 mt-5">
         <ins class="kakao_ad_area" style="display:none;" 
-        data-ad-unit    = "DAN-j4CP4mWcEERvqDoZ" 
+        data-ad-unit    = "DAN-0S6HtJEEFLckEj5d" 
         data-ad-width   = "320" 
         data-ad-height  = "50"></ins> 
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     
     </article>
 
+        <div id="main">
+  <article class="start">
+        <img id="img_main" class="mt-3" src="img_main28.png">
+         <button id="start-button">시작하기</button>
+    </article>
 
-	<div class="container">
-	
-		<div id="start-page">
-	
-              <article class="start">
-        <img id="img_main" class="mt-3" src="img_main83.png">
-            </article>
-		<button id="start-button" class="mt-5" onclick="showFirstQuestion()"style="font-size:large; font-weight: bold; color: black; background-color: rgb(172, 185, 206); border-color: rgb(172, 185, 206); width: 350px; height: 50px; margin: 0 auto;">테스트 시작하기</button>
+    
+    </div>
+    
+      <!-- 테스트 화면 -->
+      <div id="test" style="display:none">
+                  <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <h1> <span id="question-number"></span></h1>
+        <div class="question"></div>
+        <div class="choices">
+          <button class="choice"></button>
+          <button class="choice"></button>
+        </div>
 
-		</div>
-
-		<div class="question-page" id="question-page-1">
-			<div class="progress-bar">
-				<div class="progress" id="progress-1"></div>
-			</div>
-			<h2></h2>
-			<img src="qs1-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
-			<input type="text" id="answer-1">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(1)">다음 문제</button>
-			</div>
-		</div>
-
-		<div class="question-page" id="question-page-2">
-			<div class="progress-bar">
-				<div class="progress" id="progress-2"></div>
-			</div>
-			<h2></h2>
-			<img src="qs2-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(4글자)</p>
-			<input type="text" id="answer-2">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(2)">다음 문제</button>
-			</div>
-		</div>
-		<div class="question-page" id="question-page-3">
-			<div class="progress-bar">
-				<div class="progress" id="progress-3"></div>
-			</div>
-			<h2></h2>
-			<img src="qs3-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
-			<input type="text" id="answer-3">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(3)">다음 문제</button>
-			</div>
-		</div>
-        
-        	<div class="question-page" id="question-page-4">
-			<div class="progress-bar">
-				<div class="progress" id="progress-4"></div>
-			</div>
-			<h2></h2>
-			<img src="qs4-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(2글자)</p>
-			<input type="text" id="answer-4">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(4)">다음 문제</button>
-			</div>
-		</div>
-        
-             	<div class="question-page" id="question-page-5">
-			<div class="progress-bar">
-				<div class="progress" id="progress-5"></div>
-			</div>
-			<h2></h2>
-			<img src="qs5-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
-			<input type="text" id="answer-5">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(5)">다음 문제</button>
-			</div>
-		</div>
-        
-             	<div class="question-page" id="question-page-6">
-			<div class="progress-bar">
-				<div class="progress" id="progress-6"></div>
-			</div>
-			<h2></h2>
-			<img src="qs6-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
-			<input type="text" id="answer-6">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(6)">다음 문제</button>
-			</div>
-		</div>
-        
-             	<div class="question-page" id="question-page-7">
-			<div class="progress-bar">
-				<div class="progress" id="progress-7"></div>
-			</div>
-			<h2></h2>
-			<img src="qs7-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(3글자)</p>
-			<input type="text" id="answer-7">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(7)">다음 문제</button>
-			</div>
-		</div>
-        
-             	<div class="question-page" id="question-page-8">
-			<div class="progress-bar">
-				<div class="progress" id="progress-8"></div>
-			</div>
-			<h2></h2>
-			<img src="qs8-83.png" class="question-image">
-			<p>띄어쓰기 없이 !한글로! 입력해 주세요(3글자)</p>
-			<input type="text" id="answer-8">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(8)">다음 문제</button>
-			</div>
-		</div>
-        
-             	<div class="question-page" id="question-page-9">
-			<div class="progress-bar">
-				<div class="progress" id="progress-9"></div>
-			</div>
-			<h2></h2>
-			<img src="qs9-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(4글자)</p>
-			<input type="text" id="answer-9">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(9)">다음 문제</button>
-			</div>
-		</div>
-
-		<div class="question-page" id="question-page-10">
-            <div class="progress-bar">
-				<div class="progress" id="progress-10"></div>
-			</div>
-			<h2></h2>
-			<img src="qs10-83.png" class="question-image">
-			<p>띄어쓰기 없이 입력해 주세요(1글자)</p>
-			<input type="text" id="answer-10">
-			<div class="button-container">
-				<button class="submit-button" onclick="checkAnswer(10)">제출하기</button>
-			</div>
-		</div>
-         <article class="result-image">    
-        <div id="result-page" style="display: none;">
-
-		<p id="score-text"></p>
-		<img src="" id="result-image" style=" width: 100%;
-    max-width: 360px;
-    height: auto;
-    margin: 0 auto;">
-         
-                
-           <article class="result">       
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      </div>
+      
+      <!-- 결과 화면 -->
+      <div id="result" style="display:none">
+        <h1></h1>
+        <div class="result"></div>
+        <div class="result-image"></div>
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ougq"></div>
                 
-                     <button type="button" class="btn btn-info mt-3" onclick="location.href='test83.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 190, 190); border-color: rgb(255, 190, 190); width: 350px; height: 50px; margin: 0 auto;">다시 해보기</button>
-                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 190, 190); border-color: rgb(255, 190, 190); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
-                </article>
-                
-	</div>
-</div>
-    
-    <article class="kakao_ad mt-5">
+        <button type="button" class="btn btn-info mt-3" onclick="location.href='test28.html'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 208, 208); border-color: rgb(255, 208, 208); width: 350px; height: 50px; margin: 0 auto; text-align: center;">다시 해보기</button>
+                <button type="button" class="btn btn-info mt-3" onclick="location.href='/'" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 208, 208); border-color: rgb(255, 208, 208); width: 350px; height: 50px; margin: 0 auto;">다른 테스트 해보기</button>
+         
+      </div>
+       <article class="kakao_ad mt-5">
         <ins class="kakao_ad_area" style="display:none;" 
-        data-ad-unit    = "DAN-BKMmlrqfjzErKdjV" 
+        data-ad-unit    = "DAN-C0uzcR0E0tRYUADd" 
         data-ad-width   = "320" 
         data-ad-height  = "100"></ins> 
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </article>
     <article class="coupang_ad">
-<a href="https://link.coupang.com/a/T6QDc" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
-        
-
-<script>
-	const numQuestions = 10;
-	let currentQuestion = 1;
-	let correctAnswers = 0;
-
-	function checkAnswer(questionNum) {
-		const answer = document.getElementById(`answer-${questionNum}`).value.trim();
-	if (questionNum === 1 && answer.toLowerCase() === "요요") {
-    correctAnswers++;
-} else if (questionNum === 2 && answer.toLowerCase() === "다마고치") {
-    correctAnswers++;
-} else if (questionNum === 3 && answer.toLowerCase() === "스킬") {
-    correctAnswers++;
-} else if (questionNum === 4 && answer.toLowerCase() === "따조") {
-    correctAnswers++;
-} else if (questionNum === 5 && answer.toLowerCase() === "마수리") {
-    correctAnswers++;
-} else if (questionNum === 6 && answer.toLowerCase() === "콩콩이") {
-    correctAnswers++;
-} else if (questionNum === 7 && answer.toLowerCase() === "만득이") {
-    correctAnswers++;
-} else if (questionNum === 8 && answer.toLowerCase() === "디디알") {
-    correctAnswers++;
-} else if (questionNum === 9 && answer.toLowerCase() === "구슬동자") {
-    correctAnswers++;
-} else if (questionNum === 10 && answer.toLowerCase() === "씰") {
-    correctAnswers++;
-}
+<a href="https://link.coupang.com/a/T2vWi" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/471299?subId=&traceId=V0-301-bae0f72e5e59e45f-I471299&w=320&h=100" alt=""></a>
 
     
+    <script>
+      // JavaScript 코드
+      var questions = [
+        {
+          question: "오래된 동창의 연락에 나는?",
+          choices: ["반갑게 받아준다", "갑자기 왜?... 생각에 빠진다"]
+        },
+        {
+          question: "갑자기 생각나서 연락했다는 동창의 말에 나는?",
+          choices: ["잘 지냈냐고 안부를 묻는다", "혹시 다단계는 아닌지 걱정한다"]
+        },
+        {
+          question: "주말에 만나자고 묻는 동창에게 나는",
+          choices: ["별다른 약속이 없으면 수락한다", "연락을 더 해보고 결정한다"]
+        },
+   {
+          question: "한가로운 주말. 낯선 사람의 디엠이 왔다.\n\n내 반응은?",
+          choices: ["읽는다", "읽지 않는다"]
+        },
+   {
+          question: "자세히 보니 프로필 사진이 내 이상형일 때 나의 반응은?",
+          choices: ["친해지려고 노력한다", "도용일 수 있으니 조심한다"]
+        },
+   {
+          question: "알고 보니 사진도 도용이 아니고 말도 잘 통한다.\n\n이때 나는?",
+          choices: ["슬슬 약속을 잡는다", "만나는 건 좀.."]
+        },
+   {
+          question: "만나고 보니 더 내 이상형에 가까운 그 사람과",
+          choices: ["번호를 교환한다", "카톡 아이디를 알려준다"]
+        },
+   {
+          question: "그 사람과 헤어지고 집에 가는 길에 친구의 전화\n\n분명 만나자는 연락일 것이다",
+          choices: ["할 말이 많으니 만나서 오늘 일을 얘기한다", "오늘은 에너지를 다 썼기 때문에 받지 않는다"]
+        },
+   {
+          question: "그 사람과 논지 일주일이 지났다.\n\n연락은 계속 오는데 만나자고 하지 않는 그 사람",
+          choices: ["내가 먼저 놀자고 한다", "놀자고 할 때까지 기다린다"]
+        },
+   {
+          question: "다시 만난 그 사람과 밥을 먹고 있는데\n\n잘 어울리는 커플이라고 사진을 찍어준다고 한다.",
+          choices: ["감사하다고 하고 사진을 찍는다", "커플은 아닌데...라고 하며 사진을 찍는다"]
+        }
+      ];
+      
+      var currentQuestionIndex = 0;
+      var score = 0;
+      
+      var startButton = document.getElementById("start-button");
+      var questionNumber = document.getElementById("question-number");
+      var question = document.querySelector(".question");
+      var choices = document.querySelector(".choices");
+      var choiceButtons = document.querySelectorAll(".choice");
+      var result = document.querySelector(".result");
+      var resultImage = document.querySelector(".result-image");
+      var progressBar = document.getElementById("progress-bar");
+      
+      startButton.addEventListener("click", startTest);
+      for (var i = 
+0; i < choiceButtons.length; i++) {
+choiceButtons[i].addEventListener("click", selectAnswer);
+}  function startTest() {
+    // 메인화면을 숨기고 테스트 화면을 보여줌
+    document.getElementById("main").style.display = "none";
+    document.getElementById("test").style.display = "block";
     
-		if (questionNum < numQuestions) {
-			document.getElementById(`question-page-${questionNum}`).style.display = "none";
-			document.getElementById(`question-page-${questionNum + 1}`).style.display = "block";
-			document.getElementById(`progress-${questionNum + 1}`).style.width = `${(questionNum + 1) * 100 / numQuestions}%`;
-			currentQuestion++;
-		} else {
-			showResult();
-		}
-	}
+    showQuestion();
+  }
+  
+  
+  function showQuestion() {
+    // 현재 문제 번호를 업데이트
+    // questionNumber.innerText = currentQuestionIndex + 1;
 
-function showResult() {
-    document.getElementById("question-page-10").style.display = "none";
-    document.getElementById("result-page").style.display = "block";
-    if (correctAnswers === 10) {
-        document.getElementById("result-image").src = "83-100.png";
-    } else if (correctAnswers === 9) {
-        document.getElementById("result-image").src = "83-90.png";
-    } else if (correctAnswers === 8) {
-        document.getElementById("result-image").src = "83-80.png";
-    } else if (correctAnswers === 7) {
-        document.getElementById("result-image").src = "83-70.png";
-    } else if (correctAnswers === 6) {
-        document.getElementById("result-image").src = "83-60.png";
-    } else if (correctAnswers === 5) {
-        document.getElementById("result-image").src = "83-50.png";
-    } else if (correctAnswers === 4) {
-        document.getElementById("result-image").src = "83-40.png";
-    } else if (correctAnswers === 3) {
-        document.getElementById("result-image").src = "83-30.png";
-    } else if (correctAnswers === 2) {
-        document.getElementById("result-image").src = "83-20.png";
-    } else if (correctAnswers === 1) {
-        document.getElementById("result-image").src = "83-10.png";
-    } else if (correctAnswers === 0) {
-        document.getElementById("result-image").src = "83-0.png";
+    
+    // 문제와 선택지를 보여줌
+    question.innerText = questions[currentQuestionIndex].question;
+    for (var i = 0; i < choiceButtons.length; i++) {
+      choiceButtons[i].innerText = questions[currentQuestionIndex].choices[i];
+    }
+    
+    // 프로그래스 바를 업데이트
+    var progressPercent = (currentQuestionIndex + 1) / questions.length * 100;
+    progressBar.style.width = progressPercent + "%";
+  }
+  
+  function selectAnswer(event) {
+    // 사용자가 선택한 답변을 가져옴
+    var selectedChoiceIndex = Array.prototype.indexOf.call(choiceButtons, event.target);
+    
+    // 정답인지 확인하고 점수를 계산함
+    if (selectedChoiceIndex === 0) {
+      score++;
+    }
+    
+    // 다음 문제로 넘어감 또는 결과 화면을 보여줌
+    currentQuestionIndex++;
+    if (currentQuestionIndex === questions.length) {
+      showResult();
     } else {
-        // 10개 맞춘 경우
-        document.getElementById("result-image").src = "83-100.png";
+      showQuestion();
     }
-    // progress-bar 리셋
-    document.getElementById("progress-bar").style.width = "0%";
-    document.getElementById("progress-bar").textContent = "문제 1 / 10";
-}
+  }
+  
+  function showResult() {
+    // 테스트 화면을 숨기고 결과 화면을 보여줌
+    document.getElementById("test").style.display = "none";
+    document.getElementById("result").style.display = "block";
+    
+    // 결과를 계산하고 보여줌
 
+    
+    // 결과에 따른 이미지를 보여줌
+    if (score === 10) {
+      resultImage.innerHTML = '<img src="img_100u.png">';
+    } else if (score === 9) {
+      resultImage.innerHTML = '<img src="img_90u.png">';
+} else if (score === 8) {
+      resultImage.innerHTML = '<img src="img_80u.png">';
+} else if (score === 7) {
+      resultImage.innerHTML = '<img src="img_70u.png">';
+} else if (score === 6) {
+      resultImage.innerHTML = '<img src="img_60u.png">';
+} else if (score === 5) {
+      resultImage.innerHTML = '<img src="img_50u.png">';
+} else if (score === 4) {
+      resultImage.innerHTML = '<img src="img_40u.png">';
+} else if (score === 3) {
+      resultImage.innerHTML = '<img src="img_30u.png">';
+} else if (score === 2) {
+      resultImage.innerHTML = '<img src="img_20u.png">';
+} else if (score === 1) {
+      resultImage.innerHTML = '<img src="img_10u.png">';
 
-
-function showFirstQuestion() {
-  document.getElementById("start-page").style.display = "none";
-  document.getElementById("question-page-1").style.display = "block";
-}
-function restartTest() {
-    // 답변과 진행상황 초기화
-    document.querySelectorAll('input[type="text"]').forEach(function(el) {
-        el.value = "";
-    });
-    document.querySelectorAll('.progress').forEach(function(el) {
-        el.textContent = el.id.replace('progress-', '문제 ') + ' / 10';
-    });
-
-    // 현재 보이는 화면 초기화
-    document.querySelectorAll('.question-page').forEach(function(el) {
-        el.style.display = 'none';
-    });
-    document.querySelector('#start-page').style.display = 'block';
-}
-
-function restartTest() {
-    currentQuestion = 1;
-    correctAnswers = 0;
-    document.getElementById("start-page").style.display = "block";
-    document.getElementById("result-page").style.display = "none";
-    for (let i = 1; i <= 10; i++) {
-        document.getElementById(`answer-${i}`).value = "";
-        document.getElementById(`progress-${i}`).style.width = "0%";
-        document.getElementById(`question-page-${i}`).style.display = "none";
+    } else {
+      resultImage.innerHTML = '<img src="img_0u.png">';
     }
-    document.getElementById(`question-page-${currentQuestion}`).style.display = "block";
-}
-
+  }
 </script>
-        
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6076fc88e5b8b134"></script>
 
-    </article>
-    </body>
-    </body>
     </body>
 </html>
-
