@@ -112,7 +112,7 @@
     background-color: #ff9770;
   }
     .navbar .submenu {
-      left: -70px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+      left: -80px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
     }
 
   /* 콘텐츠 레이아웃 */
@@ -258,49 +258,67 @@
     color: #333;
   }
 
- /* 모바일 대응 */
+/* 모바일 대응 */
 @media (max-width: 768px) {
   .icon-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개씩 한 줄로 */
+    gap: 20px;
     max-width: 100%; /* 모바일에서는 너비 제한 해제 */
   }
+  .mobile-only {
+    display: block; /* 모바일 화면에서는 보이도록 설정 */
+  }
+ .icon-wrapper {
+    margin: 0 auto;
+  }
+
   .icon-wrapper img {
     width: 60px;
     height: 60px;
   }
+
   .icon-wrapper p {
     font-size: 12px;
   }
+
   .sidebar {
     display: none;
   }
- .content-wrapper {
-        display: flex;
-        justify-content: center; /* 콘텐츠를 중앙에 위치시키기 */
-        margin-top: 100px; /* 네비게이션 바 높이에 맞춰 여백 추가 */
-    }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center; /* 콘텐츠를 중앙에 위치시키기 */
+    margin-top: 100px; /* 네비게이션 바 높이에 맞춰 여백 추가 */
+  }
+
   .main-content {
-        margin: 0 auto; /* 전체 콘텐츠 중앙 정렬 */
-        width: 100%; /* 전체 화면 너비 사용 */
-        padding: 10px;
-    }
-    .navbar {
+    margin: 0 auto; /* 전체 콘텐츠 중앙 정렬 */
+    width: 100%; /* 전체 화면 너비 사용 */
+    padding: 10px;
+  }
+
+  .navbar {
     padding: 10px 10px; /* 모바일에서 네비게이션 바 패딩 줄임 */
   }
+
   .logo {
     height: 40px; /* 모바일에서 로고 크기 줄임 */
     margin-right: 10px; /* 로고를 왼쪽으로 땡기기 위해 마진 조정 */
   }
+
   .navbar .menu {
     gap: 10px; /* 모바일에서 메뉴 간 간격 줄임 */
   }
- .main-image {
-        width: 90%; /* 모바일에서 좌우 여백을 남겨서 중앙에 위치하도록 */
-        height: auto;
-        object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 */
-        display: block;
-        margin: 0 auto; /* 이미지를 수평 중앙 정렬 */
-        object-position: center;
-    }
+
+  .main-image {
+    width: 90%; /* 모바일에서 좌우 여백을 남겨서 중앙에 위치하도록 */
+    height: auto;
+    object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 */
+    display: block;
+    margin: 0 auto; /* 이미지를 수평 중앙 정렬 */
+    object-position: center;
+  }
 }
 </style>
 
@@ -418,7 +436,21 @@
       <p>별자리 운세</p>
     </a>
   </div>
+     <div class="icon-wrapper">
+    <a href="love_fortune.html">
+      <img src="saju_love.png" alt="연애운">
+      <p>연애운</p>
+    </a>
+  </div>
   <div class="icon-wrapper">
+    <a href="compatibility.html">
+      <img src="compatibility-icon.png" alt="사주 궁합">
+      <p>사주 궁합</p>
+    </a>
+  </div>
+  
+  <!-- 세 번째 줄 -->
+ <div class="icon-wrapper">
     <a href="weekly_taro.html">
       <img src="weekly-icon.png" alt="이번주 타로">
       <p>이번주 타로</p>
@@ -430,9 +462,13 @@
       <p>이번달 타로</p>
     </a>
   </div>
+  <div class="icon-wrapper">
+    <a href="reunion_taro.html">
+      <img src="reunion-icon.png" alt="재회 타로">
+      <p>재회 타로</p>
+    </a>
+  </div>
 </div>
-    </div>
-    </div>
 <script>
   // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
   document.querySelectorAll('.navbar .menu-link').forEach(item => {
