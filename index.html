@@ -111,6 +111,9 @@
   .navbar .submenu a:hover {
     background-color: #ff9770;
   }
+    .navbar .submenu {
+      left: -70px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+    }
 
   /* 콘텐츠 레이아웃 */
   .content-wrapper {
@@ -270,16 +273,34 @@
   .sidebar {
     display: none;
   }
-  .content-wrapper {
-    margin-top: 100px; /* 네비게이션 바 높이에 맞춰 여백 추가 */
-    display: flex;
-    justify-content: center; /* 콘텐츠를 가운데로 배치 */
-  }
+ .content-wrapper {
+        display: flex;
+        justify-content: center; /* 콘텐츠를 중앙에 위치시키기 */
+        margin-top: 100px; /* 네비게이션 바 높이에 맞춰 여백 추가 */
+    }
   .main-content {
-    margin: 0; /* 사이드바가 없어지면 왼쪽 여백 제거 */
-    width: 100%; /* 전체 화면 너비 사용 */
-    padding: 10px; /* 적절한 패딩 추가 */
+        margin: 0 auto; /* 전체 콘텐츠 중앙 정렬 */
+        width: 100%; /* 전체 화면 너비 사용 */
+        padding: 10px;
+    }
+    .navbar {
+    padding: 10px 10px; /* 모바일에서 네비게이션 바 패딩 줄임 */
   }
+  .logo {
+    height: 40px; /* 모바일에서 로고 크기 줄임 */
+    margin-right: 10px; /* 로고를 왼쪽으로 땡기기 위해 마진 조정 */
+  }
+  .navbar .menu {
+    gap: 10px; /* 모바일에서 메뉴 간 간격 줄임 */
+  }
+ .main-image {
+        width: 90%; /* 모바일에서 좌우 여백을 남겨서 중앙에 위치하도록 */
+        height: auto;
+        object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 */
+        display: block;
+        margin: 0 auto; /* 이미지를 수평 중앙 정렬 */
+        object-position: center;
+    }
 }
 </style>
 
