@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>사주플래닛 별자리 운세</title>
+    <meta name="description" content="사주플래닛 인생사주,신년운세,별자리운세,타로">
+<meta name="keywords" content="사주플래닛,사주,별자리운세,타로,인생총운,무료사주,별자리운세,타로,재회타로,연애타로,소원타로,평생운,재물운,건강운,연애운,직업운,각종운세">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="사주플래닛">
+    <meta property="og:description" content="사주플래닛">
+    <meta property="og:image" content="main-image1.png">
+    <meta property="og:url" content="saju-planet.co.kr/zodiac.html">
+
+      <link rel="icon" type="image/png" href="favicon.png">
+
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(230, 210, 255, 0.5); /* 연한 보라색 배경 */
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+    }
+/* 네비게이션 바 */
+.navbar {
+  width: 100%;
+  background-color: rgba(210, 180, 230, 0.9); /* 연한 보라색 배경 */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+.navbar .logo {
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.navbar .menu-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar .menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: rgba(186, 153, 210, 0.9); /* 연한 보라색 버튼 */
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.navbar .menu a:hover {
+  background-color: rgba(186, 153, 210, 0.9); /* 더 진한 보라색으로 호버 시 변경 */
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바의 소메뉴 기본 숨김 설정 */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(186, 153, 210, 0.9); /* 연한 보라색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 160px;
+  padding: 5px 0;
+}
+
+.navbar .submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .submenu a:hover {
+  background-color: rgba(210, 180, 230, 0.8);
+}
+/* 콘텐츠 레이아웃 */
+.content-wrapper {
+  display: flex;
+  margin-top: 70px; /* 네비게이션 바와 사이드바를 붙이기 위해 설정 */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 220px;
+  background-color: rgba(210, 180, 230, 0.9); /* 연한 보라색 사이드바 */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 70px);
+  position: fixed; /* 사이드바를 고정 위치로 설정 */
+  top: 70px; /* 네비게이션 바 바로 아래 붙이기 */
+  text-align: left;
+  overflow-y: auto;
+}
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(186, 153, 210, 0.8); /* 연한 보라색 버튼 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar .submenu {
+  display: block;
+  position: relative;
+  background-color: rgba(186, 153, 210, 0.9); /* 연한 보라색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* 상위 메뉴 항목 */
+.menu-item > a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(186, 153, 210, 0.9); /* 연한 보라색 배경 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* 소메뉴 항목 */
+.menu-item .submenu a {
+  display: block;
+  margin: 2px 0;
+  padding: 5px 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.menu-item a:hover {
+  background-color: rgba(186, 153, 210, 0.9); /* 더 진한 보라색 호버 */
+}
+
+.menu-item .submenu a:hover {
+  color: #000;
+}
+
+/* 메인 콘텐츠를 감싸는 새로운 래퍼 */
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* 메인 콘텐츠를 수평 가운데 정렬 */
+  align-items: flex-start;
+    margin-left: 240px; /* 사이드바 너비 보정 */
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+  width: 100%;
+  max-width: 800px; /* 최대 너비 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(230, 210, 255, 0.5); /* 연한 보라색 배경 */
+}
+
+    .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+    .content h1 {
+      color: #6f42c1;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    /* 주/달 선택 버튼 */
+    .time-selector {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .time-selector button {
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #6f42c1;
+      background-color: #ffffff;
+      border: 2px solid #6f42c1;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .time-selector button.selected {
+      background-color: #6f42c1;
+      color: #ffffff;
+    }
+/* 별자리 그리드 */
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* 그리드를 수평 가운데 정렬 */
+}
+
+    .zodiac-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #6f42c1;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .zodiac-button img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+.zodiac-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(210, 180, 230, 0.7); /* 연한 보라색 호버 효과 */
+}
+    .fortune-container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .fortune-title {
+      font-size: 1.2em;
+      color: #6f42c1;
+      margin-bottom: 10px;
+    }
+
+    .fortune-text {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+/* 모바일 화면에서 사이드바 숨기기 */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content-wrapper {
+    margin-left: 0; /* 사이드바가 사라지면 왼쪽 여백 제거 */
+  }
+  .zodiac-grid {
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 2개의 컬럼으로 설정 */
+    gap: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+
+ <!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="로고" class="logo">
+    </a>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="saju.html" class="menu-link">사주</a>
+        <div class="submenu">
+          <a href="saju.html">전체 사주 메뉴</a>
+          <a href="lifetime_fortune.html">평생사주</a>
+          <a href="monthly_fortune.html">월별사주</a>
+          <a href="daily_fortune.html">오늘의 운세</a>
+          <a href="love_fortune.html">연애운</a>
+          <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+          <a href="popularity_of_saju.html">내 사주의 인기도</a>
+          <a href="noble_people.html">사주에 맞는 직업</a>
+          <a href="compatibility.html">사주 궁합</a>
+          <a href="new_year_fortune.html">신년 운세</a>
+        </div>
+      </div>
+ <div class="menu-item">
+  <a href="zodiac.html" class="menu-link">별자리 운세</a>
+  <div class="submenu">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+</div>
+    <div class="menu-item">
+      <a href="tarot.html" class="menu-link">타로</a>
+      <div class="submenu">
+           <a href="tarot.html">전체 타로 메뉴</a>
+        <a href="weekly_taro.html">이번주 타로 운세</a>
+        <a href="monthly_taro.html">이번달 타로 운세</a>
+        <a href="love_taro.html">연애 타로</a>
+           <a href="reunion_taro.html">재회 타로</a>
+           <a href="career_taro.html">취업 타로</a>
+           <a href="wish_taro.html">소원 타로</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 콘텐츠 영역 -->
+  <div class="content-wrapper">
+    <!-- 왼쪽 사이드바 -->
+<div class="sidebar">
+  <div class="menu-item">
+    <a href="saju.html">사주</a>
+    <div class="submenu">
+      <a href="lifetime_fortune.html">평생사주</a>
+      <a href="monthly_fortune.html">월별사주</a>
+      <a href="daily_fortune.html">오늘의 운세</a>
+      <a href="love_fortune.html">연애운</a>
+      <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+      <a href="popularity_of_saju.html">내 사주의 인기도</a>
+      <a href="noble_people.html">사주에 맞는 직업</a>
+      <a href="compatibility.html">사주 궁합</a>
+      <a href="new_year_fortune.html">신년운세</a>
+    </div>
+  </div>
+
+  <!-- "별자리 운세" 항목도 menu-item으로 감싸기 -->
+  <div class="menu-item">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+
+  <div class="menu-item">
+    <a href="tarot.html">타로</a>
+    <div class="submenu">
+      <a href="weekly_taro.html">이번주 타로 운세</a>
+      <a href="monthly_taro.html">이번달 타로 운세</a>
+      <a href="love_taro.html">연애 타로</a>
+      <a href="reunion_taro.html">재회 타로</a>
+      <a href="career_taro.html">취업 타로</a>
+      <a href="wish_taro.html">소원 타로</a>
+    </div>
+  </div>
+</div>
+
+   <!-- 메인 콘텐츠 -->
+    <div class="main-content-wrapper">
+      <div class="main-content">
+        <h1>별자리 운세</h1>
+
+      <!-- 이번 주 / 이번 달 선택 버튼 -->
+      <div class="time-selector">
+        <button id="weeklyBtn" onclick="selectTime('weekly')" class="selected">이번 주</button>
+        <button id="monthlyBtn" onclick="selectTime('monthly')">이번 달</button>
+      </div>
+
+    <!-- 별자리 버튼 그리드 -->
+    <div class="zodiac-grid">
+      <div class="zodiac-button" onclick="showFortune('aries')">
+        <img src="aries.png" alt="양자리">
+        <span>양자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('taurus')">
+        <img src="taurus.png" alt="황소자리">
+        <span>황소자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('gemini')">
+        <img src="gemini.png" alt="쌍둥이자리">
+        <span>쌍둥이자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('cancer')">
+        <img src="cancer.png" alt="게자리">
+        <span>게자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('leo')">
+        <img src="leo.png" alt="사자자리">
+        <span>사자자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('virgo')">
+        <img src="virgo.png" alt="처녀자리">
+        <span>처녀자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('libra')">
+        <img src="libra.png" alt="천칭자리">
+        <span>천칭자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('scorpio')">
+        <img src="scorpio.png" alt="전갈자리">
+        <span>전갈자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('sagittarius')">
+        <img src="sagittarius.png" alt="사수자리">
+        <span>사수자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('capricorn')">
+        <img src="capricorn.png" alt="염소자리">
+        <span>염소자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('aquarius')">
+        <img src="aquarius.png" alt="물병자리">
+        <span>물병자리</span>
+      </div>
+      <div class="zodiac-button" onclick="showFortune('pisces')">
+        <img src="pisces.png" alt="물고기자리">
+        <span>물고기자리</span>
+      </div>
+    </div>
+
+    <div id="fortune" class="fortune-container" style="display: none;">
+      <div class="fortune-title" id="fortune-title"></div>
+      <div class="fortune-text" id="fortune-text"></div>
+    </div>
+  </div>
+
+  <script>
+    let selectedTime = 'weekly';
+
+    const fortunes = {
+      aries: {
+        weekly: "이번 주 양자리는 에너지가 넘치는 한 주가 될 것입니다. 새로운 도전에 도전해 보세요!",
+        monthly: "이번 달 양자리에게는 큰 기회가 찾아올 것입니다. 용기를 가지고 행동해 보세요."
+      },
+      taurus: {
+        weekly: "이번 주 황소자리는 안정과 균형이 중요합니다. 주변 사람들에게 도움을 청하세요.",
+        monthly: "이번 달 황소자리에게는 재정적인 기회가 생길 수 있습니다. 계획적으로 행동해 보세요."
+      },
+      gemini: {
+        weekly: "이번 주 쌍둥이자리는 새로운 사람들을 만날 기회가 있습니다. 소통을 통해 발전하세요.",
+        monthly: "이번 달 쌍둥이자리는 지적 호기심이 넘칠 것입니다. 새로운 지식을 쌓아 보세요."
+      },
+      cancer: {
+        weekly: "이번 주 게자리는 가족이나 친한 사람들과의 시간을 통해 에너지를 얻을 수 있습니다.",
+        monthly: "이번 달에는 감정적인 성장이 일어날 수 있습니다. 내면의 목소리에 귀 기울여 보세요."
+      },
+      leo: {
+        weekly: "이번 주 사자자리는 리더십을 발휘할 기회가 주어집니다. 자신감을 갖고 이끌어 보세요.",
+        monthly: "이번 달 사자자리에게는 인정받는 기회가 찾아옵니다. 목표를 향해 노력하세요."
+      },
+      virgo: {
+        weekly: "이번 주 처녀자리는 계획적인 생활이 필요한 시기입니다. 꼼꼼하게 일정을 조정해 보세요.",
+        monthly: "이번 달에는 일과 관련된 좋은 소식이 있을 수 있습니다. 신중하게 준비하세요."
+      },
+      libra: {
+        weekly: "이번 주 천칭자리는 인간관계에서 조화가 중요합니다. 타인과의 균형을 유지해 보세요.",
+        monthly: "이번 달에는 새로운 인연이 생길 수 있습니다. 관계에 집중해 보세요."
+      },
+      scorpio: {
+        weekly: "이번 주 전갈자리는 집중력이 높아질 것입니다. 중요한 일에 전념해 보세요.",
+        monthly: "이번 달 전갈자리에게는 깊이 있는 성찰의 기회가 주어질 것입니다. 마음의 여유를 가져보세요."
+      },
+      sagittarius: {
+        weekly: "이번 주 사수자리는 여행이나 모험을 계획하기에 좋습니다. 새로운 곳을 탐험해 보세요.",
+        monthly: "이번 달에는 사수자리가 자기 발전을 이룰 수 있는 시기입니다. 배움에 집중하세요."
+      },
+      capricorn: {
+        weekly: "이번 주 염소자리는 꾸준함과 인내가 중요한 시기입니다. 목표를 향해 성실히 노력해 보세요.",
+        monthly: "이번 달에는 일과 관련해 큰 성과가 있을 것입니다. 꾸준히 준비해 오던 것을 마무리해 보세요."
+      },
+      aquarius: {
+        weekly: "이번 주 물병자리는 독창적인 아이디어가 넘치는 한 주가 될 것입니다. 창의력을 발휘해 보세요.",
+        monthly: "이번 달에는 물병자리의 새로운 도전이 성과를 낼 것입니다. 도전에 두려워하지 마세요."
+      },
+      pisces: {
+        weekly: "이번 주 물고기자리는 내면의 감정에 집중할 필요가 있습니다. 마음을 다스리는 시간을 가져보세요.",
+        monthly: "이번 달 물고기자리에게는 평화로운 시간이 기다리고 있습니다. 재충전의 시간을 가지세요."
+      }
+    };
+ 
+      function selectTime(time) {
+      selectedTime = time;
+      document.getElementById('weeklyBtn').classList.toggle('selected', time === 'weekly');
+      document.getElementById('monthlyBtn').classList.toggle('selected', time === 'monthly');
+
+      const date = new Date();
+      let startOfWeek, endOfWeek, currentMonth;
+
+      if (time === 'weekly') {
+        // 이번 주의 시작일과 종료일 계산
+        const firstDayOfWeek = date.getDate() - date.getDay() + 1; // 월요일로 설정
+        startOfWeek = new Date(date.setDate(firstDayOfWeek)).toLocaleDateString();
+        endOfWeek = new Date(date.setDate(firstDayOfWeek + 6)).toLocaleDateString();
+        document.getElementById('fortune-title').textContent = `이번 주 운세: ${startOfWeek} - ${endOfWeek}`;
+      } else if (time === 'monthly') {
+        // 이번 달 계산
+        currentMonth = `${date.getFullYear()}년 ${date.getMonth() + 1}월`;
+        document.getElementById('fortune-title').textContent = `이번 달 운세: ${currentMonth}`;
+      }
+    }
+
+    function showFortune(zodiac) {
+      const fortuneContainer = document.getElementById("fortune");
+      const fortuneText = document.getElementById("fortune-text");
+
+      const fortuneType = selectedTime;
+
+      fortuneText.textContent = fortunes[zodiac][fortuneType];
+
+      fortuneContainer.style.display = "block";
+    }
+
+    // 페이지 로딩 시 "이번 주" 운세 표시
+    window.onload = () => selectTime('weekly');
+      
+         // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+    document.querySelectorAll('.navbar .menu-link').forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault(); // 기본 링크 동작 방지
+        event.stopPropagation(); // 클릭 이벤트 전파 방지
+        const submenu = item.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 다른 모든 소메뉴 닫기
+        document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+          if (otherSubmenu !== submenu) {
+            otherSubmenu.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 메뉴 외부 클릭 시 소메뉴 닫기
+    window.addEventListener('click', () => {
+      document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
