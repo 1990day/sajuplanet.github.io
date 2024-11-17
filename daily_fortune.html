@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2084997971910306"
+     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -431,7 +432,14 @@
   </div>
 
   <script>
-    // 운세 데이터
+
+  // 운세 데이터 생성 및 저장
+  if (!localStorage.getItem('fortunes')) {
+    localStorage.setItem('fortunes', JSON.stringify(generateFortunes()));
+  }
+  const fortunes = JSON.parse(localStorage.getItem('fortunes'));
+
+  // 운세 데이터 생성 함수
   function generateFortunes() {
     const beginnings = [
       "오늘은 매우 특별한 날입니다.",
@@ -508,80 +516,83 @@
       "매일의 작은 진전이 큰 목표를 이룰 것입니다."
     ];
 
-    // 2000개의 운세 생성
-    const fortunes = [];
-    for (let i = 0; i < 2000; i++) {
-      const beginning = beginnings[Math.floor(Math.random() * beginnings.length)];
-      const middle = middles[Math.floor(Math.random() * middles.length)];
-      const ending = endings[Math.floor(Math.random() * endings.length)];
-      const detail = additionalDetails[Math.floor(Math.random() * additionalDetails.length)];
-      const inspiration = inspirations[Math.floor(Math.random() * inspirations.length)];
-      const score = Math.floor(Math.random() * 31) + 70; // 70~100점
-      fortunes.push({
-        text: `${beginning} ${middle} ${ending} ${detail} ${inspiration}`,
-        score: score
-      });
-    }
-    return fortunes;
-  }
-
-  const fortunes = generateFortunes();
-
-  // 사용자별 고유 인덱스 생성
-  function getUserDailyFortuneIndex(name, year, month, day) {
-    const today = new Date();
-    const currentDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-    const key = `${name}-${year}-${month}-${day}-${currentDate}`;
-    const hash = Array.from(key).reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return hash % fortunes.length;
-  }
-
-  // 운세 표시 함수
-  function showDailyFortune() {
-    const name = document.getElementById("name").value.trim();
-    const year = document.getElementById("year").value;
-    const month = document.getElementById("month").value;
-    const day = document.getElementById("day").value;
-
-    if (!name || !year || !month || !day) {
-      alert("모든 정보를 입력해주세요.");
-      return;
-    }
-
-    const index = getUserDailyFortuneIndex(name, year, month, day);
-    const fortune = fortunes[index];
-
-    document.getElementById("saju-result-name").innerText = name;
-    document.getElementById(
-      "saju-result"
-    ).innerHTML = `<strong>${name}</strong>님의 오늘의 운세:<br>${fortune.text}<br><br><strong>오늘의 운세 점수:</strong> ${fortune.score}점`;
-    document.getElementById("result-section").style.display = "block";
-  }
-         // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
-    document.querySelectorAll('.navbar .menu-link').forEach(item => {
-      item.addEventListener('click', (event) => {
-        event.preventDefault(); // 기본 링크 동작 방지
-        event.stopPropagation(); // 클릭 이벤트 전파 방지
-        const submenu = item.nextElementSibling;
-        if (submenu && submenu.classList.contains('submenu')) {
-          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+           // 2000개의 운세 생성
+            const fortunes = [];
+            for (let i = 0; i < 2000; i++) {
+                const beginning = beginnings[Math.floor(Math.random() * beginnings.length)];
+                const middle = middles[Math.floor(Math.random() * middles.length)];
+                const ending = endings[Math.floor(Math.random() * endings.length)];
+                const detail = additionalDetails[Math.floor(Math.random() * additionalDetails.length)];
+                const inspiration = inspirations[Math.floor(Math.random() * inspirations.length)];
+                const score = Math.floor(Math.random() * 31) + 70; // 70~100점
+                fortunes.push({
+                    text: `${beginning} ${middle} ${ending} ${detail} ${inspiration}`,
+                    score: score
+                });
+            }
+            return fortunes;
         }
 
-        // 다른 모든 소메뉴 닫기
-        document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
-          if (otherSubmenu !== submenu) {
-            otherSubmenu.style.display = 'none';
-          }
-        });
-      });
-    });
+        // 사용자별 고유 인덱스 생성
+        function getUserDailyFortuneIndex(name, year, month, day) {
+            const today = new Date();
+            const currentDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+            const key = `${name}-${year}-${month}-${day}-${currentDate}`;
+            const hash = Array.from(key).reduce((acc, char) => acc + char.charCodeAt(0), 0);
+            return hash % fortunes.length;
+        }
 
-    // 메뉴 외부 클릭 시 소메뉴 닫기
-    window.addEventListener('click', () => {
-      document.querySelectorAll('.navbar .submenu').forEach(submenu => {
-        submenu.style.display = 'none';
-      });
-    });
-</script>
+        // 운세 표시 함수
+        function showDailyFortune() {
+            const name = document.getElementById("name").value.trim();
+            let year = parseInt(document.getElementById("year").value);
+            const month = document.getElementById("month").value;
+            const day = document.getElementById("day").value;
+            const lunarChecked = document.getElementById("lunar").checked;
+
+            if (!name || !year || !month || !day) {
+                alert("모든 정보를 입력해주세요.");
+                return;
+            }
+
+            // 음력 체크박스가 체크된 경우 연도를 1년 감소
+            if (lunarChecked) {
+                year -= 1;
+            }
+
+            const index = getUserDailyFortuneIndex(name, year, month, day);
+            const fortune = fortunes[index];
+
+            document.getElementById("saju-result-name").innerText = name;
+            document.getElementById("saju-result").innerHTML = `<strong>${name}</strong>님의 오늘의 운세:<br>${fortune.text}<br><br><strong>오늘의 운세 점수:</strong> ${fortune.score}점`;
+            document.getElementById("result-section").style.display = "block";
+        }
+
+        // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+        document.querySelectorAll('.navbar .menu-link').forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault(); // 기본 링크 동작 방지
+                event.stopPropagation(); // 클릭 이벤트 전파 방지
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                }
+
+                // 다른 모든 소메뉴 닫기
+                document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+                    if (otherSubmenu !== submenu) {
+                        otherSubmenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // 메뉴 외부 클릭 시 소메뉴 닫기
+        window.addEventListener('click', () => {
+            document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+                submenu.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
