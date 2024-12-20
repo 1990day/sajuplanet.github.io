@@ -587,6 +587,30 @@ document.getElementById('result-section').style.display = 'block';
         submenu.style.display = 'none';
       });
     });
+      // 우클릭 방지
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // F12, Ctrl+Shift+I 방지
+  document.addEventListener("keydown", function (e) {
+    // F12 키 방지
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I 방지 (개발자 도구 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+J 방지 (콘솔 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+    }
+    // Ctrl+U 방지 (소스 보기)
+    if (e.ctrlKey && e.key === "U") {
+      e.preventDefault();
+    }
+  });
   </script>
 </body>
 </html>
