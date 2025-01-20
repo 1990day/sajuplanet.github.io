@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>사주플래닛 재회 타로</title>
+    <meta name="description" content="사주플래닛 인생사주,신년운세,별자리운세,타로">
+<meta name="keywords" content="사주플래닛,사주,별자리운세,타로,인생총운,무료사주,별자리운세,타로,재회타로,연애타로,소원타로,평생운,재물운,건강운,연애운,직업운,각종운세">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="사주플래닛">
+    <meta property="og:description" content="사주플래닛">
+    <meta property="og:image" content="main-image1.png">
+    <meta property="og:url" content="saju-planet.co.kr/reunion_taro.html">
+
+      <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e1cece;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+   /* 네비게이션 바 */
+.navbar {
+  width: 100%;
+  background-color: #cfbcbc;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+.navbar .logo {
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.navbar .menu-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar .menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #cfbcbc;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.navbar .menu a:hover {
+  background-color: #bba8a8;
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바의 소메뉴 기본 숨김 설정 */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #cfbcbc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 160px;
+  padding: 5px 0;
+}
+
+.navbar .submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: #cfbcbc;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .submenu a:hover {
+  background-color: #bba8a8;
+}
+      .navbar .submenu {
+      left: -80px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+    }
+      
+.sidebar {
+  width: 220px;
+  background-color: #cfbcbc;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 -10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cfbcbc;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar .submenu {
+  display: block;
+  position: relative;
+  background-color: #cfbcbc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* 상위 메뉴 항목 */
+.menu-item > a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cfbcbc;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* 소메뉴 항목 */
+.menu-item .submenu a {
+  display: block;
+  margin: 2px 0;
+  padding: 5px 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.menu-item a:hover {
+  background-color: #bba8a8;
+}
+
+.menu-item .submenu a:hover {
+  color: #000;
+}
+
+/* 콘텐츠 영역 */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  width: 100%;
+  max-width: 800px;
+}
+
+.content h1 {
+  color: #505050;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+/* 타로 카드 슬라이더 */
+.tarot-slider {
+  display: flex;
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: 60px 0;
+  scroll-behavior: smooth;
+  gap: 15px;
+  position: relative;
+}
+
+.tarot-card {
+  width: 100px;
+  height: 150px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-left: -25px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #cfbcbc;
+}
+
+.tarot-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* 결과 메세지 */
+.result {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #cfbcbc, #bba8a8);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  color: #fff;
+  font-size: 1em;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.result.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.buttons button {
+  background-color: #cfbcbc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #bba8a8;
+}
+
+@keyframes shuffle {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  75% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.tarot-card.shuffling {
+  animation: shuffle 0.5s ease-in-out;
+}
+
+.tarot-card.selected {
+  transform: translateY(-40px) scale(1.1) !important;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  z-index: 20 !important;
+}
+
+/* 모바일에서 사이드바 숨기기 */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content-wrapper {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="로고" class="logo">
+    </a>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="saju.html" class="menu-link">사주</a>
+        <div class="submenu">
+          <a href="saju.html">전체 사주 메뉴</a>
+          <a href="lifetime_fortune.html">평생사주</a>
+          <a href="monthly_fortune.html">월별사주</a>
+          <a href="daily_fortune.html">오늘의 운세</a>
+          <a href="love_fortune.html">연애운</a>
+          <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+          <a href="popularity_of_saju.html">내 사주의 인기도</a>
+          <a href="noble_people.html">사주에 맞는 직업</a>
+          <a href="compatibility.html">사주 궁합</a>
+          <a href="new_year_fortune.html">신년 운세</a>
+        </div>
+      </div>
+ <div class="menu-item">
+  <a href="zodiac.html" class="menu-link">별자리 운세</a>
+  <div class="submenu">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+</div>
+    <div class="menu-item">
+      <a href="tarot.html" class="menu-link">타로</a>
+      <div class="submenu">
+           <a href="tarot.html">전체 타로 메뉴</a>
+        <a href="weekly_taro.html">이번주 타로 운세</a>
+        <a href="monthly_taro.html">이번달 타로 운세</a>
+        <a href="love_taro.html">연애 타로</a>
+           <a href="reunion_taro.html">재회 타로</a>
+           <a href="career_taro.html">취업 타로</a>
+           <a href="wish_taro.html">소원 타로</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 왼쪽 사이드바 -->
+<div class="sidebar">
+  <div class="menu-item">
+    <a href="saju.html">사주</a>
+    <div class="submenu">
+      <a href="lifetime_fortune.html">평생사주</a>
+      <a href="monthly_fortune.html">월별사주</a>
+      <a href="daily_fortune.html">오늘의 운세</a>
+      <a href="love_fortune.html">연애운</a>
+      <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+      <a href="popularity_of_saju.html">내 사주의 인기도</a>
+      <a href="noble_people.html">사주에 맞는 직업</a>
+      <a href="compatibility.html">사주 궁합</a>
+      <a href="new_year_fortune.html">신년운세</a>
+    </div>
+  </div>
+
+  <!-- "별자리 운세" 항목도 menu-item으로 감싸기 -->
+  <div class="menu-item">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+
+  <div class="menu-item">
+    <a href="tarot.html">타로</a>
+    <div class="submenu">
+      <a href="weekly_taro.html">이번주 타로 운세</a>
+      <a href="monthly_taro.html">이번달 타로 운세</a>
+      <a href="love_taro.html">연애 타로</a>
+      <a href="reunion_taro.html">재회 타로</a>
+      <a href="career_taro.html">취업 타로</a>
+      <a href="wish_taro.html">소원 타로</a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- 타로 콘텐츠 -->
+  <div class="content-wrapper">
+    <div class="content">
+      <h1>재회 타로</h1>
+
+      <!-- 타로 카드 슬라이더 -->
+      <div class="tarot-slider" id="tarotSlider">
+        <!-- 카드 클릭 시 결과 표시 -->
+        <div class="tarot-card" onclick="selectCard(1)" data-card="1"><img src="reunion_taro.png" alt="타로카드 1"></div>
+        <div class="tarot-card" onclick="selectCard(2)" data-card="2"><img src="reunion_taro.png" alt="타로카드 2"></div>
+        <div class="tarot-card" onclick="selectCard(3)" data-card="3"><img src="reunion_taro.png" alt="타로카드 3"></div>
+        <div class="tarot-card" onclick="selectCard(4)" data-card="4"><img src="reunion_taro.png" alt="타로카드 4"></div>
+        <div class="tarot-card" onclick="selectCard(5)" data-card="5"><img src="reunion_taro.png" alt="타로카드 5"></div>
+        <div class="tarot-card" onclick="selectCard(6)" data-card="6"><img src="reunion_taro.png" alt="타로카드 6"></div>
+        <div class="tarot-card" onclick="selectCard(7)" data-card="7"><img src="reunion_taro.png" alt="타로카드 7"></div>
+        <div class="tarot-card" onclick="selectCard(8)" data-card="8"><img src="reunion_taro.png" alt="타로카드 8"></div>
+        <div class="tarot-card" onclick="selectCard(9)" data-card="9"><img src="reunion_taro.png" alt="타로카드 9"></div>
+        <div class="tarot-card" onclick="selectCard(10)" data-card="10"><img src="reunion_taro.png" alt="타로카드 10"></div>
+        <div class="tarot-card" onclick="selectCard(11)" data-card="11"><img src="reunion_taro.png" alt="타로카드 11"></div>
+        <div class="tarot-card" onclick="selectCard(12)" data-card="12"><img src="reunion_taro.png" alt="타로카드 12"></div>
+        <div class="tarot-card" onclick="selectCard(13)" data-card="13"><img src="reunion_taro.png" alt="타로카드 13"></div>
+        <div class="tarot-card" onclick="selectCard(14)" data-card="14"><img src="reunion_taro.png" alt="타로카드 14"></div>
+        <div class="tarot-card" onclick="selectCard(15)" data-card="15"><img src="reunion_taro.png" alt="타로카드 15"></div>
+        <div class="tarot-card" onclick="selectCard(16)" data-card="16"><img src="reunion_taro.png" alt="타로카드 16"></div>
+        <div class="tarot-card" onclick="selectCard(17)" data-card="17"><img src="reunion_taro.png" alt="타로카드 17"></div>
+        <div class="tarot-card" onclick="selectCard(18)" data-card="18"><img src="reunion_taro.png" alt="타로카드 18"></div>
+        <div class="tarot-card" onclick="selectCard(19)" data-card="19"><img src="reunion_taro.png" alt="타로카드 19"></div>
+        <div class="tarot-card" onclick="selectCard(20)" data-card="20"><img src="reunion_taro.png" alt="타로카드 20"></div>
+        <div class="tarot-card" onclick="selectCard(21)" data-card="21"><img src="reunion_taro.png" alt="타로카드 21"></div>
+        <div class="tarot-card" onclick="selectCard(22)" data-card="22"><img src="reunion_taro.png" alt="타로카드 22"></div>
+      </div>
+
+     <!-- 결과 표시 영역 -->
+      <div id="result" class="result visible">
+        <p>타로 카드를 선택해 결과를 확인하세요.</p>
+      </div>
+
+      <!-- 버튼들 -->
+      <div class="buttons">
+        <button id="checkCardBtn" onclick="showResult()" style="display:none;">이 카드 확인하기</button>
+        <button id="chooseAgainBtn" onclick="resetSelection()" style="display:none;">다시 선택하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedCardNumber = null;
+
+    // 카드 섞기
+    function shuffleCards() {
+      const tarotSlider = document.getElementById('tarotSlider');
+      const cards = Array.from(tarotSlider.children);
+      cards.forEach(card => card.classList.add('shuffling'));
+
+      setTimeout(() => {
+        while (tarotSlider.firstChild) {
+          tarotSlider.removeChild(tarotSlider.firstChild);
+        }
+        cards.sort(() => Math.random() - 0.5);
+        cards.forEach(card => {
+          card.classList.remove('selected');
+          tarotSlider.appendChild(card);
+        });
+        cards.forEach(card => card.classList.remove('shuffling'));
+      }, 500);
+    }
+ function selectCard(cardNumber) {
+  selectedCardNumber = cardNumber;
+  document.getElementById('checkCardBtn').style.display = 'inline-block'; // "이 카드 확인하기" 버튼 보이기
+  document.getElementById('chooseAgainBtn').style.display = 'inline-block'; // "다시 선택하기" 버튼 보이기
+  document.getElementById('result').innerHTML = `<p>카드를 선택하였습니다. "이 카드 확인하기" 버튼을 누르어 결과를 확인하세요.</p>`;
+  
+  // 선택된 카드 강조
+  const cards = document.querySelectorAll('.tarot-card');
+  cards.forEach(card => card.classList.remove('selected'));
+  const selectedCard = document.querySelector(`.tarot-card[data-card="${cardNumber}"]`);
+  if (selectedCard) {
+    selectedCard.classList.add('selected');
+    console.log(`Card ${cardNumber} selected`); // 로그로 카드 선택을 확인합니다.
+  }
+}
+
+    // 결과 표시
+    function showResult() {
+      if (selectedCardNumber === null) {
+        return; // 카드가 선택되지 않았다면 아무 작업도 하지 않음
+      }
+
+     const results = [
+  "과거의 인연이 다시 당신의 삶에 나타날 가능성이 큽니다. 이 재회의 순간을 준비하며, 과거의 오해를 풀고 새로운 시작을 준비하세요. 상대방이 당신에게 다가오는 신호를 놓치지 않는 것이 중요합니다.",
+    "재회의 가능성이 점점 커지고 있습니다. 상대방도 당신을 생각하고 있을 수 있으니, 신중하고 조심스러운 태도로 다가가세요. 첫 번째 대화는 중요한 순간이 될 것입니다.",
+    "상대방도 당신을 그리워하고 있을 가능성이 높습니다. 당신의 진심 어린 마음을 표현해 보세요. 작은 메시지나 전화 한 통이 두 사람의 관계를 다시 시작하는 계기가 될 수 있습니다.",
+    "곧 재회의 기회가 올 것입니다. 이 기회를 잘 활용하려면 상대방과의 대화에서 진솔하고 따뜻한 태도를 유지하세요. 타이밍이 재회 성공의 핵심입니다.",
+    "당신의 솔직한 마음이 상대방에게 전해진다면, 긍정적인 결과를 기대할 수 있습니다. 과거의 실수에 얽매이지 않고 앞으로 나아가려는 모습을 보여주세요.",
+    "상대방과의 관계에 여전히 애정이 남아있는 듯합니다. 이 감정을 바탕으로 진지하게 관계를 다시 시작할 방법을 모색해 보세요. 상대방도 준비가 되어 있을 수 있습니다.",
+    "두 사람의 감정이 교차하는 시점입니다. 상대방도 당신을 생각하며 고민하고 있을 가능성이 큽니다. 작은 한 걸음이 두 사람의 거리를 좁힐 수 있습니다.",
+    "과거의 인연이 당신을 떠올리고 있을 수 있습니다. 상대방이 당신에게 연락을 주저하고 있을 가능성이 있으니, 먼저 손을 내밀어 보세요.",
+    "과거의 상처를 극복하는 것이 재회의 중요한 열쇠입니다. 서로의 실수를 이해하고, 용서를 통해 더 성숙한 관계로 나아가세요. 이는 두 사람 모두에게 필요한 과정입니다.",
+    "재회운이 상승하고 있는 시기입니다. 긍정적인 태도와 열린 마음으로 상대방에게 다가가 보세요. 당신의 변화된 모습을 보여주는 것이 중요합니다.",
+    "연락을 시도하면 상대방으로부터 긍정적인 반응을 기대할 수 있는 시기입니다. 짧은 안부 인사나 친근한 메시지가 좋은 출발점이 될 수 있습니다.",
+    "두 사람의 감정을 확인할 기회가 다가오고 있습니다. 이 기회를 놓치지 않도록 준비하세요. 상대방과의 진솔한 대화를 통해 서로의 감정을 공유하세요.",
+    "상대방이 당신을 생각하고 있을 가능성이 큽니다. 당신의 작은 행동 하나가 그들에게 큰 의미로 다가갈 수 있으니, 진심을 담아 다가가 보세요.",
+    "서로가 서로를 생각하고 있는 시기입니다. 이 순간은 두 사람의 관계를 재건하는 데 중요한 역할을 할 것입니다. 당신의 진심을 표현하는 것을 두려워하지 마세요.",
+    "재회에 대한 긍정적인 기운이 감도는 시기입니다. 연락을 시도해 보세요. 간단한 안부 인사만으로도 두 사람의 관계는 다시 시작될 수 있습니다.",
+    "과거의 인연이 다시 당신의 삶에 연결될 가능성이 있습니다. 이 기회를 통해 과거를 반성하고 더 나은 관계를 구축할 준비를 하세요.",
+    "상대방과의 관계가 다시 이어질 수 있는 기회가 다가오고 있습니다. 이번에는 더 성숙한 태도와 이해심으로 관계를 시작해보세요.",
+    "당신의 마음이 상대방에게 전해질 때입니다. 진솔한 대화와 표현이 상대방의 마음을 움직일 것입니다. 작은 표현이라도 진심이 담겨 있다면 충분합니다.",
+    "과거의 관계를 되돌아보고 앞으로 나아갈 준비를 하세요. 과거의 실수에서 배운 교훈을 통해 더 건강한 관계를 시작할 수 있습니다.",
+    "두 사람의 연결고리가 다시 강해지고 있습니다. 연락이 닿을 기회가 생긴다면 주저하지 말고 다가가세요. 이번에는 진심 어린 대화를 통해 새로운 시작을 열어보세요.",
+    "당신의 진심이 상대방에게 전해진다면 관계가 다시 시작될 수 있습니다. 솔직한 감정을 표현하고, 과거의 문제를 함께 극복하려는 의지를 보여주세요.",
+    "서로의 마음이 닿을 수 있는 좋은 시기입니다. 과거의 오해와 갈등을 풀고, 서로의 감정을 다시 확인해보세요. 이는 두 사람에게 긍정적인 변화를 가져올 것입니다.",
+    "재회의 가능성이 매우 높은 시기입니다. 상대방에게 다가갈 타이밍을 잘 계산하고, 자연스럽게 대화를 시작하세요. 당신의 진심이 그들에게 큰 감동을 줄 것입니다.",
+    "상대방도 당신을 다시 만나고 싶어할 가능성이 큽니다. 당신의 행동 하나하나가 그들에게 큰 의미로 다가갈 수 있으니, 신중하고 따뜻하게 행동하세요.",
+    "과거의 기억을 떠올리며 서로의 감정을 다시 확인하는 순간이 올 것입니다. 그 시점에서 당신의 진심과 상대방의 마음이 일치할 가능성이 큽니다.",
+    "재회를 위한 감정적인 준비가 되어 있다면, 상대방과 진솔한 대화를 나눠보세요. 과거의 문제를 다시 분석하고, 새로운 해결책을 함께 찾아보세요.",
+    "당신의 변화된 모습을 상대방에게 보여주는 것이 중요합니다. 그들은 당신의 성장과 성숙함을 보며 다시 관계를 시작할 의지를 가질 수 있습니다.",
+    "재회운이 상승하고 있습니다. 이번 기회를 놓치지 않도록 최선을 다하세요. 상대방과의 작은 대화가 큰 변화를 가져올 것입니다.",
+    "과거의 감정이 다시 살아날 가능성이 큽니다. 상대방도 당신과의 추억을 떠올리고 있을 수 있으니, 용기를 내어 다가가 보세요.",
+    "재회를 위해 준비가 필요합니다. 상대방에게 다가가기 전에 자신의 마음을 돌아보고, 과거의 실수를 반복하지 않도록 노력하세요.",
+    "상대방과의 관계를 새롭게 시작하기에 좋은 시기입니다. 과거의 문제를 잊고, 새로운 기회를 만들기 위해 긍정적으로 접근하세요.",
+    "두 사람 사이의 감정적 연결이 다시 강해지고 있습니다. 작은 대화가 큰 변화를 가져올 수 있으니, 대화를 시도해 보세요.",
+    "상대방도 당신을 그리워할 가능성이 높습니다. 서로의 감정을 다시 확인하고, 함께할 새로운 방향을 모색해 보세요.",
+            "상대방도 당신과의 추억을 떠올리고 있을 가능성이 큽니다. 그들이 당신에게 먼저 연락할 수 있도록 시간을 주는 것도 방법입니다.",
+    "이번 재회는 과거의 상처를 치유하고, 더 성숙한 관계로 나아가는 기회가 될 것입니다. 과거의 문제를 솔직히 이야기할 준비를 하세요.",
+    "재회의 가능성이 강하게 느껴지는 시기입니다. 하지만 서두르지 말고 천천히 상대방의 반응을 살피며 다가가세요.",
+    "상대방이 아직 당신에 대한 미련을 가지고 있을 가능성이 큽니다. 진솔한 대화를 시도해, 마음속에 남아 있는 감정을 확인해보세요.",
+    "지금은 당신의 감정을 정리하고, 재회를 위한 준비를 할 때입니다. 자신의 마음을 돌아보고, 어떤 관계를 원하는지 명확히 하세요.",
+    "두 사람 모두 다시 시작할 준비가 되어 있다면, 과거의 오해를 풀고 새로운 시작을 만들어보세요. 서로에게 시간을 주는 것이 중요합니다.",
+    "상대방은 당신이 변했는지 궁금해하고 있을 가능성이 큽니다. 그들에게 당신의 성장을 보여줄 기회를 만들어 보세요.",
+    "이번 재회는 두 사람의 관계를 더욱 단단하게 만들 기회가 될 것입니다. 상대방의 말을 경청하며, 함께할 수 있는 미래를 논의하세요.",
+    "과거에 대해 반성하고 상대방의 입장을 이해하려 노력한다면, 재회는 더욱 순조롭게 진행될 것입니다. 진심이 담긴 태도를 보여주세요.",
+    "상대방도 당신과 같은 감정을 느끼고 있을 가능성이 큽니다. 서로의 마음이 닿을 수 있도록 작은 용기를 내어 다가가 보세요.",
+    "지금은 연락을 시도하기 좋은 시기입니다. 상대방이 당신의 메시지를 반갑게 받을 가능성이 큽니다.",
+    "상대방이 당신을 관찰하며 변화를 지켜보고 있을 수 있습니다. 행동과 말로 당신의 진심을 보여주는 것이 중요합니다.",
+    "이번 재회는 두 사람 모두에게 치유와 성장을 가져다줄 것입니다. 서로의 아픔을 이해하며 새로운 시작을 준비하세요.",
+    "재회는 단순한 감정의 문제가 아닐 수 있습니다. 현실적인 문제를 함께 해결할 수 있는 계획을 세워보세요.",
+    "상대방이 과거의 갈등을 해결하고 싶어할 가능성이 큽니다. 그들의 신호를 잘 읽고, 열린 마음으로 대화에 임하세요.",
+    "이제는 두 사람이 함께 성숙한 관계를 만들어 나갈 때입니다. 과거의 교훈을 바탕으로 더 강한 신뢰를 쌓아가세요.",
+    "상대방은 당신이 자신의 삶에서 중요한 존재였음을 깨닫고 있을 수 있습니다. 그들에게 기회를 주는 것도 관계를 회복하는 열쇠가 될 것입니다.",
+    "재회는 두 사람 모두의 의지가 있어야만 가능합니다. 상대방에게 충분한 시간을 주면서, 천천히 신뢰를 다시 쌓아가 보세요.",
+    "이번 재회는 새로운 시작과도 같습니다. 상대방과 함께 과거를 뒤로하고, 앞으로의 계획을 세우며 관계를 다져나가세요.",
+    "상대방이 당신의 변화를 느낄 수 있도록 솔직한 마음을 보여주세요. 새로운 모습이 재회의 가능성을 높일 것입니다.",
+    "두 사람의 관계는 여전히 끊어지지 않은 실로 연결되어 있습니다. 그 실을 다시 잡고, 강하게 묶을 방법을 찾아보세요.",
+    "이번 재회는 두 사람 모두에게 긍정적인 변화를 가져올 수 있는 중요한 기회입니다. 서로의 감정을 존중하며 신뢰를 회복해 보세요.",
+    "상대방은 당신과의 좋은 추억을 떠올리고 있을 가능성이 큽니다. 이 추억을 바탕으로 새로운 대화를 시작해보세요.",
+    "과거의 감정을 긍정적으로 바라보며, 상대방과 다시 연결될 방법을 찾아보세요. 이는 두 사람 모두에게 의미 있는 변화가 될 것입니다.",
+    "재회의 순간이 가까워지고 있습니다. 상대방이 당신의 진심을 이해할 수 있도록, 과거의 실수를 인정하고 새로운 모습을 보여주세요.",
+    "상대방은 당신이 여전히 중요한 존재임을 깨닫고 있을 가능성이 큽니다. 그들에게 다가갈 작은 기회를 만들어보세요.",
+    "재회는 서로의 마음을 확인하고, 새로운 방향으로 나아갈 기회입니다. 상대방과 함께 과거를 정리하고, 새로운 시작을 다짐해 보세요.",
+    "현재의 감정이 재회의 가능성을 높이고 있습니다. 작은 대화라도 긍정적인 변화를 가져올 수 있으니, 진심으로 접근하세요.",
+    "상대방은 당신이 여전히 중요한 사람이라는 사실을 깨닫고 있을 가능성이 큽니다. 그들의 신호를 민감하게 받아들여 보세요.",
+    "지금은 과거를 돌아보며 서로의 입장을 이해하는 데 적합한 시기입니다. 상대방과 함께 과거를 극복하고 새로운 미래를 그려보세요.",
+    "상대방과의 관계가 성숙한 형태로 발전할 가능성이 큽니다. 이번 재회를 통해 서로의 신뢰를 더 깊게 만들 준비를 하세요.",
+    "재회의 기운이 강하게 감도는 시기입니다. 자신감을 가지고, 작은 첫걸음을 내딛어 보세요. 상대방도 준비되어 있을 가능성이 높습니다.",
+    "서로의 감정을 다시 확인하며, 깊고 진솔한 대화를 나눌 수 있는 기회를 만들어 보세요. 이 대화는 재회를 위한 중요한 열쇠가 될 것입니다.",
+    "재회는 두 사람 모두에게 치유와 성숙을 가져올 수 있습니다. 서로를 이해하려는 태도로 새로운 시작을 다짐하세요.",
+    "과거의 상처를 인정하고 이를 통해 더 나은 관계로 나아갈 준비를 하세요. 상대방도 같은 마음일 가능성이 큽니다."
+    ];
+
+      const resultText = results[selectedCardNumber - 1];
+      const resultElement = document.getElementById("result");
+
+      // 결과를 바로 보이게 하는 코드
+      resultElement.innerHTML = `<p>${resultText}</p>`;
+      resultElement.classList.add("visible"); // 메시지 보여줌
+    }
+
+    // 다시 선택하기
+    function resetSelection() {
+      selectedCardNumber = null;
+      document.getElementById('checkCardBtn').style.display = 'none'; // "이 카드 확인하기" 버튼 숨기기
+      document.getElementById('chooseAgainBtn').style.display = 'none'; // "다시 선택하기" 버튼 숨기기
+      document.getElementById('result').innerHTML = `<p>타로 카드를 선택해 결과를 확인하세요.</p>`; // 초기화
+
+      // 카드 섞기 모션
+      shuffleCards();
+    }
+        // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+    document.querySelectorAll('.navbar .menu-link').forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault(); // 기본 링크 동작 방지
+        event.stopPropagation(); // 클릭 이벤트 전파 방지
+        const submenu = item.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 다른 모든 소메뉴 닫기
+        document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+          if (otherSubmenu !== submenu) {
+            otherSubmenu.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 메뉴 외부 클릭 시 소메뉴 닫기
+    window.addEventListener('click', () => {
+      document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    });
+        // 우클릭 방지
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // F12, Ctrl+Shift+I 방지
+  document.addEventListener("keydown", function (e) {
+    // F12 키 방지
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I 방지 (개발자 도구 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+J 방지 (콘솔 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+    }
+    // Ctrl+U 방지 (소스 보기)
+    if (e.ctrlKey && e.key === "U") {
+      e.preventDefault();
+    }
+  });
+  </script>
+
+</body>
+</html>

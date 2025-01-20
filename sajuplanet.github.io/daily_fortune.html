@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>사주플래닛 오늘의 운세</title>
+    <meta name="description" content="사주플래닛 인생사주,신년운세,별자리운세,타로">
+<meta name="keywords" content="사주플래닛,사주,별자리운세,타로,인생총운,무료사주,별자리운세,타로,재회타로,연애타로,소원타로,평생운,재물운,건강운,연애운,직업운,각종운세">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="사주플래닛">
+    <meta property="og:description" content="사주플래닛">
+    <meta property="og:image" content="main-image1.png">
+    <meta property="og:url" content="saju-planet.co.kr/daily_fortune.html">
+
+      <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+             body {
+      font-family: Arial, sans-serif;
+      background-color: #ffefef; /* 연한 파란 배경 */
+       overflow-y: auto;
+    }
+      /* 상단 네비게이션 바 */
+   .navbar {
+  width: 100%;
+  background-color: rgba(255, 209, 220, 0.85); /* 부드러운 파스텔 핑크 배경 */
+  color: #333;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+.navbar .logo {
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.navbar .menu-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar .menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #ffd1dc; /* 부드러운 파스텔 핑크 버튼 */
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.navbar .menu a:hover {
+  background-color: #ffadc1; /* 더 진한 핑크색으로 호버 시 변경 */
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바의 소메뉴 기본 숨김 설정 */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffd1dc; /* 부드러운 파스텔 핑크 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 160px;
+  padding: 5px 0;
+}
+
+.navbar .submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: #ffd1dc;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .submenu a:hover {
+  background-color: #ffadc1;
+}
+    .navbar .submenu {
+      left: -80px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+    }
+.sidebar {
+  width: 220px;
+  background-color: rgba(255, 209, 220, 0.9); /* 부드러운 파스텔 핑크 사이드바 */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 -10px; /* 왼쪽으로 살짝 이동 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 70px);
+  position: fixed; /* 사이드바를 고정 위치로 설정 */
+  top: 70px; /* 네비게이션 바 바로 아래 붙이기 */
+  text-align: left; /* 텍스트 정렬을 왼쪽으로 */
+  overflow-y: auto; /* 사이드바 내용이 많아질 경우 스크롤 허용 */
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffd1dc; /* 부드러운 파스텔 핑크 버튼 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar .submenu {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 209, 220, 0.9); /* 부드러운 파스텔 핑크 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* 상위 메뉴 항목 */
+.menu-item > a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffd1dc; /* 부드러운 파스텔 핑크 배경 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* 소메뉴 항목 */
+.menu-item .submenu a {
+  display: block;
+  margin: 2px 0;
+  padding: 5px 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.menu-item a:hover {
+  background-color: #ffadc1; /* 더 진한 핑크색 호버 */
+}
+
+.menu-item .submenu a:hover {
+  color: #000;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: 240px;
+}
+
+    /* 콘텐츠 영역 */
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-left: 220px; /* 사이드바 여백 */
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .input-section, .result-section {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffe4e1; /* 유지 */
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .input-section h2, .result-section h2 {
+      color: #e75480; /* 진한 핑크색 텍스트 */
+    }
+
+    .input-section select, .input-section input {
+      margin: 5px 0;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .input-section .birth-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    /* 음력 체크박스 스타일 */
+    .lunar-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      color: #e75480;
+    }
+
+    .input-section button {
+      margin-top: 15px;
+      background-color: #ffd1dc; /* 부드러운 파스텔 핑크 버튼 */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .input-section button:hover {
+      background-color: #ffadc1;
+    }
+
+    /* 모바일에서 사이드바 숨기기 */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .content-wrapper {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="로고" class="logo">
+    </a>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="saju.html" class="menu-link">사주</a>
+        <div class="submenu">
+          <a href="saju.html">전체 사주 메뉴</a>
+          <a href="lifetime_fortune.html">평생사주</a>
+          <a href="monthly_fortune.html">월별사주</a>
+          <a href="daily_fortune.html">오늘의 운세</a>
+          <a href="love_fortune.html">연애운</a>
+          <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+          <a href="popularity_of_saju.html">내 사주의 인기도</a>
+          <a href="noble_people.html">사주에 맞는 직업</a>
+          <a href="compatibility.html">사주 궁합</a>
+          <a href="new_year_fortune.html">신년 운세</a>
+        </div>
+      </div>
+ <div class="menu-item">
+  <a href="zodiac.html" class="menu-link">별자리 운세</a>
+  <div class="submenu">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+</div>
+    <div class="menu-item">
+      <a href="tarot.html" class="menu-link">타로</a>
+      <div class="submenu">
+           <a href="tarot.html">전체 타로 메뉴</a>
+        <a href="weekly_taro.html">이번주 타로 운세</a>
+        <a href="monthly_taro.html">이번달 타로 운세</a>
+        <a href="love_taro.html">연애 타로</a>
+           <a href="reunion_taro.html">재회 타로</a>
+           <a href="career_taro.html">취업 타로</a>
+           <a href="wish_taro.html">소원 타로</a>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- 왼쪽 사이드바 -->
+<div class="sidebar">
+  <div class="menu-item">
+    <a href="saju.html">사주</a>
+    <div class="submenu">
+      <a href="lifetime_fortune.html">평생사주</a>
+      <a href="monthly_fortune.html">월별사주</a>
+      <a href="daily_fortune.html">오늘의 운세</a>
+      <a href="love_fortune.html">연애운</a>
+      <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+      <a href="popularity_of_saju.html">내 사주의 인기도</a>
+      <a href="noble_people.html">사주에 맞는 직업</a>
+      <a href="compatibility.html">사주 궁합</a>
+      <a href="new_year_fortune.html">신년운세</a>
+    </div>
+  </div>
+
+  <!-- "별자리 운세" 항목도 menu-item으로 감싸기 -->
+  <div class="menu-item">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+
+  <div class="menu-item">
+    <a href="tarot.html">타로</a>
+    <div class="submenu">
+      <a href="weekly_taro.html">이번주 타로 운세</a>
+      <a href="monthly_taro.html">이번달 타로 운세</a>
+      <a href="love_taro.html">연애 타로</a>
+      <a href="reunion_taro.html">재회 타로</a>
+      <a href="career_taro.html">취업 타로</a>
+      <a href="wish_taro.html">소원 타로</a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="content-wrapper">
+    <div class="content">
+      <h1>오늘의 운세</h1>
+
+      <!-- 입력 섹션 -->
+      <div class="input-section">
+        <h2>사주 정보 입력</h2>
+
+        <input type="text" id="name" placeholder="이름을 입력하세요">
+        
+        <div class="birth-info">
+          <select id="year">
+            <option>태어난 연도</option>
+            <script>
+              for (let i = 1920; i <= 2023; i++) {
+                document.write(`<option value="${i}">${i}년</option>`);
+              }
+            </script>
+          </select>
+
+          <select id="month">
+            <option>태어난 월</option>
+            <script>
+              for (let i = 1; i <= 12; i++) {
+                document.write(`<option value="${i}">${i}월</option>`);
+              }
+            </script>
+          </select>
+
+          <select id="day">
+            <option>태어난 일</option>
+            <script>
+              for (let i = 1; i <= 31; i++) {
+                document.write(`<option value="${i}">${i}일</option>`);
+              }
+            </script>
+          </select>
+
+          <div class="lunar-checkbox">
+            <input type="checkbox" id="lunar" value="lunar">
+            <label for="lunar">음력</label>
+          </div>
+        </div>
+
+        <select id="hour">
+          <option>태어난 시간</option>
+          <option value="모름">모름</option>
+          <option value="0">23시~01시</option>
+          <option value="2">01시~03시</option>
+          <option value="4">03시~05시</option>
+          <option value="6">05시~07시</option>
+          <option value="8">07시~09시</option>
+          <option value="10">09시~11시</option>
+          <option value="12">11시~13시</option>
+          <option value="14">13시~15시</option>
+          <option value="16">15시~17시</option>
+          <option value="18">17시~19시</option>
+          <option value="20">19시~21시</option>
+          <option value="22">21시~23시</option>
+        </select>
+
+ 
+
+   <button onclick="showDailyFortune()">오늘의 운세 보기</button>
+      </div>
+
+      <!-- 결과 섹션 -->
+      <div id="result-section" class="result-section" style="display: none;">
+        <h2>오늘의 운세</h2>
+        <p id="saju-result"><strong id="saju-result-name"></strong>님의 오늘의 운세:</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+  // 운세 데이터 생성 및 저장
+  if (!localStorage.getItem('fortunes')) {
+    localStorage.setItem('fortunes', JSON.stringify(generateFortunes()));
+  }
+  const fortunes = JSON.parse(localStorage.getItem('fortunes'));
+
+  // 운세 데이터 생성 함수
+  function generateFortunes() {
+    const beginnings = [
+      "오늘은 매우 특별한 날입니다.",
+      "당신의 노력이 결실을 맺을 날입니다.",
+      "긍정적인 에너지가 당신을 감싸는 하루가 될 것입니다.",
+      "새로운 기회가 당신을 기다리고 있습니다.",
+      "당신의 삶에 변화를 가져올 좋은 일이 다가옵니다.",
+      "작은 기쁨이 큰 행복으로 이어질 수 있습니다.",
+      "오늘은 자신감을 가지고 모든 일에 도전해 보세요.",
+      "오랜만에 마음의 여유를 가질 수 있는 날입니다.",
+      "평소보다 더 활기찬 하루가 될 것입니다.",
+      "운이 따르는 하루입니다. 놓치지 마세요.",
+      "마음속에 품었던 계획이 하나씩 성과를 낼 것입니다.",
+      "당신의 밝은 에너지가 주변을 감싸고 있습니다."
+    ];
+
+    const middles = [
+      "계획했던 일이 순조롭게 진행될 가능성이 높습니다.",
+      "작은 선택이 당신의 미래를 바꿀 수 있습니다.",
+      "새로운 아이디어와 도전이 성공으로 이어질 것입니다.",
+      "오늘은 주변 사람들에게 감사의 마음을 표현해 보세요.",
+      "기대하지 않았던 곳에서 도움을 받을 수 있습니다.",
+      "평소와 다른 선택이 긍정적인 결과를 가져올 것입니다.",
+      "당신의 배려가 주변 사람들에게 감동을 줄 것입니다.",
+      "어려운 순간에도 웃음을 잃지 않으면 좋은 일이 생깁니다.",
+      "사람들과의 대화에서 새로운 가능성을 발견할 수 있습니다.",
+      "작은 변화를 시도해 보면 놀라운 결과를 얻을 수 있습니다.",
+      "오늘의 노력이 내일의 성공으로 이어질 것입니다.",
+      "성실함이 당신을 더욱 빛나게 할 것입니다."
+    ];
+
+    const endings = [
+      "오늘 하루를 소중히 여기고 자신을 믿으세요.",
+      "모든 일이 당신에게 긍정적으로 흘러갈 것입니다.",
+      "당신의 밝은 에너지가 주변에 긍정적인 영향을 줍니다.",
+      "자신을 믿고 용기를 내세요. 모든 일이 순조로울 것입니다.",
+      "작은 친절이 큰 행운으로 돌아올 수 있습니다.",
+      "휴식을 통해 내일을 준비하세요.",
+      "계획한 일들이 하나씩 성과로 이어질 것입니다.",
+      "마음껏 웃고 오늘을 즐겨 보세요.",
+      "긍정적인 태도가 당신의 하루를 더 빛나게 할 것입니다.",
+      "작은 노력이 큰 결과를 가져옵니다.",
+      "자신감을 가지고 도전에 나서보세요.",
+      "행복한 하루를 위한 선택은 지금 시작됩니다."
+    ];
+
+    const additionalDetails = [
+      "특히 오늘은 중요한 결정을 내리기에 좋은 날입니다.",
+      "평소 하지 않았던 일을 시도하면 뜻밖의 성취를 이룰 수 있습니다.",
+      "새로운 사람들과의 만남에서 긍정적인 기회를 얻을 수 있습니다.",
+      "평소 좋아했던 취미를 다시 시작하면 에너지가 충전될 것입니다.",
+      "가족이나 친구와의 시간을 통해 따뜻함을 느껴보세요.",
+      "당신의 노력은 반드시 보상받을 것입니다.",
+      "오늘은 직감이 뛰어난 날이니 믿어보세요.",
+      "도전적인 자세가 당신의 하루를 특별하게 만들 것입니다.",
+      "작은 목표부터 차근차근 이루어 보세요.",
+      "주변 사람들에게 따뜻한 마음을 전해보세요.",
+      "금전적으로도 안정된 하루를 보낼 수 있습니다.",
+      "작은 행복이 쌓여 큰 만족으로 이어질 것입니다."
+    ];
+
+    const inspirations = [
+      "성공은 준비된 자에게만 찾아옵니다.",
+      "도전은 당신을 성장시키는 가장 큰 원동력입니다.",
+      "긍정적인 생각은 언제나 좋은 결과를 가져옵니다.",
+      "모든 변화는 당신의 선택에서 시작됩니다.",
+      "작은 노력도 당신을 더 나은 방향으로 이끕니다.",
+      "오늘의 선택이 미래를 바꿀 수 있습니다.",
+      "포기하지 않는 자세가 성공으로 이어집니다.",
+      "인내는 당신의 가장 큰 무기가 될 것입니다.",
+      "웃음은 모든 문제를 해결하는 열쇠입니다.",
+      "당신은 생각보다 더 많은 것을 이룰 수 있습니다.",
+      "꿈은 행동으로 옮길 때 현실이 됩니다.",
+      "매일의 작은 진전이 큰 목표를 이룰 것입니다."
+    ];
+
+           // 2000개의 운세 생성
+            const fortunes = [];
+            for (let i = 0; i < 2000; i++) {
+                const beginning = beginnings[Math.floor(Math.random() * beginnings.length)];
+                const middle = middles[Math.floor(Math.random() * middles.length)];
+                const ending = endings[Math.floor(Math.random() * endings.length)];
+                const detail = additionalDetails[Math.floor(Math.random() * additionalDetails.length)];
+                const inspiration = inspirations[Math.floor(Math.random() * inspirations.length)];
+                const score = Math.floor(Math.random() * 31) + 70; // 70~100점
+                fortunes.push({
+                    text: `${beginning} ${middle} ${ending} ${detail} ${inspiration}`,
+                    score: score
+                });
+            }
+            return fortunes;
+        }
+
+        // 사용자별 고유 인덱스 생성
+        function getUserDailyFortuneIndex(name, year, month, day) {
+            const today = new Date();
+            const currentDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+            const key = `${name}-${year}-${month}-${day}-${currentDate}`;
+            const hash = Array.from(key).reduce((acc, char) => acc + char.charCodeAt(0), 0);
+            return hash % fortunes.length;
+        }
+
+        // 운세 표시 함수
+        function showDailyFortune() {
+            const name = document.getElementById("name").value.trim();
+            let year = parseInt(document.getElementById("year").value);
+            const month = document.getElementById("month").value;
+            const day = document.getElementById("day").value;
+            const lunarChecked = document.getElementById("lunar").checked;
+
+            if (!name || !year || !month || !day) {
+                alert("모든 정보를 입력해주세요.");
+                return;
+            }
+
+            // 음력 체크박스가 체크된 경우 연도를 1년 감소
+            if (lunarChecked) {
+                year -= 1;
+            }
+
+            const index = getUserDailyFortuneIndex(name, year, month, day);
+            const fortune = fortunes[index];
+
+            document.getElementById("saju-result-name").innerText = name;
+            document.getElementById("saju-result").innerHTML = `<strong>${name}</strong>님의 오늘의 운세:<br>${fortune.text}<br><br><strong>오늘의 운세 점수:</strong> ${fortune.score}점`;
+            document.getElementById("result-section").style.display = "block";
+        }
+
+        // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+        document.querySelectorAll('.navbar .menu-link').forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault(); // 기본 링크 동작 방지
+                event.stopPropagation(); // 클릭 이벤트 전파 방지
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                }
+
+                // 다른 모든 소메뉴 닫기
+                document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+                    if (otherSubmenu !== submenu) {
+                        otherSubmenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // 메뉴 외부 클릭 시 소메뉴 닫기
+        window.addEventListener('click', () => {
+            document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+                submenu.style.display = 'none';
+            });
+        });
+        // 우클릭 방지
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // F12, Ctrl+Shift+I 방지
+  document.addEventListener("keydown", function (e) {
+    // F12 키 방지
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I 방지 (개발자 도구 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+J 방지 (콘솔 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+    }
+    // Ctrl+U 방지 (소스 보기)
+    if (e.ctrlKey && e.key === "U") {
+      e.preventDefault();
+    }
+  });
+    </script>
+</body>
+</html>

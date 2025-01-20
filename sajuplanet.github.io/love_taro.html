@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>사주플래닛 연애 타로</title>
+    <meta name="description" content="사주플래닛 인생사주,신년운세,별자리운세,타로">
+<meta name="keywords" content="사주플래닛,사주,별자리운세,타로,인생총운,무료사주,별자리운세,타로,재회타로,연애타로,소원타로,평생운,재물운,건강운,연애운,직업운,각종운세">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="사주플래닛">
+    <meta property="og:description" content="사주플래닛">
+    <meta property="og:image" content="main-image1.png">
+    <meta property="og:url" content="saju-planet.co.kr/love_taro.html">
+
+      <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef3; /* 연한 핑크색 배경 */
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+        
+    overflow-y: auto;
+    }
+
+   .navbar {
+  width: 100%;
+   background-color: #ffb6c1; /* 연한 핑크색 배경 */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+.navbar .logo {
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.navbar .menu-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar .menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #ffb6c1; /* 연한 핑크색 버튼 */
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.navbar .menu a:hover {
+  background-color: #ff69b4; /* 진한 핑크색으로 호버 시 변경 */
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바의 소메뉴 기본 숨김 설정 */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffb6c1; /* 연한 핑크색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 160px;
+  padding: 5px 0;
+}
+
+.navbar .submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: #ffb6c1;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .submenu a:hover {
+  background-color: #ff69b4;
+}
+.navbar .submenu {
+      left: -80px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+    }
+
+    .sidebar {
+  width: 220px;
+  background-color: rgba(255, 182, 193, 0.9); /* 연한 핑크색 사이드바 */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 -10px; /* 왼쪽으로 살짝 이동 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 70px);
+  position: fixed; /* 사이드바를 고정 위치로 설정 */
+  top: 70px; /* 네비게이션 바 바로 아래 붙이기 */
+  text-align: left; /* 텍스트 정렬을 왼쪽으로 */
+  overflow-y: auto; /* 사이드바 내용이 많아질 경우 스크롤 허용 */
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffb6c1; /* 연한 핑크색 버튼 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar .submenu {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 182, 193, 0.9); /* 연한 핑크색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* 상위 메뉴 항목 */
+.menu-item > a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffb6c1; /* 연한 핑크색 배경 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* 소메뉴 항목 */
+.menu-item .submenu a {
+  display: block;
+  margin: 2px 0;
+  padding: 5px 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.menu-item a:hover {
+  background-color: #ff69b4; /* 진한 핑크색 호버 */
+}
+
+.menu-item .submenu a:hover {
+  color: #000;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: 240px;
+}
+
+
+    /* 콘텐츠 영역 */
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .content h1 {
+      color: #ff69b4; /* 진한 핑크색 */
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+    /* 타로 카드 슬라이더 */
+    .tarot-slider {
+      display: flex;
+      overflow-x: scroll;
+      max-width: 100%;
+      padding: 60px 0;
+      scroll-behavior: smooth;
+      gap: 15px;
+      position: relative;
+    }
+
+    .tarot-card {
+      width: 100px;
+      height: 150px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      margin-left: -25px;
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #ffeef3; /* 연한 핑크색 배경 */
+    }
+
+    .tarot-card img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    /* 결과 메세지 */
+    .result {
+      margin-top: 40px;
+      background: linear-gradient(135deg, #ffdde1, #f8a5c2); /* 연한 핑크색의 부드러운 그라디언트 */
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      color: #333;
+      font-size: 1em;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .result.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .buttons {
+      margin-top: 40px;
+    }
+
+    .buttons button {
+      background-color: #ff69b4; /* 진한 핑크색 버튼 */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #ff4d6d; /* 버튼 호버 색상 */
+    }
+
+    @keyframes shuffle {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-100%); }
+      50% { transform: translateX(100%); }
+      75% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    .tarot-card.shuffling {
+      animation: shuffle 0.5s ease-in-out;
+    }
+
+    .tarot-card.selected {
+      transform: translateY(-40px) scale(1.1) !important;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3) !important;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+      z-index: 20 !important;
+    }
+
+    /* 모바일에서 사이드바 숨기기 */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .content-wrapper {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    </style>
+</head>
+<body>
+
+   <!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="로고" class="logo">
+    </a>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="saju.html" class="menu-link">사주</a>
+        <div class="submenu">
+          <a href="saju.html">전체 사주 메뉴</a>
+          <a href="lifetime_fortune.html">평생사주</a>
+          <a href="monthly_fortune.html">월별사주</a>
+          <a href="daily_fortune.html">오늘의 운세</a>
+          <a href="love_fortune.html">연애운</a>
+          <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+          <a href="popularity_of_saju.html">내 사주의 인기도</a>
+          <a href="noble_people.html">사주에 맞는 직업</a>
+          <a href="compatibility.html">사주 궁합</a>
+          <a href="new_year_fortune.html">신년 운세</a>
+        </div>
+      </div>
+ <div class="menu-item">
+  <a href="zodiac.html" class="menu-link">별자리 운세</a>
+  <div class="submenu">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+</div>
+    <div class="menu-item">
+      <a href="tarot.html" class="menu-link">타로</a>
+      <div class="submenu">
+           <a href="tarot.html">전체 타로 메뉴</a>
+        <a href="weekly_taro.html">이번주 타로 운세</a>
+        <a href="monthly_taro.html">이번달 타로 운세</a>
+        <a href="love_taro.html">연애 타로</a>
+           <a href="reunion_taro.html">재회 타로</a>
+           <a href="career_taro.html">취업 타로</a>
+           <a href="wish_taro.html">소원 타로</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- 왼쪽 사이드바 -->
+<div class="sidebar">
+  <div class="menu-item">
+    <a href="saju.html">사주</a>
+    <div class="submenu">
+      <a href="lifetime_fortune.html">평생사주</a>
+      <a href="monthly_fortune.html">월별사주</a>
+      <a href="daily_fortune.html">오늘의 운세</a>
+      <a href="love_fortune.html">연애운</a>
+      <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+      <a href="popularity_of_saju.html">내 사주의 인기도</a>
+      <a href="noble_people.html">사주에 맞는 직업</a>
+      <a href="compatibility.html">사주 궁합</a>
+      <a href="new_year_fortune.html">신년운세</a>
+    </div>
+  </div>
+
+  <!-- "별자리 운세" 항목도 menu-item으로 감싸기 -->
+  <div class="menu-item">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+
+  <div class="menu-item">
+    <a href="tarot.html">타로</a>
+    <div class="submenu">
+      <a href="weekly_taro.html">이번주 타로 운세</a>
+      <a href="monthly_taro.html">이번달 타로 운세</a>
+      <a href="love_taro.html">연애 타로</a>
+      <a href="reunion_taro.html">재회 타로</a>
+      <a href="career_taro.html">취업 타로</a>
+      <a href="wish_taro.html">소원 타로</a>
+    </div>
+  </div>
+</div>
+
+  <!-- 타로 콘텐츠 -->
+  <div class="content-wrapper">
+    <div class="content">
+      <h1>연애 타로</h1>
+
+      <!-- 타로 카드 슬라이더 -->
+      <div class="tarot-slider" id="tarotSlider">
+        <!-- 카드 클릭 시 결과 표시 -->
+        <div class="tarot-card" onclick="selectCard(1)" data-card="1"><img src="love_taro.png" alt="타로카드 1"></div>
+        <div class="tarot-card" onclick="selectCard(2)" data-card="2"><img src="love_taro.png" alt="타로카드 2"></div>
+        <div class="tarot-card" onclick="selectCard(3)" data-card="3"><img src="love_taro.png" alt="타로카드 3"></div>
+        <div class="tarot-card" onclick="selectCard(4)" data-card="4"><img src="love_taro.png" alt="타로카드 4"></div>
+        <div class="tarot-card" onclick="selectCard(5)" data-card="5"><img src="love_taro.png" alt="타로카드 5"></div>
+        <div class="tarot-card" onclick="selectCard(6)" data-card="6"><img src="love_taro.png" alt="타로카드 6"></div>
+        <div class="tarot-card" onclick="selectCard(7)" data-card="7"><img src="love_taro.png" alt="타로카드 7"></div>
+        <div class="tarot-card" onclick="selectCard(8)" data-card="8"><img src="love_taro.png" alt="타로카드 8"></div>
+        <div class="tarot-card" onclick="selectCard(9)" data-card="9"><img src="love_taro.png" alt="타로카드 9"></div>
+        <div class="tarot-card" onclick="selectCard(10)" data-card="10"><img src="love_taro.png" alt="타로카드 10"></div>
+        <div class="tarot-card" onclick="selectCard(11)" data-card="11"><img src="love_taro.png" alt="타로카드 11"></div>
+        <div class="tarot-card" onclick="selectCard(12)" data-card="12"><img src="love_taro.png" alt="타로카드 12"></div>
+        <div class="tarot-card" onclick="selectCard(13)" data-card="13"><img src="love_taro.png" alt="타로카드 13"></div>
+        <div class="tarot-card" onclick="selectCard(14)" data-card="14"><img src="love_taro.png" alt="타로카드 14"></div>
+        <div class="tarot-card" onclick="selectCard(15)" data-card="15"><img src="love_taro.png" alt="타로카드 15"></div>
+        <div class="tarot-card" onclick="selectCard(16)" data-card="16"><img src="love_taro.png" alt="타로카드 16"></div>
+        <div class="tarot-card" onclick="selectCard(17)" data-card="17"><img src="love_taro.png" alt="타로카드 17"></div>
+        <div class="tarot-card" onclick="selectCard(18)" data-card="18"><img src="love_taro.png" alt="타로카드 18"></div>
+        <div class="tarot-card" onclick="selectCard(19)" data-card="19"><img src="love_taro.png" alt="타로카드 19"></div>
+        <div class="tarot-card" onclick="selectCard(20)" data-card="20"><img src="love_taro.png" alt="타로카드 20"></div>
+        <div class="tarot-card" onclick="selectCard(21)" data-card="21"><img src="love_taro.png" alt="타로카드 21"></div>
+        <div class="tarot-card" onclick="selectCard(22)" data-card="22"><img src="love_taro.png" alt="타로카드 22"></div>
+      </div>
+
+     <!-- 결과 표시 영역 -->
+      <div id="result" class="result visible">
+        <p>타로 카드를 선택해 결과를 확인하세요.</p>
+      </div>
+
+      <!-- 버튼들 -->
+      <div class="buttons">
+        <button id="checkCardBtn" onclick="showResult()" style="display:none;">이 카드 확인하기</button>
+        <button id="chooseAgainBtn" onclick="resetSelection()" style="display:none;">다시 선택하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedCardNumber = null;
+
+    // 카드 섞기
+    function shuffleCards() {
+      const tarotSlider = document.getElementById('tarotSlider');
+      const cards = Array.from(tarotSlider.children);
+      cards.forEach(card => card.classList.add('shuffling'));
+
+      setTimeout(() => {
+        while (tarotSlider.firstChild) {
+          tarotSlider.removeChild(tarotSlider.firstChild);
+        }
+        cards.sort(() => Math.random() - 0.5);
+        cards.forEach(card => {
+          card.classList.remove('selected');
+          tarotSlider.appendChild(card);
+        });
+        cards.forEach(card => card.classList.remove('shuffling'));
+      }, 500);
+    }
+ function selectCard(cardNumber) {
+  selectedCardNumber = cardNumber;
+  document.getElementById('checkCardBtn').style.display = 'inline-block'; // "이 카드 확인하기" 버튼 보이기
+  document.getElementById('chooseAgainBtn').style.display = 'inline-block'; // "다시 선택하기" 버튼 보이기
+  document.getElementById('result').innerHTML = `<p>카드를 선택하였습니다. "이 카드 확인하기" 버튼을 누르어 결과를 확인하세요.</p>`;
+  
+  // 선택된 카드 강조
+  const cards = document.querySelectorAll('.tarot-card');
+  cards.forEach(card => card.classList.remove('selected'));
+  const selectedCard = document.querySelector(`.tarot-card[data-card="${cardNumber}"]`);
+  if (selectedCard) {
+    selectedCard.classList.add('selected');
+    console.log(`Card ${cardNumber} selected`); // 로그로 카드 선택을 확인합니다.
+  }
+}
+
+    // 결과 표시
+    function showResult() {
+      if (selectedCardNumber === null) {
+        return; // 카드가 선택되지 않았다면 아무 작업도 하지 않음
+      }
+
+     const results = [
+          "당신의 연애운이 안정적이고 조화로운 상태에 있습니다. 현재 연인과의 관계에서 안정감을 느끼며 서로의 감정을 깊이 이해할 수 있는 시간을 가져보세요. 이 시기는 서로에게 편안함과 따뜻함을 제공하는 데 적합합니다.",
+    "새로운 인연이 당신을 기다리고 있습니다. 예상치 못한 장소나 상황에서 특별한 만남이 이루어질 가능성이 높습니다. 열린 마음으로 주변 사람들을 대하며 새로운 가능성을 받아들여 보세요.",
+    "현재 연인과의 관계에서 감정이 깊어지는 중요한 순간입니다. 서로의 마음을 솔직히 표현하고 더 가까워지기 위한 노력을 기울이세요. 감정이 풍부한 대화가 관계를 한 단계 더 발전시킬 것입니다.",
+    "연애운이 상승세를 타고 있습니다. 이번 주는 데이트를 계획하거나 중요한 감정을 표현하기에 적합한 시기입니다. 타이밍을 잘 맞춰 상대방에게 다가가 보세요. 예상치 못한 긍정적인 반응을 얻을 수 있습니다.",
+    "연애에 있어 중요한 선택의 순간이 다가오고 있습니다. 현재의 관계를 더욱 발전시킬지, 아니면 새로운 길을 탐색할지에 대한 결정이 필요할 수 있습니다. 신중히 판단하고 자신의 마음을 따라가세요.",
+    "상대방의 마음을 이해하려는 노력이 필요한 시기입니다. 때로는 갈등이나 오해가 생길 수 있지만, 이를 해결하려는 당신의 노력이 관계를 더 깊게 만들어줄 것입니다. 감정에 휘둘리지 않고 논리적으로 대화하세요.",
+    "주변에서 당신에게 호감을 갖고 있는 사람이 있습니다. 평소에 가까이 있던 사람일 가능성이 크며, 상대방의 미묘한 신호를 주의 깊게 살펴보세요. 이 사람과의 관계가 새로운 시작으로 이어질 수 있습니다.",
+    "짝사랑 중이라면 상대가 당신의 마음을 눈치챌 가능성이 높아지는 시기입니다. 감정을 은근히 표현하거나, 가벼운 대화를 통해 상대방에게 접근해 보세요. 용기를 낸다면 좋은 결과를 얻을 수 있습니다.",
+    "신뢰를 쌓아가는 시간이 필요합니다. 서로의 감정을 진솔하게 나누고, 솔직한 대화를 통해 오해를 풀어나가세요. 관계의 안정성을 높이는 데 집중해야 할 시기입니다.",
+    "감정적으로 큰 변화가 일어날 수 있는 주간입니다. 때로는 감정의 기복이 당신을 혼란스럽게 할 수 있지만, 이를 잘 다스리고 자신의 마음을 평온하게 유지하는 것이 중요합니다.",
+    "연애에 있어 개인적으로 성장해야 할 시기입니다. 자신의 감정이나 행동 패턴을 돌아보며, 성숙한 연애를 위한 준비를 하세요. 이 과정은 당신이 더 나은 사랑을 경험하는 데 도움을 줄 것입니다.",
+    "누군가와 깊이 연결되는 순간이 찾아옵니다. 상대방과 진솔한 대화를 통해 서로의 가치관이나 목표를 공유하세요. 이는 관계를 더욱 깊고 안정적으로 만들어 줄 것입니다.",
+    "사랑이 깊어지면서 새로운 단계로 접어들고 있습니다. 약혼이나 결혼과 같은 중요한 결정을 고려할 시기일 수 있습니다. 두 사람의 미래에 대해 긍정적으로 논의해보세요.",
+    "당신의 연애에 행운이 따르고 있습니다. 예상치 못했던 기쁨이나 놀라운 일이 일어날 가능성이 큽니다. 이 기회를 놓치지 않고 사랑을 한층 더 발전시키세요.",
+    "연인에게 애정 표현을 적극적으로 해보세요. 상대방은 당신의 진심 어린 표현을 매우 소중하게 생각할 것입니다. 사소한 행동이라도 상대방에게 깊은 감동을 줄 수 있습니다.",
+    "현재의 관계에서 벗어나 새로운 가능성을 탐색하는 것이 필요할 수 있습니다. 변화는 때로 두렵게 느껴질 수 있지만, 새로운 시작은 당신에게 더 나은 기회를 가져다줄 것입니다.",
+    "사랑하는 사람과 추억을 쌓기에 이상적인 주간입니다. 함께 특별한 경험을 계획하거나 작은 이벤트를 만들어보세요. 이 추억은 앞으로 두 사람의 관계를 더 단단히 만들어줄 것입니다.",
+    "당신의 연애운이 매우 좋은 상태입니다. 새로운 만남이나 현재의 관계에서 긍정적인 흐름이 느껴질 것입니다. 좋은 기회를 놓치지 말고 적극적으로 행동하세요.",
+    "서로에 대한 믿음과 이해가 더욱 깊어질 것입니다. 이 시기는 서로를 더욱 신뢰하고 관계를 안정적으로 만드는 데 초점을 맞추세요.",
+    "상대방이 당신에게 호감을 느끼고 있을 가능성이 높습니다. 한 걸음 더 다가가 대화를 시작하거나 함께 시간을 보내며 관계를 발전시켜 보세요.",
+    "이번 주는 연애에 있어 소중한 추억을 만들기에 적합한 시기입니다. 함께 보내는 시간을 소중히 여기며, 특별한 순간을 만들어 보세요.",
+    "좋은 인연이 당신 가까이에 있습니다. 눈앞의 기회를 놓치지 않도록 주변을 잘 살펴보고, 열린 마음으로 사람들을 대하세요.",
+    "당신의 사랑에 새로운 에너지가 불어넣어질 시기입니다. 오랜 관계에서 지쳤다면 새로운 활동을 함께하며 관계를 새롭게 만들어보세요.",
+    "솔로라면 자신을 가꾸는 데 집중하세요. 이 과정이 곧 당신에게 더 나은 인연을 불러올 것입니다. 자신감을 가지고 새로운 만남에 대비하세요.",
+    "현재 연애 중이라면 상대방에게 특별한 이벤트를 준비해보세요. 예상치 못한 기쁨을 선사함으로써 관계에 더욱 활력을 줄 수 있습니다.",
+    "연애와 관련하여 예상치 못한 변화를 경험할 수 있습니다. 이를 긍정적으로 받아들이고, 변화를 성장의 기회로 삼으세요.",
+    "관계에서 상호 존중이 매우 중요한 시기입니다. 상대방의 의견을 경청하고, 이해하려는 태도를 보이세요. 이는 관계의 안정성을 크게 높일 것입니다.",
+    "주변 사람들의 조언이 이번 주 연애 운에 큰 영향을 줄 수 있습니다. 가까운 친구나 가족과의 대화를 통해 좋은 아이디어나 방향을 얻을 수 있습니다.",
+    "이 주간은 용기 있는 사랑이 필요한 시기입니다. 당신의 마음을 상대방에게 솔직히 표현해 보세요. 진심이 전해지면 좋은 결과를 얻을 수 있습니다.",
+    "과거의 사랑에서 배움을 얻고 앞으로 나아가야 할 시기입니다. 과거에 얽매이지 말고 새로운 기회를 받아들이세요.",
+    "연애에 있어 감정적인 안정이 필요합니다. 명상이나 혼자만의 시간을 통해 자신의 내면을 다스리고 상대방과의 관계를 더 깊이 이해해보세요.",
+          "현재 당신의 연애 상황은 안정을 유지하고 있습니다. 상대방과의 관계에서 편안함을 느끼며 서로에게 긍정적인 영향을 줄 수 있는 시기입니다. 작은 이벤트를 준비해 함께 특별한 시간을 만들어보세요.",
+    "곧 예상치 못한 로맨틱한 순간이 찾아올 것입니다. 새로운 인연이 당신의 일상에 스며들 가능성이 크니, 새로운 사람들과의 만남을 열정적으로 받아들여 보세요.",
+    "당신의 연애는 서로의 감정을 깊이 이해하고 나누는 단계로 접어들고 있습니다. 이 시간을 잘 활용하여 상대방과 함께 더 깊은 관계로 발전할 수 있도록 노력하세요.",
+    "이번 주는 당신의 매력이 돋보이는 시기입니다. 연인과의 데이트를 계획하거나, 관심 있는 사람에게 다가갈 용기를 내어보세요. 당신의 노력은 놀라운 결과를 가져올 것입니다.",
+    "연애운이 상승하고 있습니다. 이 시기를 활용하여 고백이나 중요한 대화를 나눠보세요. 상대방도 당신의 진심을 느낄 가능성이 큽니다.",
+    "연애에서 중요한 결정을 내려야 할 시기입니다. 자신의 감정과 상대방의 태도를 신중히 분석하고, 장기적인 관점에서 선택을 내리는 것이 중요합니다.",
+    "주변 사람들로부터 당신을 향한 긍정적인 시선이 느껴질 것입니다. 누군가 당신에게 관심을 보일 가능성이 크니, 새로운 대화를 시작해보세요.",
+    "현재 당신의 짝사랑이 진전될 가능성이 보입니다. 상대방이 당신의 관심을 눈치챌 수 있으니, 적절한 방식으로 마음을 표현해 보세요.",
+    "상대방과의 신뢰를 쌓아가는 것이 중요한 시기입니다. 서로에 대해 깊은 이야기를 나누고, 관계를 안정적으로 유지할 수 있는 기반을 마련하세요.",
+    "연애 관계에서 감정의 기복이 있을 수 있는 주간입니다. 이러한 변화를 긍정적으로 받아들이고, 자신의 감정을 잘 조율하여 관계를 안정적으로 유지하세요.",
+    "이번 주는 연애에서 자신을 성장시킬 기회입니다. 자신의 장점과 단점을 객관적으로 돌아보고, 상대방과의 관계에서 더 나은 모습을 보여줄 수 있도록 노력하세요.",
+    "특별한 대화가 당신과 상대방 사이의 벽을 허물 수 있습니다. 진솔한 이야기를 나눌 기회를 만들고, 서로의 깊은 감정을 공유해 보세요.",
+    "연애에 있어 큰 변화를 맞이할 가능성이 큽니다. 새로운 만남이 있거나, 현재의 관계에서 더 깊은 연결이 생길 수 있으니 열린 마음으로 받아들이세요.",
+    "당신의 사랑은 행운의 영향을 받고 있습니다. 예상치 못한 선물이나 즐거운 소식이 찾아올 가능성이 높습니다. 이 기쁨을 상대방과 나누세요.",
+    "상대방에게 애정을 표현하기에 좋은 시기입니다. 평소보다 더 많은 칭찬과 관심을 보여줌으로써 관계를 강화할 수 있습니다.",
+    "현재의 연애 관계에서 벗어나 새로운 가능성을 탐색해보세요. 변화는 두려운 것이지만, 새로운 시작은 당신의 삶에 활력을 불어넣을 것입니다.",
+    "사랑하는 사람과 함께 추억을 쌓는 데 좋은 시간입니다. 새로운 장소를 방문하거나 함께 시간을 보내며 관계를 더욱 돈독히 하세요.",
+    "이번 주는 연애와 관련된 결정을 내리기에 적합한 시기입니다. 당신의 직감과 감정을 신뢰하고, 올바른 선택을 내리세요.",
+    "상대방과의 관계가 새로운 단계로 발전할 가능성이 큽니다. 두 사람의 미래에 대해 깊이 논의하며, 장기적인 계획을 세워보세요.",
+    "당신의 매력은 이번 주에 특히 빛날 것입니다. 자신감을 가지고 새로운 사람들과의 만남을 주도하세요. 특별한 인연을 만날 가능성이 높습니다.",
+    "현재 연애에서 갈등이 있다면, 이번 주는 이를 해결하기 좋은 시기입니다. 상대방의 입장을 이해하려 노력하고, 솔직한 대화를 통해 문제를 풀어나가세요.",
+    "서로를 위한 작은 선물이 관계를 더욱 따뜻하게 만들어 줄 것입니다. 특별한 날이 아니더라도 상대방을 위한 사소한 이벤트를 계획해 보세요.",
+    "주변 친구나 가족이 당신의 연애에 긍정적인 영향을 미칠 수 있습니다. 그들의 조언을 경청하고, 관계를 발전시키는 데 활용해 보세요.",
+    "연애와 관련된 중요한 통찰을 얻을 수 있는 주간입니다. 상대방의 말과 행동을 주의 깊게 관찰하여 더 깊은 이해를 얻으세요.",
+    "솔로라면 새로운 취미를 시작하거나 커뮤니티에 참여해보세요. 이러한 활동이 당신에게 좋은 인연을 가져다줄 가능성이 큽니다.",
+    "당신의 연애는 놀라운 방식으로 발전할 가능성이 있습니다. 예상하지 못했던 기쁨이 찾아오니, 이를 긍정적으로 받아들일 준비를 하세요.",
+    "현재의 연애 관계에서 성장이 필요한 시기입니다. 함께 새로운 도전을 계획하거나, 서로를 더 잘 이해하기 위한 노력을 기울이세요.",
+    "당신의 연애에 새로운 활기가 더해질 것입니다. 새로운 장소를 방문하거나 특별한 활동을 통해 관계를 새롭게 만들어 보세요.",
+    "상대방과의 관계에서 공감과 이해가 깊어질 것입니다. 함께 보내는 시간이 더욱 즐거워질 것이니, 서로에게 집중해 보세요.",
+    "연애에 있어 안정감과 평화가 중요한 주간입니다. 상대방과의 시간을 소중히 여기고, 함께 하는 소소한 순간들을 즐겨보세요.",
+    "새로운 사랑이 시작될 조짐이 보입니다. 당신의 일상에 긍정적인 변화를 가져다줄 인연이 가까이 있을 수 있으니 눈을 크게 뜨세요.",
+    "현재 연인과의 관계가 한 단계 더 발전할 가능성이 있습니다. 약혼이나 결혼과 같은 중요한 결정을 내릴 시기일 수 있으니, 깊이 생각해보세요.",
+    "감정의 기복이 심한 주간이 될 수 있습니다. 자신의 감정을 잘 다스리고, 상대방에게 솔직하게 표현함으로써 관계를 더 깊게 만들어보세요.",
+    "혼란스러운 상황에서도 희망을 잃지 마세요. 이번 주는 관계를 정리하고 새로운 방향으로 나아가기 위한 좋은 기회입니다.",
+    "현재 연애에서 느끼는 어려움은 곧 해결될 것입니다. 상대방과의 대화를 통해 서로의 감정을 솔직히 나눠보세요.",
+    "이번 주는 당신의 연애운이 매우 강력합니다. 새로운 만남이나 긍정적인 변화가 예상되니, 준비된 마음으로 기회를 잡으세요.",
+    "상대방과의 관계를 더욱 깊고 안정적으로 만들기 위해 작은 이벤트를 계획해보세요. 서로의 감정을 확인하는 시간이 필요합니다.",
+    "주변 사람들에게 긍정적인 에너지를 전파하세요. 당신의 긍정적인 태도가 연애 관계에도 좋은 영향을 미칠 것입니다."
+      ];
+
+      const resultText = results[selectedCardNumber - 1];
+      const resultElement = document.getElementById("result");
+
+      // 결과를 바로 보이게 하는 코드
+      resultElement.innerHTML = `<p>${resultText}</p>`;
+      resultElement.classList.add("visible"); // 메시지 보여줌
+    }
+
+    // 다시 선택하기
+    function resetSelection() {
+      selectedCardNumber = null;
+      document.getElementById('checkCardBtn').style.display = 'none'; // "이 카드 확인하기" 버튼 숨기기
+      document.getElementById('chooseAgainBtn').style.display = 'none'; // "다시 선택하기" 버튼 숨기기
+      document.getElementById('result').innerHTML = `<p>타로 카드를 선택해 결과를 확인하세요.</p>`; // 초기화
+
+      // 카드 섞기 모션
+      shuffleCards();
+    }
+        // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+    document.querySelectorAll('.navbar .menu-link').forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault(); // 기본 링크 동작 방지
+        event.stopPropagation(); // 클릭 이벤트 전파 방지
+        const submenu = item.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 다른 모든 소메뉴 닫기
+        document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+          if (otherSubmenu !== submenu) {
+            otherSubmenu.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 메뉴 외부 클릭 시 소메뉴 닫기
+    window.addEventListener('click', () => {
+      document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    });
+        // 우클릭 방지
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // F12, Ctrl+Shift+I 방지
+  document.addEventListener("keydown", function (e) {
+    // F12 키 방지
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I 방지 (개발자 도구 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+J 방지 (콘솔 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+    }
+    // Ctrl+U 방지 (소스 보기)
+    if (e.ctrlKey && e.key === "U") {
+      e.preventDefault();
+    }
+  });
+  </script>
+
+</body>
+</html>

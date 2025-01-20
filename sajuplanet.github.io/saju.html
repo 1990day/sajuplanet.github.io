@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522499110435321"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>사주플래닛 사주</title>
+    <meta name="description" content="사주플래닛 인생사주,신년운세,별자리운세,타로">
+<meta name="keywords" content="사주플래닛,사주,별자리운세,타로,인생총운,무료사주,별자리운세,타로,재회타로,연애타로,소원타로,평생운,재물운,건강운,연애운,직업운,각종운세">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="사주플래닛">
+    <meta property="og:description" content="사주플래닛">
+    <meta property="og:image" content="main-image1.png">
+    <meta property="og:url" content="saju-planet.co.kr/saju.html">
+
+      <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* 연한 파란 배경 */
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+        overflow-y: auto;
+    }
+/* 네비게이션 바 */
+.navbar {
+  width: 100%;
+  background-color: rgba(173, 216, 230, 0.85); /* 하늘색 배경 */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+.navbar .logo {
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.navbar .menu-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar .menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #87cefa; /* 하늘색 버튼 */
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.navbar .menu a:hover {
+  background-color: #00bfff; /* 더 진한 하늘색으로 호버 시 변경 */
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바의 소메뉴 기본 숨김 설정 */
+.navbar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #87cefa; /* 하늘색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 160px;
+  padding: 5px 0;
+}
+
+.navbar .submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: #87cefa;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .submenu a:hover {
+  background-color: #00bfff;
+}
+     .navbar .submenu {
+      left: -80px; /* 모바일에서 소메뉴를 왼쪽으로 띄움 */
+    }
+
+/* 콘텐츠 레이아웃 */
+.content-wrapper {
+  display: flex;
+  margin-top: 120px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: rgba(173, 21    6, 230, 0.9); /* 하늘색 사이드바 */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 -10px; /* 왼쪽으로 살짝 이동 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 70px);
+  position: fixed; /* 사이드바를 고정 위치로 설정 */
+  top: 70px; /* 네비게이션 바 바로 아래 붙이기 */
+  text-align: left; /* 텍스트 정렬을 왼쪽으로 */
+  overflow-y: auto; /* 사이드바 내용이 많아질 경우 스크롤 허용 */
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #87cefa; /* 하늘색 버튼 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar .submenu {
+  display: block;
+  position: relative;
+  background-color: rgba(173, 216, 230, 0.9); /* 하늘색 소메뉴 배경 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* 상위 메뉴 항목 */
+.menu-item > a {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #87cefa; /* 하늘색 배경 */
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* 소메뉴 항목 */
+.menu-item .submenu a {
+  display: block;
+  margin: 2px 0;
+  padding: 5px 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.menu-item a:hover {
+  background-color: #00bfff; /* 더 진한 하늘색 호버 */
+}
+
+.menu-item .submenu a:hover {
+  color: #000;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: 240px;
+}
+
+/* 사주 메뉴 버튼 */
+.saju-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.saju-menu button {
+  background-color: #b0e0e6; /* 연한 하늘색 */
+  color: #2a4d7f;
+  border: 2px solid #a3c6ff;
+  border-radius: 25px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.saju-menu button:hover {
+  background-color: #87cefa; /* 호버 시 진한 하늘색 */
+  color: #2a4d7f;
+}
+
+.saju-menu img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.saju-menu span {
+  font-size: 0.9em;
+}
+
+/* 모바일에서 사이드바 숨기기 */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+     .saju-menu {
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열로 배열 */
+    gap: 15px; /* 열 간격을 살짝 줄임 */
+  }
+      .main-content {
+    margin-left: 0; /* 사이드바에 의해 밀리지 않도록 */
+    width: 100%; /* 전체 너비 사용 */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo.png" alt="로고" class="logo">
+    </a>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="saju.html" class="menu-link">사주</a>
+        <div class="submenu">
+          <a href="saju.html">전체 사주 메뉴</a>
+          <a href="lifetime_fortune.html">평생사주</a>
+          <a href="monthly_fortune.html">월별사주</a>
+          <a href="daily_fortune.html">오늘의 운세</a>
+          <a href="love_fortune.html">연애운</a>
+          <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+          <a href="popularity_of_saju.html">내 사주의 인기도</a>
+          <a href="noble_people.html">사주에 맞는 직업</a>
+          <a href="compatibility.html">사주 궁합</a>
+          <a href="new_year_fortune.html">신년 운세</a>
+        </div>
+      </div>
+ <div class="menu-item">
+  <a href="zodiac.html" class="menu-link">별자리 운세</a>
+  <div class="submenu">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+</div>
+    <div class="menu-item">
+      <a href="tarot.html" class="menu-link">타로</a>
+      <div class="submenu">
+           <a href="tarot.html">전체 타로 메뉴</a>
+        <a href="weekly_taro.html">이번주 타로 운세</a>
+        <a href="monthly_taro.html">이번달 타로 운세</a>
+        <a href="love_taro.html">연애 타로</a>
+           <a href="reunion_taro.html">재회 타로</a>
+           <a href="career_taro.html">취업 타로</a>
+           <a href="wish_taro.html">소원 타로</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 콘텐츠 영역 -->
+  <div class="content-wrapper">
+    <!-- 왼쪽 사이드바 -->
+    <!-- 왼쪽 사이드바 -->
+<div class="sidebar">
+  <div class="menu-item">
+    <a href="saju.html">사주</a>
+    <div class="submenu">
+      <a href="lifetime_fortune.html">평생사주</a>
+      <a href="monthly_fortune.html">월별사주</a>
+      <a href="daily_fortune.html">오늘의 운세</a>
+      <a href="love_fortune.html">연애운</a>
+      <a href="weakness_of_saju.html">내 사주의 부족한 점</a>
+      <a href="popularity_of_saju.html">내 사주의 인기도</a>
+      <a href="noble_people.html">사주에 맞는 직업</a>
+      <a href="compatibility.html">사주 궁합</a>
+      <a href="new_year_fortune.html">신년운세</a>
+    </div>
+  </div>
+
+  <!-- "별자리 운세" 항목도 menu-item으로 감싸기 -->
+  <div class="menu-item">
+    <a href="zodiac.html">별자리 운세</a>
+  </div>
+
+  <div class="menu-item">
+    <a href="tarot.html">타로</a>
+    <div class="submenu">
+      <a href="weekly_taro.html">이번주 타로 운세</a>
+      <a href="monthly_taro.html">이번달 타로 운세</a>
+      <a href="love_taro.html">연애 타로</a>
+      <a href="reunion_taro.html">재회 타로</a>
+      <a href="career_taro.html">취업 타로</a>
+      <a href="wish_taro.html">소원 타로</a>
+    </div>
+  </div>
+</div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="main-content">
+      <div class="saju-menu">
+        <!-- 사주 메뉴 버튼 -->
+        <button onclick="location.href='lifetime_fortune.html'">
+          <img src="lifetime-icon.png" alt="평생사주">
+          <span>평생사주</span>
+        </button>
+        <button onclick="location.href='monthly_fortune.html'">
+          <img src="monthly_saju.png" alt="월별사주">
+          <span>월별사주</span>
+        </button>
+        <button onclick="location.href='daily_fortune.html'">
+          <img src="sal-icon.png" alt="오늘의 운세">
+          <span>오늘의 운세</span>
+        </button>
+        <button onclick="location.href='love_fortune.html'">
+          <img src="saju_love.png" alt="연애운">
+          <span>연애운</span>
+        </button>
+        <button onclick="location.href='weakness_of_saju.html'">
+          <img src="weakness-icon.png" alt="내 사주의 부족한 점">
+          <span>내 사주의 부족한 점</span>
+        </button>
+        <button onclick="location.href='popularity_of_saju.html'">
+          <img src="popularity-icon.png" alt="내 사주의 인기도">
+          <span>내 사주의 인기도</span>
+        </button>
+        <button onclick="location.href='noble_people.html'">
+          <img src="noble-icon.png" alt="사주에 있는 직업">
+          <span>사주에 맞는 직업</span>
+        </button>
+        <button onclick="location.href='compatibility.html'">
+          <img src="compatibility-icon.png" alt="사주궁합">
+          <span>사주궁합</span>
+        </button>
+        <button onclick="location.href='new_year_fortune.html'">
+          <img src="newyear-icon.png" alt="신년 운세">
+          <span>신년 운세</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 네비게이션 바 메뉴 클릭 시 소메뉴 보이기/숨기기
+    document.querySelectorAll('.navbar .menu-link').forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault(); // 기본 링크 동작 방지
+        event.stopPropagation(); // 클릭 이벤트 전파 방지
+        const submenu = item.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 다른 모든 소메뉴 닫기
+        document.querySelectorAll('.navbar .submenu').forEach(otherSubmenu => {
+          if (otherSubmenu !== submenu) {
+            otherSubmenu.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 메뉴 외부 클릭 시 소메뉴 닫기
+    window.addEventListener('click', () => {
+      document.querySelectorAll('.navbar .submenu').forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    });
+        // 우클릭 방지
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // F12, Ctrl+Shift+I 방지
+  document.addEventListener("keydown", function (e) {
+    // F12 키 방지
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I 방지 (개발자 도구 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+J 방지 (콘솔 열기)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+    }
+    // Ctrl+U 방지 (소스 보기)
+    if (e.ctrlKey && e.key === "U") {
+      e.preventDefault();
+    }
+  });
+  </script>
+
+</body>
+</html>
